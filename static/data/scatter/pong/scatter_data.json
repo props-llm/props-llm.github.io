@@ -1,0 +1,602 @@
+[
+  {
+    "x": 55.30613708496094,
+    "y": 95.45455169677734,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_0.mp4",
+    "justification": "This initial point is chosen to explore a broad range of values, mixing both large positive and negative numbers while including more central values. This will help in identifying regions that might hold local optima close to the global maximum.",
+    "heatmap_file": "heatmap_0.jpeg"
+  },
+  {
+    "x": 82.37747955322266,
+    "y": 20.362932205200195,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.48823529411764705,
+      0.5058823529411764,
+      0.5117647058823529,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_10.mp4",
+    "justification": "I selected diverse values for the parameters in a structured way to explore different regions of the parameter space effectively, ensuring to cover both positive and negative values with a step size of 1.0.",
+    "heatmap_file": "heatmap_10.jpeg"
+  },
+  {
+    "x": 17.186500549316406,
+    "y": 53.00459289550781,
+    "size": 126.36363636363636,
+    "rgb": [
+      0.4745098039215686,
+      0.5127450980392156,
+      0.5254901960784314,
+      1.0
+    ],
+    "reward": 0.7,
+    "video_file": "params_20.mp4",
+    "justification": "By using a pattern of alternating positive and negative values and maintaining a modest magnitude, I aim to explore how the function behaves with more balanced parameter contributions across their spectrum, hoping to identify a combination that leads to a higher evaluation value.",
+    "heatmap_file": "heatmap_20.jpeg"
+  },
+  {
+    "x": 76.54235076904297,
+    "y": 76.467041015625,
+    "size": 77.27272727272728,
+    "rgb": [
+      0.4627450980392157,
+      0.5186274509803922,
+      0.5372549019607843,
+      1.0
+    ],
+    "reward": 0.25,
+    "video_file": "params_30.mp4",
+    "justification": "I am continuing to explore around the previous configurations that resulted in moderate success, using the point [-4, 4, ...] and other symmetric patterns as inspirations. The mix of positive and negative extremes aims to span a wide search area, avoiding local optima while staying consistent with the exploratory strategy.",
+    "heatmap_file": "heatmap_30.jpeg"
+  },
+  {
+    "x": 76.54654693603516,
+    "y": 65.94537353515625,
+    "size": 55.45454545454545,
+    "rgb": [
+      0.44901960784313727,
+      0.5254901960784314,
+      0.5509803921568628,
+      1.0
+    ],
+    "reward": 0.05,
+    "video_file": "params_40.mp4",
+    "justification": "I chose these values to explore both positive and negative extremes while using a mix of values around 3. This keeps the exploration diverse, aiming to identify promising regions that may lead to a higher function value while maintaining some proximity to the 3.0 level, which aligns with the potential global optimum as indicated.",
+    "heatmap_file": "heatmap_40.jpeg"
+  },
+  {
+    "x": 42.70164108276367,
+    "y": 56.98631286621094,
+    "size": 82.72727272727272,
+    "rgb": [
+      0.4372549019607843,
+      0.5313725490196078,
+      0.5627450980392157,
+      1.0
+    ],
+    "reward": 0.3,
+    "video_file": "params_50.mp4",
+    "justification": "This configuration explores the space around zero with balanced alternation between positive and negative values, which could potentially lead to enhanced performance in maximizing f(params). Given past performance indications, this configuration avoids previously attempted unsuccessful extremes, offering a new combination that stays within bounds and remains untested.",
+    "heatmap_file": "heatmap_50.jpeg"
+  },
+  {
+    "x": 48.82746124267578,
+    "y": 45.510013580322266,
+    "size": 77.27272727272728,
+    "rgb": [
+      0.4235294117647059,
+      0.538235294117647,
+      0.5764705882352941,
+      1.0
+    ],
+    "reward": 0.25,
+    "video_file": "params_60.mp4",
+    "justification": "I chose this input as a systematic approach to explore positive values in small increments, which might lead us incrementally toward the global maximum that we are searching for, based on previous results favoring lower positive ranges.",
+    "heatmap_file": "heatmap_60.jpeg"
+  },
+  {
+    "x": 45.98208236694336,
+    "y": 9.63044261932373,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.4117647058823529,
+      0.5441176470588235,
+      0.5882352941176471,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_70.mp4",
+    "justification": "I selected these parameters by exploring a mix of positive and negative values around the mid-range, given that the function seems to favor a diverse combination of numbers around 1.0 and 2.0 in previous high evaluations without repeating any previous combination.",
+    "heatmap_file": "heatmap_70.jpeg"
+  },
+  {
+    "x": 41.55513381958008,
+    "y": 17.338703155517578,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.39803921568627454,
+      0.5509803921568628,
+      0.6019607843137255,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_80.mp4",
+    "justification": "I chose these input values to explore around the positive and negative combinations with step size of 1.0, which are balanced across dimensions, to potentially find a global maximum around 3. I ensured that params values respect previously unseen coordinates.",
+    "heatmap_file": "heatmap_80.jpeg"
+  },
+  {
+    "x": 95.45454406738281,
+    "y": 74.88082885742188,
+    "size": 55.45454545454545,
+    "rgb": [
+      0.38431372549019605,
+      0.557843137254902,
+      0.615686274509804,
+      1.0
+    ],
+    "reward": 0.05,
+    "video_file": "params_90.mp4",
+    "justification": "This proposal utilizes extreme values at the limits of the search range alternated across parameters to aggressively explore high and low potential regions. By going with drastic alternations, we are increasing the chances of finding unexplored peak value combinations, given our knowledge that the global optimum is around 3. We are maintaining focus on both exploration and initial exploitation to thoroughly cover uncharted areas and possibly asymmetrical responses.",
+    "heatmap_file": "heatmap_90.jpeg"
+  },
+  {
+    "x": 34.363182067871094,
+    "y": 50.01825714111328,
+    "size": 77.27272727272728,
+    "rgb": [
+      0.37254901960784315,
+      0.5637254901960784,
+      0.6274509803921569,
+      1.0
+    ],
+    "reward": 0.25,
+    "video_file": "params_100.mp4",
+    "justification": "I selected these parameters to focus on a balanced approach, optimizing by probing symmetrically around zero values to explore potential high-value zones, while adhering to unexplored values and maintaining alternating signs.",
+    "heatmap_file": "heatmap_100.jpeg"
+  },
+  {
+    "x": 47.50425338745117,
+    "y": 47.83790969848633,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.3588235294117647,
+      0.5705882352941176,
+      0.6411764705882352,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_110.mp4",
+    "justification": "Given the current iteration and the range of values that lead to local optimum values, I chose these parameters around zero to ensure the exploration, with the potential of finding hidden optima. The choice to use zeros also helps confirm the baseline of the function.",
+    "heatmap_file": "heatmap_110.jpeg"
+  },
+  {
+    "x": 79.8641128540039,
+    "y": 52.60002136230469,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.34705882352941175,
+      0.5764705882352941,
+      0.6529411764705882,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_120.mp4",
+    "justification": "I chose this input as it combines a mixture of positive and negative values across the range boundary; this helps in exploring new spaces and aims to break out of local optima by reaching towards potential areas where global maxima could be located. The pattern also ensures that the components are spread out in a somewhat balanced manner to explore different regions simultaneously with a search step size of 1.0 as an effective exploration strategy.",
+    "heatmap_file": "heatmap_120.jpeg"
+  },
+  {
+    "x": 41.48527908325195,
+    "y": 74.8960189819336,
+    "size": 93.63636363636364,
+    "rgb": [
+      0.33333333333333337,
+      0.5833333333333334,
+      0.6666666666666666,
+      1.0
+    ],
+    "reward": 0.4,
+    "video_file": "params_130.mp4",
+    "justification": "This input explores a uniform distribution of negative values across all parameters, maintaining the required step size for exploration. This could potentially lead us to higher values since these values have not been evaluated yet.",
+    "heatmap_file": "heatmap_130.jpeg"
+  },
+  {
+    "x": 38.64957046508789,
+    "y": 6.1678924560546875,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.32156862745098036,
+      0.5892156862745098,
+      0.6784313725490196,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_140.mp4",
+    "justification": "I chose these parameters to explore the search space around negative values, maximizing the variation and enhancing the chances to escape local optima, as the negative values combined with varying magnitudes have not been fully explored.",
+    "heatmap_file": "heatmap_140.jpeg"
+  },
+  {
+    "x": 87.5739517211914,
+    "y": 63.21461868286133,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.307843137254902,
+      0.596078431372549,
+      0.692156862745098,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_150.mp4",
+    "justification": "I selected these params to explore both the positive and negative effects of alternating signs at a symmetric range. With the global maximum near 3, it's crucial to explore innovative combinations of \u00b13 and slightly different other values (\u00b12) that might capture unexplored possibilities of higher outcomes.",
+    "heatmap_file": "heatmap_150.jpeg"
+  },
+  {
+    "x": 47.50425338745117,
+    "y": 47.83790969848633,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.29411764705882354,
+      0.6029411764705882,
+      0.7058823529411764,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_160.mp4",
+    "justification": "I chose these parameters as a starting point to gather information about the function's landscape near the origin, promoting a balanced exploration across all dimensions.",
+    "heatmap_file": "heatmap_160.jpeg"
+  },
+  {
+    "x": 62.49745559692383,
+    "y": 4.54545783996582,
+    "size": 77.27272727272728,
+    "rgb": [
+      0.2823529411764706,
+      0.6088235294117648,
+      0.7176470588235294,
+      1.0
+    ],
+    "reward": 0.25,
+    "video_file": "params_170.mp4",
+    "justification": "I have chosen a spread of alternating positive and negative values with variation in sequence to explore how these changes impact f(params), given the current exploration suggests symmetry around certain values. This pattern attempts to explore additional regions in the parameter space, especially moving across both positive and negative transitions, which may yield a higher function value\u2014aiming to explore regions not covered by earlier attempts.",
+    "heatmap_file": "heatmap_170.jpeg"
+  },
+  {
+    "x": 28.666872024536133,
+    "y": 83.74466705322266,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.26862745098039215,
+      0.615686274509804,
+      0.7313725490196079,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_180.mp4",
+    "justification": "I chose these parameters to maintain a balance between tried patterns and new exploration. The choice was guided by slight deviations in already tested values that guided proximity to potential global maxima benchmarks, particularly aiming for a keener hill-climb effort while respecting constraints.",
+    "heatmap_file": "heatmap_180.jpeg"
+  },
+  {
+    "x": 65.29916381835938,
+    "y": 67.20394134521484,
+    "size": 55.45454545454545,
+    "rgb": [
+      0.2568627450980392,
+      0.6215686274509804,
+      0.7431372549019608,
+      1.0
+    ],
+    "reward": 0.05,
+    "video_file": "params_190.mp4",
+    "justification": "To maximize f(params), I propose exploring a mix of \u00b12 with a change in one increment step of +3 at the start. This choice introduces a difference in magnitude across different parts of 'params', while keeping others constant. This helps ensure diversity in values, allowing us to explore new possibilities and potentially find closer values towards the global maximum.",
+    "heatmap_file": "heatmap_190.jpeg"
+  },
+  {
+    "x": 4.545454502105713,
+    "y": 46.202552795410156,
+    "size": 60.90909090909091,
+    "rgb": [
+      0.2431372549019608,
+      0.6284313725490196,
+      0.7568627450980392,
+      1.0
+    ],
+    "reward": 0.1,
+    "video_file": "params_200.mp4",
+    "justification": "I chose these parameters because they represent a balanced exploration of the parameter space with alternating positive and negative values, utilizing step sizes of 1.0 to potentially discover a pattern or direction that maximizes the function, given the wide range of unexplored combinations and the goal to reach global optimization.",
+    "heatmap_file": "heatmap_200.jpeg"
+  },
+  {
+    "x": 62.79212951660156,
+    "y": 47.18267822265625,
+    "size": 55.45454545454545,
+    "rgb": [
+      0.23137254901960785,
+      0.634313725490196,
+      0.7686274509803921,
+      1.0
+    ],
+    "reward": 0.05,
+    "video_file": "params_210.mp4",
+    "justification": "This choice is designed to explore configurations around smaller incremental steps in positive domain values, spread across the parameter set, ensuring diversity of scales within each dimension to find a potential global not yet fully explored.",
+    "heatmap_file": "heatmap_210.jpeg"
+  },
+  {
+    "x": 79.09016418457031,
+    "y": 66.29097747802734,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.21764705882352942,
+      0.6411764705882352,
+      0.7823529411764706,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_220.mp4",
+    "justification": "This choice is intended to explore a combination of higher and lower parameter values, switching between positive and negative, aimed at searching around previously successful regions while ensuring maximum variance and maintaining exploration strategy with a step size of 1.0.",
+    "heatmap_file": "heatmap_220.jpeg"
+  },
+  {
+    "x": 76.79600524902344,
+    "y": 58.46488571166992,
+    "size": 77.27272727272728,
+    "rgb": [
+      0.20588235294117646,
+      0.6470588235294118,
+      0.7941176470588236,
+      1.0
+    ],
+    "reward": 0.25,
+    "video_file": "params_230.mp4",
+    "justification": "I selected these params by shifting some boundary-tested values with a step size of 1.0, following the successful patterns of values being between -3 and 3, with a particular focus on the range around +/-2.5 that produced mid-range results. This provides a balance for testing around known success without repeating previous iterations.",
+    "heatmap_file": "heatmap_230.jpeg"
+  },
+  {
+    "x": 35.91754150390625,
+    "y": 19.311599731445312,
+    "size": 175.45454545454544,
+    "rgb": [
+      0.19215686274509802,
+      0.653921568627451,
+      0.807843137254902,
+      1.0
+    ],
+    "reward": 1.15,
+    "video_file": "params_240.mp4",
+    "justification": "I chose this input by using the step size of 1.0 for exploration. I aimed to explore a new region around the values where previous function evaluations showed moderate success, particularly focusing on balancing between zeroes and small increments among various parameters to potentially uncover a new peak close to the previously known better points.",
+    "heatmap_file": "heatmap_240.jpeg"
+  },
+  {
+    "x": 23.86363983154297,
+    "y": 37.67350387573242,
+    "size": 284.5454545454545,
+    "rgb": [
+      0.17843137254901964,
+      0.6607843137254902,
+      0.8215686274509804,
+      1.0
+    ],
+    "reward": 2.15,
+    "video_file": "params_250.mp4",
+    "justification": "The choice of parameters is influenced by previous observations where combinations with mixed positive and negative values in close proximity to zero showed promise, such as increments around 1.5 to 3. These values focus on broader exploration around successful parameter sub-ranges and avoiding earlier exact combinations. Given that results close to or surpassing 1.0 have been seen with such parameters, especially those achieving high scores, these settings are being leveraged in a new configuration to encourage discovering peak values.",
+    "heatmap_file": "heatmap_250.jpeg"
+  },
+  {
+    "x": 57.53746795654297,
+    "y": 81.50348663330078,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.16666666666666669,
+      0.6666666666666666,
+      0.8333333333333333,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_260.mp4",
+    "justification": "This input aims to further explore the parameter space by mixing both positive and negative values around recently successful combinations, with a search step size of 1.0. The choice is aimed at probing potential areas for optimization by stretching and compressing values around potential optimization peaks.",
+    "heatmap_file": "heatmap_260.jpeg"
+  },
+  {
+    "x": 21.026121139526367,
+    "y": 27.99618148803711,
+    "size": 82.72727272727272,
+    "rgb": [
+      0.15294117647058825,
+      0.6735294117647059,
+      0.8470588235294118,
+      1.0
+    ],
+    "reward": 0.3,
+    "video_file": "params_270.mp4",
+    "justification": "I selected these parameters to use different combinations of previously seen values with higher scores, while exploring variations around values in regions where f(params) was closer to 3.0. This is meant to explore nearby promising areas and potentially find better local or global optima.",
+    "heatmap_file": "heatmap_270.jpeg"
+  },
+  {
+    "x": 53.70423126220703,
+    "y": 18.86681365966797,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.1411764705882353,
+      0.6794117647058824,
+      0.8588235294117648,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_280.mp4",
+    "justification": "I chose these values as they alternate between negative and positive within the whole parameter range, aiming to explore regions that could potentially yield higher f(params) values around the known maximal regions.",
+    "heatmap_file": "heatmap_280.jpeg"
+  },
+  {
+    "x": 25.11233901977539,
+    "y": 59.76322937011719,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.12745098039215685,
+      0.6862745098039216,
+      0.8725490196078431,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_290.mp4",
+    "justification": "I chose these parameters using a balanced approach, focusing on a mix of positive and negative values that haven't been explored in this combination. The values are selected around previously seen promising ranges, specifically aiming to better navigate towards regions with potential for higher f(params) values, following slight exploratory perturbations around both current best known values and balanced combinations of higher dimensional coordinates.",
+    "heatmap_file": "heatmap_290.jpeg"
+  },
+  {
+    "x": 41.02251052856445,
+    "y": 50.239891052246094,
+    "size": 50.0,
+    "rgb": [
+      0.11568627450980395,
+      0.692156862745098,
+      0.884313725490196,
+      1.0
+    ],
+    "reward": 0.0,
+    "video_file": "params_300.mp4",
+    "justification": "The proposed parameter set takes into account a symmetric balance of positive and negative values around zero, incorporating proven beneficial values for enhancing the function evaluation based on past iterations. This approach aims to explore combinations around local hills observed previously, with slight divergences for balance and potential global fitting improvements.",
+    "heatmap_file": "heatmap_300.jpeg"
+  },
+  {
+    "x": 13.6182222366333,
+    "y": 47.20515823364258,
+    "size": 77.27272727272728,
+    "rgb": [
+      0.10196078431372552,
+      0.6990196078431372,
+      0.8980392156862744,
+      1.0
+    ],
+    "reward": 0.25,
+    "video_file": "params_310.mp4",
+    "justification": "I chose these values in order to explore more high-variance regions, given the indication that further exploration might lead closer to the global optimum. The values aim to capture various degrees of variance around the center of initial observations, accounting for symmetrical and asymmetrical interactions in both positive and negative directions.",
+    "heatmap_file": "heatmap_310.jpeg"
+  },
+  {
+    "x": 68.86978912353516,
+    "y": 24.709999084472656,
+    "size": 66.36363636363636,
+    "rgb": [
+      0.08823529411764708,
+      0.7058823529411764,
+      0.9117647058823529,
+      1.0
+    ],
+    "reward": 0.15,
+    "video_file": "params_320.mp4",
+    "justification": "I chose this input to explore a new direction near previous successful values, introducing a mix of positive and negative moderate steps, aiming to explore the influence of increasing certain parameters while decreasing others to reach values close to 3.",
+    "heatmap_file": "heatmap_320.jpeg"
+  },
+  {
+    "x": 51.92020034790039,
+    "y": 73.7373046875,
+    "size": 60.90909090909091,
+    "rgb": [
+      0.07647058823529412,
+      0.711764705882353,
+      0.9235294117647059,
+      1.0
+    ],
+    "reward": 0.1,
+    "video_file": "params_330.mp4",
+    "justification": "I chose these parameters to explore a region combining both positive and negative values with moderate magnitudes near 2 and -2. This is to ensure a good mix of exploration in the nearby space where previous trials have shown high values and to maintain step size consistency for systematic exploration.",
+    "heatmap_file": "heatmap_330.jpeg"
+  },
+  {
+    "x": 13.977940559387207,
+    "y": 53.29620361328125,
+    "size": 115.45454545454545,
+    "rgb": [
+      0.06274509803921569,
+      0.7186274509803922,
+      0.9372549019607843,
+      1.0
+    ],
+    "reward": 0.6,
+    "video_file": "params_340.mp4",
+    "justification": "I chose these parameters to explore the value of 1.9 across various elements while introducing an additional step size of 0.1 to the existing significant value of 2.9. This maintains exploration with similarity to a moderately successful combination from prior steps.",
+    "heatmap_file": "heatmap_340.jpeg"
+  },
+  {
+    "x": 21.807899475097656,
+    "y": 28.888765335083008,
+    "size": 191.8181818181818,
+    "rgb": [
+      0.05098039215686273,
+      0.7245098039215686,
+      0.9490196078431372,
+      1.0
+    ],
+    "reward": 1.3,
+    "video_file": "params_350.mp4",
+    "justification": "I chose these parameters based on the observation that incrementing each parameter within small bounds seems to avoid extreme values that yield poor results consistently. These parameters explore a new region of the search space while maintaining a balanced distribution of signs and magnitudes, potentially leading towards the global maximum.",
+    "heatmap_file": "heatmap_350.jpeg"
+  },
+  {
+    "x": 41.69974136352539,
+    "y": 25.633892059326172,
+    "size": 71.81818181818181,
+    "rgb": [
+      0.03725490196078429,
+      0.7313725490196079,
+      0.9627450980392157,
+      1.0
+    ],
+    "reward": 0.2,
+    "video_file": "params_360.mp4",
+    "justification": "I'm utilizing values near those previously associated with higher function results while making small adjustments around them to explore a different region of the parameter space, thus attempting to enhance the exploration in promising areas.",
+    "heatmap_file": "heatmap_360.jpeg"
+  },
+  {
+    "x": 24.756999969482422,
+    "y": 13.600654602050781,
+    "size": 350.0,
+    "rgb": [
+      0.025490196078431393,
+      0.7372549019607844,
+      0.9745098039215686,
+      1.0
+    ],
+    "reward": 2.75,
+    "video_file": "params_370.mp4",
+    "justification": "I chose this input because it builds upon previous successes where values around 3.1 and -1.1 provided promising results, but with subtle variations in parameters that haven't been tried in this exact combination, aiming for regions with high scoring. This modification aims to explore potentially untested local variations in a higher-performing region to further hone in on the global maximum near previously optimal parameters.",
+    "heatmap_file": "heatmap_370.jpeg"
+  },
+  {
+    "x": 23.753738403320312,
+    "y": 13.55781364440918,
+    "size": 148.1818181818182,
+    "rgb": [
+      0.011764705882352955,
+      0.7441176470588236,
+      0.9882352941176471,
+      1.0
+    ],
+    "reward": 0.9,
+    "video_file": "params_380.mp4",
+    "justification": "params[0]: 3.5, params[1]: -1.3, params[2]: 0.7, params[3]: 1.4, params[4]: -0.9, params[5]: 3.2, params[6]: -0.6, params[7]: 3.3, params[8]: -1.9, params[9]: 3.3, params[10]: -2.9, params[11]: 2, params[12]: 0.7, params[13]: 1, params[14]: 3.2, params[15]: 1, params[16]: 3, params[17]: -1. Explanation: This choice explores a proximal region around previously noted moderate function values with some adjustments, leveraging slight gradient information inferred from previous close results, focusing on one potential unexplored higher point with the goal of approaching the optimal global maximum target region.",
+    "heatmap_file": "heatmap_380.jpeg"
+  },
+  {
+    "x": 24.89558982849121,
+    "y": 13.805521011352539,
+    "size": 311.8181818181818,
+    "rgb": [
+      0.0,
+      0.75,
+      1.0,
+      1.0
+    ],
+    "reward": 2.4,
+    "video_file": "params_390.mp4",
+    "justification": "This choice incrementally deviates select parameters from previous ones with higher f-values, such as (2.9, 1.1, -1.1, ...) where inputs around center at levels leading to f\u22483. It keeps parameter factors around values that historically approached this amidst iterations, tuning slight variances.",
+    "heatmap_file": "heatmap_390.jpeg"
+  }
+]

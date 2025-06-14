@@ -1,0 +1,517 @@
+.hero-body {
+  padding-top: 1.5vh;
+}
+
+/* FOR GIFS */
+.container2 {
+    background-color: rgb(245, 245, 245);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.gif-container {
+    width: 28%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.gif-container:last-child {
+    margin-right: 0;
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+/* FOR GIFS */
+
+.spider{
+  border: 5px solid rgb(245, 245, 245);
+  width: 80%;
+}
+
+/* FOR WIDGET BUTTONS */
+.button-container {
+    position: relative;
+    width: 23vw;
+    height: 3vh;
+    margin: 0.5vh auto;
+    font-size: 18px;
+    text-align: center;
+    background-color: #333333;
+    line-height: 3vh;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    user-select: none;
+    font-family: monospace;
+    padding: 0px;
+  }
+
+  .button-container.top {
+    background-color: #1a1a1a;
+  }
+
+  .button-container.middle {
+    background-color: #717171;
+  }
+
+  .button-container.bottom {
+    background-color: #999999;
+  }
+
+  .button-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .button-overlay.left {
+    left: 0;
+  }
+
+  .button-overlay.right {
+    right: 0;
+  }
+
+  .button-overlay.left::before {
+    content: "◄";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+  }
+
+  .button-overlay.right::before {
+    content: "►";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+  }
+
+  .button-text pre {
+    display: inline;
+    margin: 0;
+  }
+
+  .cbutton {
+      color: white;
+      background-color: inherit;
+      padding: 0px;
+      margin: 0px;
+  }
+
+
+.container3 {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.display-info {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* FOR WIDGET BUTTONS */
+
+
+/* FOR BANNER VIDEO BUTTON */
+.down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 2;
+    animation: subtleBounce 2.5s infinite;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .v-shape-left,
+  .v-shape-right {
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+  }
+
+  .v-shape-left {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    left: 50%;
+  }
+
+  .v-shape-right {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+    right: 50%;
+  }
+
+  @keyframes subtleBounce {
+
+    0%,
+    20%,
+    80%,
+    100% {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+      transform: translateX(-50%) translateY(-5px);
+    }
+  }
+
+
+  #next-section {
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+/* FOR BANNER VIDEO BUTTON */
+
+
+/* FOR BANNER VIDEO */
+.content {
+    padding: 20px;
+  }
+
+  .video-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+
+  .overlay-h1 {
+    all: unset;
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0.67em 0;
+    line-height: 1.2;
+    padding: 0;
+    user-select: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    color: white;
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #bannerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+/* FOR BANNER VIDEO */
+
+video {
+  pointer-events: none;
+  display: block;
+}
+
+/* FOR VIDEO GRID */
+.grid {
+    display: grid;
+    /* grid-template-columns: repeat(3, 15em); */
+    grid-template-columns: repeat(3, 1fr); /* Change to 2 columns of equal width */
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: 1.5em;
+}
+
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* Change to 2 columns of equal width */
+        gap: 2px;
+        grid-template-rows: auto; /* Allow rows to adjust based on content */
+    }
+}
+
+@media (max-width: 400px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* Change to 2 columns of equal width */
+        gap: 2px;
+        grid-template-rows: auto; /* Allow rows to adjust based on content */
+    }
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    position: relative;
+    overflow: visible;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grid-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-overlay-left {
+    position: absolute;
+    left: -5em; /* Adjust this value based on your layout and desired spacing */
+    width: 5em; /* Same as the width of your grid item */
+    text-align: center;
+    color: black; /* Ensure this contrasts with the background */
+    /* background-color: red; */
+    font-size: 1em; /* Adjust text size as needed */
+    box-sizing: border-box;
+    z-index: 100000; /* Ensure it is above the video */
+    display: block; /* Ensure it is displayed */
+    visibility: visible; /* Ensure it is visible */
+}
+
+.text-overlay-top {
+    position: absolute;
+    top: -2em; /* Position at the top of the grid item */
+    width: 8em; /* Same as the width of your grid item */
+    text-align: center;
+    color: black; /* Text color */
+    /* background-color: red; */
+    font-size: 16px; /* Adjust text size */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    display: block; /* Ensure it is displayed */
+    visibility: visible; /* Ensure it is visible */
+}
+
+/* FOR VIDEO GRID */
+@media (max-width: 1200px) {
+  .button-container {
+    position: relative;
+    width: 44vw;
+    height: 3vh;
+    margin: 0.5vh auto;
+    font-size: 1m;
+    text-align: center;
+    background-color: #333333;
+    line-height: 3vh;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    user-select: none;
+    font-family: monospace;
+    padding: 0px;
+  }
+
+}
+
+@media (max-width: 700px) {
+    .text-overlay-left {
+        position: absolute;
+        left: -5em; /* Adjust this value based on your layout and desired spacing */
+        width: 4em;
+        text-align: center;
+        color: black; /* Ensure this contrasts with the background */
+        /* background-color: red; */
+        font-size: 0.7em; /* Adjust text size as needed */
+        box-sizing: border-box;
+        z-index: 100000; /* Ensure it is above the video */
+        display: block; /* Ensure it is displayed */
+        visibility: visible; /* Ensure it is visible */
+    }
+
+    .text-overlay-top {
+        position: absolute;
+        top: -2em; /* Position at the top of the grid item */
+        width: 8em; /* Same as the width of your grid item */
+        text-align: center;
+        color: black; /* Text color */
+        /* background-color: red; */
+        font-size: 0.7em; /* Adjust text size */
+        box-sizing: border-box; /* Ensure padding is included in the width/height */
+        display: block; /* Ensure it is displayed */
+        visibility: visible; /* Ensure it is visible */
+    }
+
+    .button-container {
+        position: relative;
+        width: 56vw;
+        height: 3vh;
+        margin: 0.5vh auto;
+        font-size: 0.85em;
+        text-align: center;
+        background-color: #333333;
+        line-height: 3vh;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        overflow: hidden;
+        user-select: none;
+        font-family: monospace;
+        padding: 0px;
+      }
+
+      .overlay-h1 {
+        font-size: 1.4em;
+      }
+
+      .spider{
+        border: 5px solid rgb(245, 245, 245);
+        width: 100%;
+      }
+
+}
+
+
+.tldr-container {
+  display: flex;
+  width: 100%;
+  /* align-items: stretch; ensures both boxes are equal height */
+}
+
+.tldr-container-text-box {
+  width: 79%;
+  margin-right: 3%;
+  padding-left: 2%;
+  padding-top: 0.5%;
+}
+
+.tldr-container-image-box {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tldr-container-image-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.main-intro-container {
+  display: flex;
+  width: 100%;
+  /* align-items: stretch; ensures both boxes are equal height */
+}
+
+.main-intro-container-text-box {
+  width: 75%;
+  margin-right: 5%;
+}
+
+.main-intro-container-image-box {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-intro-container-image-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card {
+  border-radius: 12px;
+  border: 2px solid #00a1d7;
+  overflow: hidden; /* ensures rounded corners clip inner content */
+  width: 100%;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-header {
+  background-color: #00a1d7;
+  color: white;
+  padding: 2px 15px;
+  /* font-weight: bold; */
+}
+
+.card-body {
+  /* border-radius: 12px; */
+  /* border: 2px solid #3498db; */
+  padding: 10px 15px;
+  border-top: none;
+  background-color: #ebfbff;
+}
+
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 0%; /* optional spacing between images */
+}
+
+.image-row img {
+  height: 150px; /* fixed height */
+  flex: 1; /* allows flexible width */
+  object-fit: contain; /* fills and crops */
+  width: auto; /* don't force width */
+}

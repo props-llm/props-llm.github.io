@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Scatter Plot with GIF</title> -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Prompted Policy Search">
+  <meta name="keywords" content="LLMs, Large Language Models, Prompted Policy Search, Reinforcement Learning, Robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompted Policy Search</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- (Remove if cloning) !! Tag for bimanual imitation !! -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE0696DKLE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VE0696DKLE');
+  </script> -->
+  <!-- (Remove if cloning) !! Tag for bimanual imitation !! -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/irl_lab.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <!-- <script src="./script.js"></script> -->
+  <script src="./static/js/variables.js"></script>
+  <script src="./static/js/plot-functions.js"></script>
+  <script src="./static/js/scatter-plot.js"></script>
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <link rel="stylesheet" href="static/css/plot.css">
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: auto;
+    }
+
+    .props {
+      font-family: 'Courier New', monospace;
+      color: #000000;
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    
+    .props-card {
+      font-family: 'Courier New', monospace;
+      color: #ffffff;
+      background-color: transparent;
+      /* padding: 2px 4px;
+      border-radius: 3px; */
+      padding: 2px 0px;
+      padding-right: 0.3em;
+      font-weight: bold;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!-- <header class="banner">
+    <div class="banner">
+      <video autoplay loop muted playsinline oncontextmenu="return false;" preload="auto" id="bannerVideo">
+        <source src="static/videos/banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="overlay">
+        <h1 class="overlay-h1">Text 1</h1>
+      </div>
+    </div>
+    <div class="down-arrow" onclick="scrollToNextSection()">
+      <div class="v-shape-left"></div>
+      <div class="v-shape-right"></div>
+    </div>
+
+  </header> -->
+
+  <section class="hero" id="main-section">
+    <div class="hero-body" >
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered" style="padding-bottom: 0%;">
+            <h1 class="title is-1 publication-title">Prompted Policy Search: Reinforcement Learning through Linguistic
+              and Numerical Reasoning in LLMs</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://yifanzhou.com/">Yifan Zhou</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://sachingrover211.github.io/">Sachin Grover</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=jFpEtzQAAAAJ&hl=en">Mohamed El
+                  Mistiri</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=zAAmfKkAAAAJ&hl=en">Kamalesh
+                  Kalirathinam</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://k-pratyush.github.io/">Pratyush Kerhalkar</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://swarooprm.github.io/">Swaroop Mishra</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=tnv8_FQAAAAJ&hl=en">Neelesh Kumar</a><sup>2</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=upcYjw0AAAAJ&hl=en">Sanket Gaurav</a><sup>2</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.oyaaran.com/">Oya Aran</a><sup>2</sup>
+              </span>
+              <span class="author-block">
+                <a href="http://henibenamor.weebly.com/">Heni Ben Amor</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-unis">
+              <span class="author-block"><sup>1</sup><a
+                  href="https://interactive-robotics.engineering.asu.edu/">Interactive Robotics Lab, Arizona State
+                  University</span></a><br>
+              <span class="author-block"><sup>2</sup><a href="https://pgresearchdevelop.com/">Research & Develop,
+                  Procter & Gamble</span></a><br>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2408.06536" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                  <a href="./static/videos/task_sequence.mp4" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/ir-lab/bimanual-imitation"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://www.dropbox.com/scl/fo/2onj92s7gewettu1rjg3d/h?rlkey=1d4dnhwf3z6s4a51lopgocby5&dl=0"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span> -->
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <div class="content has-text-justified" style="padding-top: 0%;">
+            <div class="tldr-container" style="background-color: #ebfbff;">
+              <div class="tldr-container-text-box">
+                <strong>
+                <span style="font-size: larger;">Tl;Dr:</span> <br>
+                (1) LLMs can perform numerical optimization for Reinforcement Learning (RL) tasks. <br>
+                (2) LLMs can incorporate semantics signals, (e.g., goals, domain knowledge, ...), leading to more informed exploration and sample-efficient learning. <br>
+                (3) Our proposed <code class="props">ProPS</code> outperforms all baselines on 8 out of 15 Gymnasium tasks. <br></strong>
+              </div>
+              <div class="tldr-container-image-box">
+                <img src="static/images/frozenlake_top_1_count_v1.5.jpg" alt="Example" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="padding-top: 0%;">
+    <div class="container is-max-desktop">
+
+
+      <!-- <h2 class="title is-3">TSNE of Learned Policy Parameters</h2> -->
+      <div class="content has-text-justified">
+        <p>
+          <strong>Hover over points and discover the mind of the agent!</strong> Each point in the space below represents a learned policy. Hover over any point to watch
+          the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. <span style="color:red">[todo: legends of the size and color of the points; other rl methods' points; init a point (with gif)]</span>
+        </p>
+
+        <div class="button-container top" data-index="0" data-variable="scatterPlotCurrentGymTaskIndex">
+          <span class="button-text">
+            <pre class="cbutton"></pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+
+        <div class="interactive-container">
+          <div id="plot-container" style="text-align: center">
+            <!-- Data points will be added here by JavaScript -->
+          </div>
+          <div id="learning-info-box">
+            <!-- Display the LLM justifications in this scrollable text box. -->
+
+            <div class="justification-text" id="justification-text-scatter-plot">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+              Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+              ... (more text to make it scrollable) ...
+            </div>
+            <div class="heatmap-image-container" id="heatmap-image-container-scatter-plot">
+              <img src="" alt="Placeholder">
+            </div>
+          </div>
+        </div>
+
+        <div id="gif-popup">
+          <!-- <img src="" alt="Hovered GIF"> -->
+          <video autoplay loop muted playsinline>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <script src="static/js/scatter-plot.js"></script>
+        <!-- <script src="static/js/scatter-plot.js"></script> -->
+
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
+              leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
+              efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
+              Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
+              linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
+              with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
+              policy optimization loop—directly proposing policy updates
+              based on both reward feedback and natural language input. We show that LLMs can perform numerical
+              optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
+              strategy hints can lead to more informed exploration and sample-efficient learning. <code
+                class="props">ProPS</code> is evaluated
+              across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
+              seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
+              tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
+              potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <h2 class="title is-3">Overview</h2>
+      <div class="content has-text-justified">
+        <div class="main-intro-container">
+          <div class="main-intro-container-text-box">
+            <p>We present a novel reinforcement learning (RL) approach in which a large language model (LLM) directly
+              generates policy parameters without relying on a conventional RL optimizer or any external optimization
+              component beyond the reward signal. Traditional RL methods focus on numerical information (e.g., gradients
+              with respect to the reward) and as a result cannot incorporate important task-specific knowledge that is
+              difficult to express in numbers, such as domain semantics or user-provided guidance. To address this
+              limitation, we introduce <strong>Prompted Policy Search</strong> (<code class="props">ProPS</code>), a new method that combines
+              <strong>numerical reasoning</strong> with <strong>linguistic reasoning</strong> to enable more flexible and informed
+              learning. By linguistic reasoning, we mean the ability of LLMs to understand, process, and analyze natural
+              language in order to draw (deductive and inductive) inferences and make informed decisions. This allows us
+              to embed valuable information like prior domain knowledge, goals, or user-provided policy hints directly
+              into the learning process using natural language. For example, traditional RL methods treat all input
+              features as raw numbers and do not distinguish between features expressed in different units, such as
+              meters versus kilometers. In contrast, an LLM can interpret text-based task descriptions that explain the
+              nature and context of each feature.</p>
+          </div>
+          <div class="main-intro-container-image-box">
+            <img src="static/images/Approach_Overview.jpg" alt="Example" />
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header"><code class="props-card">ProPS</code> Prompt</div>
+          <div class="card-body">
+            You are a good global optimizer, helping me find the global maximum of a mathematical function
+            f(params). I will give you the function evaluation and the current iteration number at each step. Your
+            goal is to propose input values that efficiently lead us to the global maximum within a limited number
+            of iterations (400). <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Regarding the parameters param: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #00a1d7;">% definitions of parameters</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Here’s how we’ll interact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #00a1d7;">% formatting instructions</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Remember: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #00a1d7;">% constraints to be respected</span> <br>
+          </div>
+        </div>
+
+        <p>
+          The figure above illustrates a truncated version of the prompt (full prompt in paper). The system message
+          specifies the role of the LLM as a global optimizer and indicates the total number of optimization
+          iterations. The prompt includes three key components: (1) definitions of the parameters to be
+          optimized, (2) formatting instructions for the LLM’s output, and (3) any additional constraints the
+          LLM must adhere to during optimization. At each iteration, the LLM receives the prompt along
+          with a history of previous parameter suggestions and their associated rewards (i.e., in-context
+          examples). It then proposes a new parameter vector, accompanied by a textual justification of the
+          update. These justifications add a layer of interpretability to the search process, as they describe
+          observed trends in the data.
+        </p>
+
+        <div class="card">
+          <div class="card-header"><code class="props-card">ProPS<sup>+</sup></code> Prompt</div>
+          <div class="card-body">
+            You are a good global RL policy optimizer, helping me find an optimal policy in the following environment: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Environment: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #00a1d7;">% definition of the environment, parameters and policy</span> <br>
+            In the cartpole environment, a pole is attached by an un-actuated joint to a cart which moves along a
+            frictionless track. The pendulum is placed upright on the cart and the goal is to balance the pole by
+            applying forces in the left and right direction on the cart.The state is a vector of 4 elements, representing
+            the cart position (-4.8 to 4.8), cart velocity (-inf to inf), pole angle (-0.418 to 0.418 rad), and pole
+            angular velocity (-inf to inf) respectively. The goal is to keep the pole upright and the cart within the
+            bounding position of [-2.4, 2.4]. The action space consists of 2 actions (0: push left, 1: push right).
+            The policy is a linear policy with 10 parameters and works as follows: action = argmax(...) The reward
+            is +1 for every time step the pole is upright and the cart is within the bounding position. The episode
+            ends when the pole falls over or the cart goes out of bounds. <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Regarding the parameters param: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #00a1d7;">% definitions of parameters</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Here’s how we’ll interact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #00a1d7;">% formatting instructions</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Remember: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #00a1d7;">% constraints to be respected</span> <br>
+          </div>
+        </div>
+
+        <p>
+          The figure above illustrates <code class="props">ProPS<sup>+</sup></code>, which is a semantically-augmented variant of
+          <code class="props">ProPS</code>, where we extend the basic framework to incorporate rich, task-specific, and contextual
+          knowledge into the reinforcement learning process via semantically-informed prompts. The
+          example shown describes the CartPole environment, using text adapted from publicly available documentation (e.g., OpenAI
+          Gym/Gymnasium). In this example, the prompt specifies details such as the task description, action space (binary),
+          policy parameterization (linear), and reward structure. Additionally, it includes optional expert-provided guidance on
+          desirable or undesirable policy behaviors, framed as constraints. 
+        </p>
+
+      </div>
+
+
+      <h2 class="title is-3">Learning Curves</h2>
+      <div class="content has-text-justified">
+        <p>
+          Here is the learning curve of our proposed <code class="props">ProPS</code>. Similarly, hover over any point to watch the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. <span style="color: red;">[todo: legends of the size and color of the points; init a point (with gif)]</span>
+        </p>
+
+        <div class="button-container top" data-index="0" data-variable="learningCurvePlotCurrentGymTaskIndex">
+          <span class="button-text">
+            <pre class="cbutton"></pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+
+
+
+        <div class="interactive-container">
+          <div id="plot-container-learning-curve" style="text-align: center">
+            <!-- Data points will be added here by JavaScript -->
+          </div>
+
+          <div id="gif-popup-learning-curve">
+            <!-- <img src="" alt="Hovered GIF"> -->
+            <video autoplay loop muted playsinline>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div id="learning-info-box-learning-curve">
+            <!-- Display the LLM justifications in this scrollable text box. -->
+
+            <div class="justification-text" id="justification-text-learning-curve">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+              Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+              ... (more text to make it scrollable) ...
+            </div>
+            <div class="heatmap-image-container" id="heatmap-image-container-learning-curve">
+              <img src="" alt="Placeholder">
+            </div>
+          </div>
+        </div>
+
+        <script src="static/js/learning-curve-plot.js"></script>
+        <!-- <script src="static/js/scatter-plot.js"></script> -->
+
+      </div>
+
+
+
+
+      <h2 class="title is-3">Experiment Results</h2>
+      <div class="content has-text-justified">
+        <p>
+          We evaluate the performance of both <code class="props">ProPS</code> and <code class="props">ProPS<sup>+</sup></code>, using GPT-4o, across 15 widely-used
+          reinforcement learning benchmarks from the OpenAI Gym and Gymnasium suites. For tasks with
+          continuous state spaces, we employ linear policy representations, while discrete-state tasks use tabular policies. The
+          selected environments span a diverse range of RL domains, including classic control problems (e.g., CartPole,
+          MountainCar), games (e.g., Pong, Nim), continuous control tasks (e.g., MuJoCo environments),
+          etc. Notably, in 7 out of 15 environments, <code class="props">ProPS</code> outperforms all baseline algorithms. After incorporating
+          domain knowledge, <code class="props">ProPS<sup>+</sup></code> achieves the highest performance in 8 out of 15 tasks. The table below displays the
+          average return and standard deviation over 10 random seeds for each method. The best and second-best
+          baseline results are highlighted and underlined, respectively. 
+        </p>
+
+        <style>
+          table.custom-table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+            font-size: 13px;
+            width: 100%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+          }
+
+          table.custom-table th,
+          table.custom-table td {
+            padding: 6px 10px;
+            text-align: center;
+          }
+
+          table.custom-table th {
+            border-bottom: 1px solid #000;
+          }
+
+          table.custom-table td.domain {
+            text-align: left;
+            white-space: nowrap;
+          }
+
+          table.custom-table td.algo {
+            text-align: right;
+            font-weight: bold;
+            white-space: nowrap;
+          }
+
+          table.custom-table td.value {
+            text-align: left;
+            white-space: nowrap;
+          }
+
+          table.custom-table td.highlight {
+            background-color: #CCF2FF;
+          }
+        </style>
+
+        <table class="custom-table" style="margin-bottom: 0%;">
+          <thead>
+            <tr style="text-align: center;">
+              <th rowspan="2" style="text-align: left;">Domain</th>
+              <th colspan="2">Best Baseline</th>
+              <th colspan="2">2nd Best Baseline</th>
+              <th rowspan="2"><code class="props" style="font-weight: bold;">ProPS</code></th>
+              <th rowspan="2"><code class="props" style="font-weight: bold;">ProPS<sup>+</sup></code></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="domain">Mount. Car (C)</td>
+              <td class="algo">SAC</td><td class="value">86.65 ± 0.84</td>
+              <td class="algo">PPO</td><td class="value">78.16 ± 5.32</td>
+              <td><u>87.21 ± 29.28</u></td>
+              <td class="highlight" style="font-weight: bold">89.16 ± 29.72</td>
+            </tr>
+            <tr>
+              <td class="domain">Inverted Pend.</td>
+              <td class="algo">TRPO</td><td class="value">571.31 ± 358.88</td>
+              <td class="algo">PPO</td><td class="value">218.65 ± 129.31</td>
+              <td class="highlight" style="font-weight: bold">1000.00 ± 0.00</td>
+              <td class="highlight" style="font-weight: bold">1000.00 ± 0.00</td>
+            </tr>
+            <tr>
+              <td class="domain">Inv. Dbl. Pend.</td>
+              <td class="algo highlight">TRPO</td><td class="value highlight">3609.37 ± 4000.04</td>
+              <td class="algo">PPO</td><td class="value">108.60 ± 4.12</td>
+              <td>128.17 ± 24.52</td>
+              <td><u>148.39 ± 48.65</u></td>
+            </tr>
+            <tr>
+              <td class="domain">Reacher</td>
+              <td class="algo highlight">PPO</td><td class="value highlight">-7.32 ± 0.38</td>
+              <td class="algo">TRPO</td><td class="value"><u>-8.93 ± 1.39</u></td>
+              <td>-11.32 ± 1.37</td>
+              <td>-18.15 ± 22.06</td>
+            </tr>
+            <tr>
+              <td class="domain">Swimmer</td>
+              <td class="algo">TRPO</td><td class="value">52.96 ± 18.86</td>
+              <td class="algo">PPO</td><td class="value">39.40 ± 6.54</td>
+              <td><u>218.83 ± 58.45</u></td>
+              <td class="highlight" style="font-weight: bold">227.30 ± 56.23</td>
+            </tr>
+            <tr>
+              <td class="domain">Hopper</td>
+              <td class="algo highlight">TRPO</td><td class="value highlight">716.90 ± 385.20</td>
+              <td class="algo">PPO</td><td class="value">351.75 ± 157.71</td>
+              <td>284.16 ± 165.62</td>
+              <td><u>356.22 ± 292.35</u></td>
+            </tr>
+            <tr>
+              <td class="domain">Walker</td>
+              <td class="algo highlight">TRPO</td><td class="value highlight">519.38 ± 73.15</td>
+              <td class="algo">PPO</td><td class="value"><u>469.78 ± 159.17</u></td>
+              <td>147.17 ± 81.20</td>
+              <td>126.75 ± 136.44</td>
+            </tr>
+            <tr>
+              <td class="domain">Frozen Lake</td>
+              <td class="algo">TRPO</td><td class="value"><u>0.22 ± 0.05</u></td>
+              <td class="algo">PPO</td><td class="value">0.16 ± 0.02</td>
+              <td class="highlight" style="font-weight: bold">0.57 ± 0.17</td>
+              <td>0.19 ± 0.05</td>
+            </tr>
+            <tr>
+              <td class="domain">Cliff Walking</td>
+              <td class="algo highlight">TRPO</td><td class="value highlight">-66.60 ± 13.61</td>
+              <td class="algo">PPO</td><td class="value"><u>-94.35 ± 3.96</u></td>
+              <td>-100.00 ± 0.00</td>
+              <td>-96.40 ± 22.90</td>
+            </tr>
+            <tr>
+              <td class="domain">Maze</td>
+              <td class="algo highlight">A2C</td><td class="value highlight">0.97 ± 0.00</td>
+              <td class="algo highlight">TRPO</td><td class="value highlight">0.97 ± 0.00</td>
+              <td>0.55 ± 0.00</td>
+              <td class="highlight" style="font-weight: bold">0.97 ± 0.00</td>
+            </tr>
+            <tr>
+              <td class="domain">Nim</td>
+              <td class="algo">A2C</td><td class="value"><u>0.58 ± 0.10</u></td>
+              <td class="algo">TRPO</td><td class="value">0.50 ± 0.10</td>
+              <td>0.33 ± 0.29</td>
+              <td class="highlight" style="font-weight: bold">0.97 ± 0.09</td>
+            </tr>
+            <tr>
+              <td class="domain">Mount. Car (D)</td>
+              <td class="algo">DQN</td><td class="value">-194.36 ± 1.47</td>
+              <td class="algo">A2C</td><td class="value">-200.00 ± 0.00</td>
+              <td><u>-126.11 ± 21.67</u></td>
+              <td class="highlight" style="font-weight: bold">-116.71 ± 15.20</td>
+            </tr>
+            <tr>
+              <td class="domain">Navigation</td>
+              <td class="algo highlight">TRPO</td><td class="value highlight">4223.51 ± 19.70</td>
+              <td class="algo">PPO</td><td class="value"><u>4127.43 ± 24.29</u></td>
+              <td>2587.30 ± 707.55</td>
+              <td>2779.55 ± 270.65</td>
+            </tr>
+            <tr>
+              <td class="domain">Pong</td>
+              <td class="algo">PPO</td><td class="value">2.29 ± 0.91</td>
+              <td class="algo">TRPO</td><td class="value">1.36 ± 1.05</td>
+              <td><u>2.80 ± 0.26</u></td>
+              <td class="highlight" style="font-weight: bold">2.99 ± 0.03</td>
+            </tr>
+            <tr>
+              <td class="domain">Cart Pole</td>
+              <td class="algo">TRPO</td><td class="value">465.34 ± 62.32</td>
+              <td class="algo">PPO</td><td class="value">365.86 ± 73.38</td>
+              <td><u>478.27 ± 65.17</u></td>
+              <td class="highlight" style="font-weight: bold">500.00 ± 0.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="font-size: 11px; font-style: italic;">Means ± standard errors</p>
+
+
+      </div>
+
+
+
+      <h2 class="title is-3">Why do LLMs work? Numerical Optimization</h2>
+      <div class="content has-text-justified">
+        <p>
+          The primary objective here is to systematically assess how well LLMs, specifically Gemini-1.5-pro and GPT-4o, can
+          perform as direct numerical optimizers when tasked with minimizing mathematical functions. We aim to quantify their
+          solution quality in comparison to established classical optimization algorithms (Gradient Descent, Adam). 
+          The comprehensive results are presented as the mean and standard deviation of final objective function values from 50 independent runs (each with 100 optimization steps).
+          Gemini-1.5-pro achieved the best (lowest mean) objective value in a majority of cases, succeeding in 12 out of the 20 distinct optimization tasks.
+        </p>
+
+        <div class="button-container top" data-index="0" data-variable="numOptimObjectiveIndex">
+          <span class="button-text">
+            <pre class="cbutton"></pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+
+        <div class="button-container middle" data-index="0" data-variable="numOptimDimIndex">
+          <span class="button-text">
+            <pre class="cbutton"></pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+
+        <div class="image-row">
+          <img src="" alt="img1" id="gd-curve"/>
+          <img src="" alt="img2" id="adam-curve"/>
+          <img src="" alt="img3" id="gemini-1.5-pro-curve"/>
+          <img src="" alt="img4" id="gpt-4o-curve"/>
+        </div>
+
+        <script src="static/js/num-optim-plot.js"></script>
+
+      </div>
+
+
+
+      <h2 class="title is-3">Try the Code Yourself!</h2>
+      <div class="content has-text-justified" style="margin-bottom: 0px;">
+        <iframe src="https://nbviewer.org/gist/yfzhoucs/d8a7cfa20acc8dc2f4e176d6b1351fb4" width="100%" height="500px" frameborder="0" style="border: 5px solid rgb(245, 245, 245);"></iframe>
+      </div>
+
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">More Insights</h2>
+          <!-- <div class="content has-text-justified" style="margin: 0px; padding-bottom: 0px;">
+            <p>
+              <a href="https://github.com/ir-lab/bimanual-imitation">Our codebase</a> inherits features from <a
+                href="https://github.com/ir-lab/irl_control">IRL Control</a>, which supports:
+            <ul>
+              <li><strong>Low-level Controllers</strong> including Operational Space Control and Admittance Control.
+              <li><strong>Demo Collection</strong> with PS Move controllers and 3D Connexion Space Mouse for
+                teleoperation.
+              </li>
+              <li><strong>Configuration Files</strong> for tuning PID Gains, min/max velocities, and adding kinematic
+                descriptions of the robot devices.
+              </li>
+            </ul>
+            As our work focuses on learning in the operational/task space, we extend IRL Control to implicitly control
+            the robot's torso through the nullspace. Thus, the action space can be characterized by using only the
+            change in position/rotation of two end effectors. Some of the key features available are described below.
+            </p>
+          </div> -->
+          <!--/ method. -->
+          <div class="columns is-centered has-text-centered">
+            <!-- Regid Body motion -->
+            <div class="column">
+              <div class="content">
+                <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">Impact of In-Context History Size</h2>
+                <img src="static/images/len_history.png" width="50%">
+                <p style="text-align: justify;">
+                  We first examine whether the number of in-context examples (i.e., the history length N iterations) influences policy
+                  search performance. The figure shows the results on the Mountain Car task. We observe a
+                  clear, nearly linear improvement in average reward as N increases. When N=1 (which is analogous to a conventional
+                  optimizer maintaining only a single candidate) the reward plateaus around 100. In contrast, when the full history is
+                  utilized (unbounded N), the agent reaches the maximum reward of 200. This highlights the benefit of leveraging
+                  historical parameter-reward pairs, as the LLM is able to synthesize more effective updates over time.
+                </p>
+              </div>
+            </div>
+            <!--/ Regid Body motion -->
+
+            <!-- Soft robot motion -->
+            <div class="column">
+              <div class="content">
+                <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">Run Time Comparison</h2>
+                <img src="static/images/times.png" width="50%">
+                <p style="text-align: justify;">
+                  Next, we evaluate computational efficiency of our proposed methods, <code class="props">ProPS</code> and <code class="props">ProPS<sup>+</sup></code>, in comparison to the baselines.
+                  To ensure a fair comparison that accounts for potential differences in CPU utilization during training, we recorded the
+                  CPU time for traditional RL algorithms. We observe that <code class="props">ProPS</code> and <code class="props">ProPS<sup>+</sup></code> in this setting show modest time requirements when compared with the baselines.
+                </p>
+              </div>
+            </div>
+            <!--/ soft robot motion -->
+          </div>
+          <!--/ Matting. -->
+
+
+          <!--/ method. -->
+          <div class="columns is-centered has-text-centered">
+            <!-- Regid Body motion -->
+            <div class="column">
+              <div class="content" style="padding-top: 0px;">
+                <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">Effect of LLM Choice</h2>
+                <img src="static/images/across_llm.png" width="50%">
+                <p style="text-align: justify;">
+                  We next assess the robustness of our method across different large language models. Specifically, we evaluate GPT-4o, 
+                  Gemini-2.5-Flash, Claude-3.7-sonnet and
+                  Qwen2.5-14B-Instruct on the Mountain Car and Swimmer tasks. As shown in
+                  the figure, all proprietary models show strong performance, demonstrating that modern
+                  LLMs are capable of supporting effective prompted policy search, albeit with differences in sample efficiency and final
+                  performance. However, by comparison, lightweight LLMs such as Qwen are free and resource-efficient but have more limited
+                  capabilities with regards to numerical optimization and policy search.
+                </p>
+              </div>
+            </div>
+            <!--/ Regid Body motion -->
+
+            <!-- Soft robot motion -->
+            <div class="column">
+              <div class="content" style="padding-top: 0px;">
+                <h2 class="title is-5" style="padding: 0px; margin: 0.5em;">Fine-Tuning for Policy Search</h2>
+                <img src="static/images/finetune.png" width="50%">
+                <p style="text-align: justify;">
+                  Thus, we explore whether a lightweight LLM can explicitly be fine-tuned to improve its prompted policy search
+                  capabilities. To this end, we perform GRPO finetuning of the
+                  Qwen2.5-14B-Instruct model using a
+                  dataset of 2000 randomly generated policy parameters for the Mountain Car Continuous task.
+                  After finetuning, we evaluate the
+                  fine-tuned model on three tasks: Mountain Car, Inverted Pendulum and Pong to assess generalization.
+                  The fine-tuned model outperforms its pre-trained counterpart on all
+                  tasks, suggesting that targeted fine-tuning can enhance general policy search capabilities beyond the training task.
+                </p>
+              </div>
+            </div>
+            <!--/ soft robot motion -->
+          </div>
+          <!--/ Matting. -->
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{zhou2025props,
+        author    = {xxx},
+        title     = {xxx},
+        year      = {2025},
+      }</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <!-- <a class="icon-link" href="">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a class="icon-link" href="https://github.com/mdrolet01" class="external-link" disabled>
+            <i class="fab fa-github"></i>
+          </a> -->
+          <div class="content">
+            <p>
+              This website uses the template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a href="https://github.com/bimanual-imitation/bimanual-imitation.github.io/">bimanual-imitation</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function scrollToNextSection() {
+        const nextSection = document.getElementById('main-section');
+        if (nextSection) {
+          nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+      // Attach the function to the window object so it can be called from the onclick attribute
+      window.scrollToNextSection = scrollToNextSection;
+    });
+  </script>
+
+  <script>
+    const video = document.getElementById('bannerVideo');
+    const bannerText = document.querySelector('.overlay h1');
+
+    video.addEventListener('timeupdate', () => {
+      const currentTime = video.currentTime;
+      const duration = video.duration;
+      const percentage = (currentTime / duration) * 100;
+
+      if (percentage >= 75) {
+        // Normalize the percentage to a value between 0 and 1
+        const normalizedOpacity = (percentage - 75) / 25; // Maps 80-100% to 0-1
+        bannerText.style.opacity = normalizedOpacity.toString();
+      } else {
+        bannerText.style.opacity = '0'; // Ensure invisible before 80%
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
