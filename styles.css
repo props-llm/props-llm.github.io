@@ -436,7 +436,8 @@ video {
 }
 
 .tldr-container-image-box {
-  width: 18%;
+  width: 200px;
+  /* height: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -498,6 +499,7 @@ video {
   padding: 10px 15px;
   border-top: none;
   background-color: #ebfbff;
+  color: #0a7ea6;
 }
 
 
@@ -514,4 +516,104 @@ video {
   flex: 1; /* allows flexible width */
   object-fit: contain; /* fills and crops */
   width: auto; /* don't force width */
+}
+
+.ablation-image {
+  width: 50%;
+}
+
+.semantics-container-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.semantics-container-video-box {
+  width: 20%;
+  flex: 0 0 20%; /* fixed width */
+}
+
+/* Responsive Switch */
+@media (max-width: 768px) {
+  .tldr-container {
+    flex-direction: column; /* stack top to bottom */
+    align-items: center;
+  }
+
+  .tldr-container-image-box {
+    width: min(200px, 80%);
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tldr-container-text-box {
+    width: 100%;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  .main-intro-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    /* align-items: stretch; ensures both boxes are equal height */
+  }
+
+  .main-intro-container-text-box {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  .main-intro-container-image-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .main-intro-container-image-box img {
+    max-width: min(80%, 200px);
+    height: auto;
+    object-fit: contain;
+  }
+
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 0%; /* optional spacing between images */
+    flex-direction: column;
+
+  }
+
+  .image-row img {
+    /* height: 100px; fixed height */
+    flex: 1; /* allows flexible width */
+    object-fit: contain; /* fills and crops */
+    width: 75%; /* don't force width */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .ablation-image {
+    width: 80%;
+  }
+
+  .semantics-container-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .semantics-container-video-box {
+    width: 80%;
+    flex: 0 0 80%; /* fixed width */
+    margin: 0 auto; /* centers the element horizontally */
+    display: flex; /* ensures content inside can be aligned */
+    justify-content: center; /* centers content horizontally */
+    align-items: center; /* centers content vertically */
+  }
 }

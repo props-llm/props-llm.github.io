@@ -12,7 +12,7 @@
     display: flex;
 }
 
-#plot-container {
+.plot-parent-container {
     width: 50%;
     /* height: 40%; */
     aspect-ratio: 5 / 4;
@@ -23,7 +23,12 @@
     margin-left: 10%;
 }
 
-#learning-info-box {
+.plot-container {
+    width: 100%;
+    height: 100%;
+}
+
+.learning-info-box {
     width: 30%;
     /* height: 40%; */
     aspect-ratio: 3 / 4;
@@ -34,53 +39,58 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-#learning-info-box-learning-curve {
-    width: 30%;
-    /* height: 40%; */
-    aspect-ratio: 3 / 4;
-    margin-left: 2%;
-    border: 5px solid rgb(245, 245, 245);
-    position: relative; /* Crucial for absolute positioning of points */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
-.justification-text {
+.justification-text-container {
   height: 60%;
+}
+
+.justification-text-title {
+  height: 30px;
   overflow-y: auto;
-  padding: 5px;
+  background-color: rgb(245, 245, 245);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.justification-text {
+  height: calc(100% - 30px);
+  overflow-y: auto;
   background-color: white;
+  padding: 5px;
 }
 
 .heatmap-image-container {
   height: 40%;
-  display: flex;
+  /* display: flex; */
+}
+
+.heatmap-image-title {
+  padding-top: 5px;
+  height: 30px;
+  overflow-y: auto;
+  background-color: rgb(245, 245, 245);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.heatmap-image {
+  /* height: 40%;
+  display: flex; */
+  height: calc(100% - 30px);
+  display: flex; /* enable flex layout */
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  background-color: #eee;
+  /* padding: 5px; */
+  background-color: rgb(245, 245, 245);
 
 }
 
-.heatmap-image-container img {
+.heatmap-image img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   /* transform: rotate(90deg); */
+  background-color: rgb(245, 245, 245);
 
-}
-
-#plot-container-learning-curve {
-    width: 50%;
-    /* height: 40%; */
-    aspect-ratio: 5 / 4;
-    /* border: 1px solid #333; */
-    position: relative; /* Crucial for absolute positioning of points */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-left: 10%;
-
-    border: 5px solid rgb(245, 245, 245);
 }
 
 .data-point {
@@ -88,7 +98,7 @@
     height: 10px;
     background-color: steelblue;
     border-radius: 50%;
-    position: absolute; /* Positioned relative to plot-container */
+    position: absolute; 
     cursor: pointer;
     transition: transform 0.2s ease-out, background-color 0.2s;
     /* Center the point on its coordinates */
@@ -101,7 +111,7 @@
 }
 
 #gif-popup {
-    position: fixed; /* Or absolute, depending on desired behavior with scrolling */
+    position: absolute; /* Or absolute, depending on desired behavior with scrolling */
     display: none; /* Hidden by default */
     border: 1px solid #ccc;
     background-color: white;
@@ -113,7 +123,7 @@
 }
 
 #gif-popup-learning-curve {
-    position: fixed; /* Or absolute, depending on desired behavior with scrolling */
+    position: absolute; /* Or absolute, depending on desired behavior with scrolling */
     display: none; /* Hidden by default */
     border: 1px solid #ccc;
     background-color: white;
@@ -140,4 +150,184 @@
     display: block;
     max-width: 150px; /* Adjust as needed */
     max-height: 150px; /* Adjust as needed */
+}
+
+
+/* Responsive Switch */
+@media (max-width: 768px) {
+    .interactive-container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+    }
+
+    .plot-parent-container {
+        width: 80%;
+        aspect-ratio: 5 / 4;
+        border: 5px solid rgb(245, 245, 245);
+        position: relative; /* Crucial for absolute positioning of points */
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-left: 0%;
+    }
+
+
+    .plot-container {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .learning-info-box {
+        width: 80%;
+        aspect-ratio: 5 / 4;
+        margin-left: 0%;
+        border: 5px solid rgb(245, 245, 245);
+        position: relative; /* Crucial for absolute positioning of points */
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* #learning-info-box-learning-curve {
+        width: 48%;
+        aspect-ratio: 4.8 / 4;
+        margin-left: 2%;
+        border: 5px solid rgb(245, 245, 245);
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    } */
+
+
+
+    .justification-text {
+        width: 100%;
+        aspect-ratio: 1 / 0.6;
+        overflow-y: auto;
+        padding: 5px;
+        background-color: white;
+        font-size: 12px;
+    }
+
+    /* .heatmap-image-container {
+
+        width: 100%;
+        aspect-ratio: 1 / 0.4;
+        border: 5px solid rgb(245, 245, 245);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-left: 0%;
+    }
+
+    .heatmap-image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    } */
+
+
+    .heatmap-image-container {
+        /* height: 40%; */
+
+        width: 100%;
+        aspect-ratio: 1 / 0.4;
+        /* display: flex; */
+    }
+
+    .heatmap-image-title {
+        padding-top: 5px;
+        height: 30px;
+        overflow-y: auto;
+        background-color: rgb(245, 245, 245);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .heatmap-image {
+        /* height: 40%;
+        display: flex; */
+        height: calc(100% - 30px);
+        display: flex; /* enable flex layout */
+        align-items: center;
+        justify-content: center;
+        /* padding: 5px; */
+        background-color: rgb(245, 245, 245);
+
+    }
+
+    .heatmap-image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        /* transform: rotate(90deg); */
+        background-color: rgb(245, 245, 245);
+
+    }
+
+
+
+
+    .data-point {
+        width: 10px;
+        height: 10px;
+        background-color: steelblue;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        transition: transform 0.2s ease-out, background-color 0.2s;
+        /* Center the point on its coordinates */
+        transform: translate(-50%, -50%);
+    }
+
+    .data-point:hover {
+        transform: translate(-50%, -50%) scale(1.5);
+        background-color: orangered;
+    }
+
+    #gif-popup {
+        position: absolute; /* Or absolute, depending on desired behavior with scrolling */
+        display: none; /* Hidden by default */
+        border: 1px solid #ccc;
+        background-color: white;
+        padding: 5px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        z-index: 1000; /* Ensure it's on top */
+        pointer-events: none; /* VERY IMPORTANT: Prevents the popup from interfering with mouse events */
+        border-radius: 5px;
+    }
+
+    #gif-popup-learning-curve {
+        position: absolute; /* Or absolute, depending on desired behavior with scrolling */
+        display: none; /* Hidden by default */
+        border: 1px solid #ccc;
+        background-color: white;
+        padding: 5px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        z-index: 1000; /* Ensure it's on top */
+        pointer-events: none; /* VERY IMPORTANT: Prevents the popup from interfering with mouse events */
+        border-radius: 5px;
+    }
+
+    #gif-popup img {
+        display: block;
+        max-width: 150px; /* Adjust as needed */
+        max-height: 150px; /* Adjust as needed */
+    }
+
+    #gif-popup video {
+        display: block;
+        max-width: 150px; /* Adjust as needed */
+        max-height: 150px; /* Adjust as needed */
+    }
+
+    #gif-popup-learning-curve video {
+        display: block;
+        max-width: 150px; /* Adjust as needed */
+        max-height: 150px; /* Adjust as needed */
+    }
 }

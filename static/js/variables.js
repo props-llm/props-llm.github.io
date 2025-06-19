@@ -37,3 +37,9 @@ const labelMap = {
 
 var numScatterPoints = 0;
 var initScatterPoint = null;
+var scatterPlotInited = false;
+
+
+var numCurvePoints = 0;
+var initCurvePoint = null;
+var curvePlotInited = false;

@@ -29,9 +29,11 @@ function updateScatterPlot() {
     const plotContainer = document.getElementById('plot-container');
     const gifPopup = document.getElementById('gif-popup');
     const gifImage = gifPopup.querySelector('video');
+    const gifPopupIteration = document.getElementById('gif-popup-iteration-scatter');
     const heatmapImageContainerScatterPlot = document.getElementById('heatmap-image-container-scatter-plot');
     const heatmapImageContainerScatterPlotImg = heatmapImageContainerScatterPlot.querySelector('img');
     const justificationTextScatterPlot = document.getElementById('justification-text-scatter-plot');
+    const parentContainer = document.getElementById('learning-info-box');
 
     // Clear existing data points before adding new ones
     while (plotContainer.firstChild) {
@@ -63,22 +65,21 @@ function updateScatterPlot() {
 
             point.video_file = data.video_file; 
             point.heatmap_file = data.heatmap_file;
+            point.iter = idx * 10;
             
             point.addEventListener('mouseover', function(event) {
 
                 console.log('initScatterPoint', initScatterPoint);
-                if (initScatterPoint != null) {
+                if (initScatterPoint != null && scatterPlotInited == true) {
+                    console.log('Mouseout on initScatterPoint:', initScatterPoint.id);
                     initScatterPoint.dispatchEvent(new Event('mouseout'));
                     initScatterPoint = null;
                 }
-                console.log('Mouseover event:', event);
+                else if (initScatterPoint != null && scatterPlotInited == false) {
+                    scatterPlotInited = true;
+                }
                 console.log('Mouseover on point:', this.id, 'with data:', data);
 
-                // Show GIF popup
-                // gifImage.src = this.dataset.gifUrl;
-
-                // gifImage.src = 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDM5Njd1b3p2MG5seWtzdXdxMjZyZnBkM3BqazBkMXlybGRjbWx1cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BPJmthQ3YRwD6QqcVD/giphy.gif';
-                // 'static/data/swimmer/videos/' + 
                 gifImage.src = task_folder + 'videos/' + this.video_file;
                 console.log('GIF URL:', gifImage.src);
 
@@ -87,6 +88,8 @@ function updateScatterPlot() {
 
                 justificationTextScatterPlot.textContent = data.justification || 'No justification text available.';
                 console.log('Justification Text:', justificationTextScatterPlot.textContent);
+
+                gifPopupIteration.textContent = `Iteration ${this.iter}`;
 
                 gifPopup.style.display = 'block';
                 updatePopupPosition(event, idx);
@@ -111,6 +114,7 @@ function updateScatterPlot() {
                 
                 // Restore original styles
                 if (this.originalStyles) {
+                    console.log('Restoring original styles for point:', this.id);
                     this.style.backgroundColor = this.originalStyles.backgroundColor;
                     this.style.border = this.originalStyles.border;
                 }
@@ -133,29 +137,32 @@ function updateScatterPlot() {
         })
         .then(data => {
             renderScatterPoints(data); // Call the function to create points
+            scatterPlotInited = false;
             numScatterPoints = data.length;
+            console.log('Scatter Data Plotting Done');
+            console.log('Current initScatterPoint:', initScatterPoint);
+            initScatterPoint = document.getElementById(`tsne-point-${numScatterPoints - 5}`);
+            if (!initScatterPoint) {
+                console.log('numScatterPoints:', numScatterPoints);
+                console.error('Last 5th point not found in the DOM.');
+            }
+            else {
+                // Simulate mouseover on the last 5th point
+                initScatterPoint.dispatchEvent(new MouseEvent('mouseover', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true
+                }));
+            }
+            console.log('initScatterPoint:', initScatterPoint);
 
-            // initScatterPoint = document.getElementById(`tsne-point-${numScatterPoints - 5}`);
-            // if (!initScatterPoint) {
-            //     console.log('numScatterPoints:', numScatterPoints);
-            //     console.error('Last 5th point not found in the DOM.');
-            // }
-            // else {
-            //     // Simulate mouseover on the last 5th point
-            //     initScatterPoint.dispatchEvent(new MouseEvent('mouseover', {
-            //         view: window,
-            //         bubbles: true,
-            //         cancelable: true
-            //     }));
-            // }
 
 
+            // heatmapImageContainerScatterPlotImg.src = task_folder + 'heatmaps/' + data.slice(-5)[0].heatmap_file;
+            // console.log('Heatmap URL:', heatmapImageContainerScatterPlotImg.src);
 
-            heatmapImageContainerScatterPlotImg.src = task_folder + 'heatmaps/' + data.slice(-5)[0].heatmap_file;
-            console.log('Heatmap URL:', heatmapImageContainerScatterPlotImg.src);
-
-            justificationTextScatterPlot.textContent = data.slice(-5)[0].justification || 'No justification text available.';
-            console.log('Justification Text:', justificationTextScatterPlot.textContent);
+            // justificationTextScatterPlot.textContent = data.slice(-5)[0].justification || 'No justification text available.';
+            // console.log('Justification Text:', justificationTextScatterPlot.textContent);
             
             // // Store original styles
             // data.slice(-5)[0].originalStyles = {
@@ -187,43 +194,11 @@ function updateScatterPlot() {
                 console.error(`Point with index ${idx} not found.`);
                 return;
             }
-            const pointRect = point.getBoundingClientRect();
-            console.log('Point Rect:', pointRect);
-            const pointCenterX = pointRect.left + pointRect.width / 2;
-            const pointCenterY = pointRect.top + pointRect.height / 2;
-            const offsetX = 15;
-            const offsetY = 15;
-            let newLeft = pointCenterX + offsetX;
-            let newTop = pointCenterY + offsetY;
-            const popupRect = gifPopup.getBoundingClientRect();
 
-
-            // const offsetX = 15;
-            // const offsetY = 15;
-            // let newLeft = event.clientX + offsetX;
-            // let newTop = event.clientY + offsetY;
-            // const popupRect = gifPopup.getBoundingClientRect();
-
-            // Adjust if popup goes off the right edge
-            if (newLeft + popupRect.width > window.innerWidth) {
-                newLeft = event.clientX - offsetX - popupRect.width;
-            }
-            // Adjust if popup goes off the bottom edge
-            if (newTop + popupRect.height > window.innerHeight) {
-                newTop = event.clientY - offsetY - popupRect.height;
-            }
-            // Adjust if popup goes off the left edge (if it was shifted)
-            if (newLeft < 0) {
-                newLeft = event.clientX + offsetX; // Revert to original right offset
-            }
-            // Adjust if popup goes off the top edge (if it was shifted)
-            if (newTop < 0) {
-                newTop = event.clientY + offsetY; // Revert to original bottom offset
-            }
-
-
-            gifPopup.style.left = newLeft + 'px';
-            gifPopup.style.top = newTop + 'px';
+            // console.log('point style left top', point.style.left, point.style.top);
+            gifPopup.style.left = 'calc(' + point.style.left + ' + 15px)'; // Offset to the right
+            gifPopup.style.top = 'calc(' + point.style.top + ' + 15px)'; // Offset down
+            // console.log('gifPopup style left top', gifPopup.style.left, gifPopup.style.top);
         }
     }
 }
@@ -259,6 +234,7 @@ function updateLearningCurvePlot() {
     const plotContainer = document.getElementById('plot-container-learning-curve');
     const gifPopup = document.getElementById('gif-popup-learning-curve');
     const gifImage = gifPopup.querySelector('video');
+    const gifPopupIteration = document.getElementById('gif-popup-iteration-learning-curve');
     const heatmapImageContainerLearningCurve = document.getElementById('heatmap-image-container-learning-curve');
     const heatmapImageContainerLearningCurveImg = heatmapImageContainerLearningCurve.querySelector('img');
     const justificationTextLearningCurve = document.getElementById('justification-text-learning-curve');
@@ -282,9 +258,10 @@ function updateLearningCurvePlot() {
 
         rgb_1st = scatterData[0].rgb;
         
-        scatterData.forEach(data => {
+        scatterData.forEach((data, idx) => {
             const point = document.createElement('div');
             point.classList.add('data-point');
+            point.id = `tsne-point-${idx}-learning-curve`;
             point.style.left = `${data.epoch_percentage}%`;
             point.style.top = `${100 - data.reward_percentage}%`;
             point.style.backgroundColor = `rgba(${rgb_1st[0] * 255}, ${rgb_1st[1] * 255}, ${rgb_1st[2] * 255}, 0.5)`;
@@ -299,13 +276,20 @@ function updateLearningCurvePlot() {
 
             point.video_file = data.video_file; 
             point.heatmap_file = data.heatmap_file; // Assuming heatmap_file is part of the data
+            point.iter = idx * 10;
             
             point.addEventListener('mouseover', function(event) {
-                // Show GIF popup
-                // gifImage.src = this.dataset.gifUrl;
 
-                // gifImage.src = 'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDM5Njd1b3p2MG5seWtzdXdxMjZyZnBkM3BqazBkMXlybGRjbWx1cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BPJmthQ3YRwD6QqcVD/giphy.gif';
-                // 'static/data/swimmer/videos/' + 
+                console.log('initCurvePoint', initCurvePoint);
+                if (initCurvePoint != null && curvePlotInited == true) {
+                    console.log('Mouseout on initCurvePoint:', initCurvePoint.id);
+                    initCurvePoint.dispatchEvent(new Event('mouseout'));
+                    initCurvePoint = null;
+                }
+                else if (initCurvePoint != null && curvePlotInited == false) {
+                    curvePlotInited = true;
+                }
+
                 gifImage.src = task_folder + 'videos/' + this.video_file;
                 console.log('GIF URL:', gifImage.src);
 
@@ -315,8 +299,10 @@ function updateLearningCurvePlot() {
                 justificationTextLearningCurve.textContent = data.justification || 'No justification text available.';
                 console.log('Justification Text:', justificationTextLearningCurve.textContent);
 
+                gifPopupIteration.textContent = `Iteration ${this.iter}`;
+
                 gifPopup.style.display = 'block';
-                updatePopupPosition(event);
+                updatePopupPosition(event, idx);
                 
                 // Store original styles
                 this.originalStyles = {
@@ -433,7 +419,49 @@ function updateLearningCurvePlot() {
             return response.json(); // Parse the JSON from the response
         })
         .then(data => {
+            // renderScatterPoints(data); // Call the function to create points
+            // scatterPlotInited = false;
+            // numScatterPoints = data.length;
+            // console.log('Scatter Data Plotting Done');
+            // console.log('Current initScatterPoint:', initScatterPoint);
+            // initScatterPoint = document.getElementById(`tsne-point-${numScatterPoints - 5}`);
+            // if (!initScatterPoint) {
+            //     console.log('numScatterPoints:', numScatterPoints);
+            //     console.error('Last 5th point not found in the DOM.');
+            // }
+            // else {
+            //     // Simulate mouseover on the last 5th point
+            //     initScatterPoint.dispatchEvent(new MouseEvent('mouseover', {
+            //         view: window,
+            //         bubbles: true,
+            //         cancelable: true
+            //     }));
+            // }
+            // console.log('initScatterPoint:', initScatterPoint);
+
+
+
+
             renderScatterPoints(data); // Call the function to create points
+            curvePlotInited = false;
+
+            numCurvePoints = data.length;
+            console.log('Curve Data Plotting Done');
+            console.log('Current initCurvePoint:', initCurvePoint);
+            initCurvePoint = document.getElementById(`tsne-point-${numScatterPoints - 5}-learning-curve`);
+            if (!initCurvePoint) {
+                console.log('numCurvePoints:', numCurvePoints);
+                console.error(`tsne-point-${numScatterPoints - 5}-learning-curve not found in the DOM.`);
+            }
+            else {
+                // Simulate mouseover on the last 5th point
+                initCurvePoint.dispatchEvent(new MouseEvent('mouseover', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true
+                }));
+            }
+            console.log('initCurvePoint:', initCurvePoint);
         })
         .catch(error => {
             console.error('Error fetching or parsing scatter data:', error);
@@ -443,38 +471,52 @@ function updateLearningCurvePlot() {
     // Update GIF Popup Position on Mouse Move
     // This function and its event listener can remain as they are,
     // they don't directly depend on the data loading, only on the popup state.
-    document.addEventListener('mousemove', updatePopupPosition);
+    // document.addEventListener('mousemove', updatePopupPosition);
 
-    function updatePopupPosition(event) {
+    function updatePopupPosition(event, idx) {
         if (gifPopup.style.display === 'block') {
-            const offsetX = 15;
-            const offsetY = 15;
 
-            let newLeft = event.clientX + offsetX;
-            let newTop = event.clientY + offsetY;
 
-            const popupRect = gifPopup.getBoundingClientRect();
-
-            // Adjust if popup goes off the right edge
-            if (newLeft + popupRect.width > window.innerWidth) {
-                newLeft = event.clientX - offsetX - popupRect.width;
-            }
-            // Adjust if popup goes off the bottom edge
-            if (newTop + popupRect.height > window.innerHeight) {
-                newTop = event.clientY - offsetY - popupRect.height;
-            }
-            // Adjust if popup goes off the left edge (if it was shifted)
-            if (newLeft < 0) {
-                newLeft = event.clientX + offsetX; // Revert to original right offset
-            }
-            // Adjust if popup goes off the top edge (if it was shifted)
-            if (newTop < 0) {
-                newTop = event.clientY + offsetY; // Revert to original bottom offset
+            const point = document.getElementById(`tsne-point-${idx}-learning-curve`);
+            if (!point) {
+                console.error(`Point with index ${idx} not found.`);
+                return;
             }
 
+            gifPopup.style.left = 'calc(' + point.style.left + ' + 15px)'; // Offset to the right
+            gifPopup.style.top = 'calc(' + point.style.top + ' + 15px)'; // Offset down
 
-            gifPopup.style.left = newLeft + 'px';
-            gifPopup.style.top = newTop + 'px';
+
+
+
+            // const offsetX = 15;
+            // const offsetY = 15;
+
+            // let newLeft = event.clientX + offsetX;
+            // let newTop = event.clientY + offsetY;
+
+            // const popupRect = gifPopup.getBoundingClientRect();
+
+            // // Adjust if popup goes off the right edge
+            // if (newLeft + popupRect.width > window.innerWidth) {
+            //     newLeft = event.clientX - offsetX - popupRect.width;
+            // }
+            // // Adjust if popup goes off the bottom edge
+            // if (newTop + popupRect.height > window.innerHeight) {
+            //     newTop = event.clientY - offsetY - popupRect.height;
+            // }
+            // // Adjust if popup goes off the left edge (if it was shifted)
+            // if (newLeft < 0) {
+            //     newLeft = event.clientX + offsetX; // Revert to original right offset
+            // }
+            // // Adjust if popup goes off the top edge (if it was shifted)
+            // if (newTop < 0) {
+            //     newTop = event.clientY + offsetY; // Revert to original bottom offset
+            // }
+
+
+            // gifPopup.style.left = newLeft + 'px';
+            // gifPopup.style.top = newTop + 'px';
         }
     }
 }
