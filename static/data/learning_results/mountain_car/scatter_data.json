@@ -1,7 +1,7 @@
 [
   {
-    "x": 80.16081237792969,
-    "y": 44.39350128173828,
+    "x": 48.761436462402344,
+    "y": 73.64957427978516,
     "epoch_percentage": 0.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -14,11 +14,12 @@
     "reward": -200.0,
     "video_file": "params_0.mp4",
     "justification": "I chose these initial values because they are at the center of the parameter space. This position allows us to explore both positive and negative directions in subsequent iterations. Starting from the zero point gives a balanced and neutral baseline to identify the gradient of the function more effectively and start the exploration process.",
-    "heatmap_file": "heatmap_0.jpeg"
+    "heatmap_file": "heatmap_0.jpeg",
+    "iteration_id": 0
   },
   {
-    "x": 70.54542541503906,
-    "y": 52.09956359863281,
+    "x": 49.905799865722656,
+    "y": 55.417449951171875,
     "epoch_percentage": 2.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -31,11 +32,12 @@
     "reward": -200.0,
     "video_file": "params_10.mp4",
     "justification": "I chose this input to explore the symmetry by adjusting previously negative and positive values around the origin for balanced exploration. This helps cover different sign combinations and ensures we're not sticking to the already tried patterns.",
-    "heatmap_file": "heatmap_10.jpeg"
+    "heatmap_file": "heatmap_10.jpeg",
+    "iteration_id": 10
   },
   {
-    "x": 94.70256805419922,
-    "y": 39.62611389160156,
+    "x": 41.65708923339844,
+    "y": 81.1665267944336,
     "epoch_percentage": 5.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -48,11 +50,12 @@
     "reward": -200.0,
     "video_file": "params_20.mp4",
     "justification": "This set of parameters introduces further exploration into negative and positive ranges in a balanced manner, using a step size of 1.0 to possibly navigate out of a local minimum and assess new areas of the solution space for potentially higher function values.",
-    "heatmap_file": "heatmap_20.jpeg"
+    "heatmap_file": "heatmap_20.jpeg",
+    "iteration_id": 20
   },
   {
-    "x": 70.86585235595703,
-    "y": 23.827926635742188,
+    "x": 46.13727951049805,
+    "y": 66.0131607055664,
     "epoch_percentage": 7.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -65,11 +68,12 @@
     "reward": -200.0,
     "video_file": "params_30.mp4",
     "justification": "I chose this input to explore the extreme positive bounds to see if the values near maximum bounds can lead us towards the global maximum, as all previously tried values mainly resulted in -200.00 with mixed and lower ranges.",
-    "heatmap_file": "heatmap_30.jpeg"
+    "heatmap_file": "heatmap_30.jpeg",
+    "iteration_id": 30
   },
   {
-    "x": 71.6795883178711,
-    "y": 84.15353393554688,
+    "x": 61.73502731323242,
+    "y": 63.23894119262695,
     "epoch_percentage": 10.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -82,11 +86,12 @@
     "reward": -200.0,
     "video_file": "params_40.mp4",
     "justification": "I chose this input to maintain diversity in exploration. By exploring both positive and negative numbers with a step size of 1.0, the chosen parameters cover a broad range within the defined limits, avoiding repeating the previously tested inputs and focusing on unexplored combinations that could potentially reveal clues for reaching beyond a local optima.",
-    "heatmap_file": "heatmap_40.jpeg"
+    "heatmap_file": "heatmap_40.jpeg",
+    "iteration_id": 40
   },
   {
-    "x": 29.46891212463379,
-    "y": 59.92512130737305,
+    "x": 17.689577102661133,
+    "y": 43.06602096557617,
     "epoch_percentage": 12.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -99,11 +104,12 @@
     "reward": -200.0,
     "video_file": "params_50.mp4",
     "justification": "I chose this input to explore a potentially promising area by setting balanced extreme values across positive and negative ranges, leveraging symmetry and maximizing parameter impact through large magnitude values while considering non-repetition and a clear deviation from past attempts. This strategy is laid out to intensively explore new areas that were yet to be examined.",
-    "heatmap_file": "heatmap_50.jpeg"
+    "heatmap_file": "heatmap_50.jpeg",
+    "iteration_id": 50
   },
   {
-    "x": 75.0490493774414,
-    "y": 65.4952621459961,
+    "x": 54.935001373291016,
+    "y": 66.73277282714844,
     "epoch_percentage": 15.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -116,11 +122,12 @@
     "reward": -200.0,
     "video_file": "params_60.mp4",
     "justification": "This combination is selected to ensure a good balance between positive and negative values, maintaining a diverse range across the parameter space, which can potentially lead to higher function values.",
-    "heatmap_file": "heatmap_60.jpeg"
+    "heatmap_file": "heatmap_60.jpeg",
+    "iteration_id": 60
   },
   {
-    "x": 73.04484558105469,
-    "y": 40.209068298339844,
+    "x": 51.877201080322266,
+    "y": 30.280893325805664,
     "epoch_percentage": 17.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -133,11 +140,12 @@
     "reward": -200.0,
     "video_file": "params_70.mp4",
     "justification": "The suggested params are chosen to explore a combination of extreme values within the range with alternating signs, aiming to trigger a change that could lead closer to the direction of a potential global minimum around -120, as all previously attempted configurations received a constant result of -200. Exploring suddenly large differences might reveal unexplored areas that could be more promising than gradual changes.",
-    "heatmap_file": "heatmap_70.jpeg"
+    "heatmap_file": "heatmap_70.jpeg",
+    "iteration_id": 70
   },
   {
-    "x": 94.26095581054688,
-    "y": 42.9150505065918,
+    "x": 41.491207122802734,
+    "y": 79.71009826660156,
     "epoch_percentage": 20.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -150,11 +158,12 @@
     "reward": -200.0,
     "video_file": "params_80.mp4",
     "justification": "I selected these parameters to explore a new region by focusing on a mix of positive and negative values, distributed to ensure coverage across the parameter space while maintaining a search step size of 1.0, which could potentially increase the function value toward the global maximum.",
-    "heatmap_file": "heatmap_80.jpeg"
+    "heatmap_file": "heatmap_80.jpeg",
+    "iteration_id": 80
   },
   {
-    "x": 63.6280403137207,
-    "y": 54.821861267089844,
+    "x": 52.13205337524414,
+    "y": 57.26628112792969,
     "epoch_percentage": 22.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -167,11 +176,12 @@
     "reward": -200.0,
     "video_file": "params_90.mp4",
     "justification": "I chose these parameters to further explore the boundaries at extreme values in both the positive and negative directions across different dimensions. This exploration helps ensure we're probing the edges of the parameter space to maximize the function's value.",
-    "heatmap_file": "heatmap_90.jpeg"
+    "heatmap_file": "heatmap_90.jpeg",
+    "iteration_id": 90
   },
   {
-    "x": 89.5239486694336,
-    "y": 41.36846160888672,
+    "x": 44.49443817138672,
+    "y": 78.92296600341797,
     "epoch_percentage": 25.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -184,11 +194,12 @@
     "reward": -200.0,
     "video_file": "params_100.mp4",
     "justification": "I chose this set of params to explore a new region of the parameter space by utilizing positive and negative values. This approach helps to systematically cover possible value combinations in varying relative magnitude. The step size of 1.0 aligns with the exploration strategy, given we haven't found a solution near the global optimum yet.",
-    "heatmap_file": "heatmap_100.jpeg"
+    "heatmap_file": "heatmap_100.jpeg",
+    "iteration_id": 100
   },
   {
-    "x": 87.69977569580078,
-    "y": 70.75247955322266,
+    "x": 61.42218780517578,
+    "y": 77.52425384521484,
     "epoch_percentage": 27.500000000000004,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -201,11 +212,12 @@
     "reward": -200.0,
     "video_file": "params_110.mp4",
     "justification": "To explore the parameter space and potentially avoid local optima, I've chosen a balanced set of values centered around zero with extreme values at the limits of the range [-6.0, 6.0] to encourage wide exploration.",
-    "heatmap_file": "heatmap_110.jpeg"
+    "heatmap_file": "heatmap_110.jpeg",
+    "iteration_id": 110
   },
   {
-    "x": 84.90784454345703,
-    "y": 9.275561332702637,
+    "x": 48.29277420043945,
+    "y": 92.06644439697266,
     "epoch_percentage": 30.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -218,11 +230,12 @@
     "reward": -200.0,
     "video_file": "params_120.mp4",
     "justification": "This choice represents an exploratory move, using both positive and negative values with a step size of 1.0, testing new regions of the parameter space.",
-    "heatmap_file": "heatmap_120.jpeg"
+    "heatmap_file": "heatmap_120.jpeg",
+    "iteration_id": 120
   },
   {
-    "x": 82.96671295166016,
-    "y": 91.69713592529297,
+    "x": 58.70479202270508,
+    "y": 69.49190521240234,
     "epoch_percentage": 32.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -235,11 +248,12 @@
     "reward": -200.0,
     "video_file": "params_130.mp4",
     "justification": "I chose this input to explore an untested area of the parameter space in both positive and negative directions with a mix of high and low values, aiming to find a region that might lead closer to the global maximum.",
-    "heatmap_file": "heatmap_130.jpeg"
+    "heatmap_file": "heatmap_130.jpeg",
+    "iteration_id": 130
   },
   {
-    "x": 77.90357971191406,
-    "y": 95.45455169677734,
+    "x": 62.51349639892578,
+    "y": 70.78834533691406,
     "epoch_percentage": 35.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -252,11 +266,12 @@
     "reward": -200.0,
     "video_file": "params_140.mp4",
     "justification": "I chose this input to explore a new set of parameters within the allowed range, emphasizing variations and balanced steps across the parameter space as there appears to be no prior attempt with this configuration. This should help in identifying promising regions that might lead the optimization process towards the global maximum.",
-    "heatmap_file": "heatmap_140.jpeg"
+    "heatmap_file": "heatmap_140.jpeg",
+    "iteration_id": 140
   },
   {
-    "x": 47.49815368652344,
-    "y": 4.5454535484313965,
+    "x": 30.947071075439453,
+    "y": 61.273109436035156,
     "epoch_percentage": 37.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -269,11 +284,12 @@
     "reward": -200.0,
     "video_file": "params_150.mp4",
     "justification": "I chose this set of parameters to further explore the edge values, ensuring combinations of the maximum and minimum boundaries, which have not been fully tested in diverse combinations. This step continues the exploration strategy within the given range.",
-    "heatmap_file": "heatmap_150.jpeg"
+    "heatmap_file": "heatmap_150.jpeg",
+    "iteration_id": 150
   },
   {
-    "x": 69.79965209960938,
-    "y": 94.81558227539062,
+    "x": 64.1854476928711,
+    "y": 63.66537857055664,
     "epoch_percentage": 40.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -286,11 +302,12 @@
     "reward": -200.0,
     "video_file": "params_160.mp4",
     "justification": "The choice of this input utilizes alternating extreme values within the defined range. This increases the chances of escaping local optima and exploring a diverse area of the parameter space, aiming to uncover the global maximum.",
-    "heatmap_file": "heatmap_160.jpeg"
+    "heatmap_file": "heatmap_160.jpeg",
+    "iteration_id": 160
   },
   {
-    "x": 84.37559509277344,
-    "y": 20.38576889038086,
+    "x": 48.102752685546875,
+    "y": 86.98258972167969,
     "epoch_percentage": 42.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -303,11 +320,12 @@
     "reward": -200.0,
     "video_file": "params_170.mp4",
     "justification": "I chose these parameters to explore diverse regions in the parameter space, incorporating both positive and negative values. This is based on the observation that the global maximum should be around -120. Applying a search step size of 1.0 helps further expand the search area in an attempt to move away from local optima and approach global optimality, capturing a wider diversity of states in the search space.",
-    "heatmap_file": "heatmap_170.jpeg"
+    "heatmap_file": "heatmap_170.jpeg",
+    "iteration_id": 170
   },
   {
-    "x": 72.47869110107422,
-    "y": 74.07438659667969,
+    "x": 59.6692008972168,
+    "y": 61.78310012817383,
     "epoch_percentage": 45.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -320,11 +338,12 @@
     "reward": -200.0,
     "video_file": "params_180.mp4",
     "justification": "I chose this combination to explore new parameter ranges, emphasizing negative and positive extremes, while ensuring no repetition of earlier tested combinations. This search step size of 1.0 increases the chance of moving out of local optima.",
-    "heatmap_file": "heatmap_180.jpeg"
+    "heatmap_file": "heatmap_180.jpeg",
+    "iteration_id": 180
   },
   {
-    "x": 95.45454406738281,
-    "y": 40.09494400024414,
+    "x": 41.600685119628906,
+    "y": 81.04974365234375,
     "epoch_percentage": 47.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -337,11 +356,12 @@
     "reward": -200.0,
     "video_file": "params_190.mp4",
     "justification": "I chose this input to explore different regions in the multidimensional space by using a mix of positive and negative values. This helps in randomly exploring the parameter space while avoiding already seen combinations, potentially getting us closer to the global maximum.",
-    "heatmap_file": "heatmap_190.jpeg"
+    "heatmap_file": "heatmap_190.jpeg",
+    "iteration_id": 190
   },
   {
-    "x": 83.71650695800781,
-    "y": 67.68817901611328,
+    "x": 59.87552261352539,
+    "y": 79.69076538085938,
     "epoch_percentage": 50.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -354,11 +374,12 @@
     "reward": -200.0,
     "video_file": "params_200.mp4",
     "justification": "I've chosen this set of parameters because the global optimum is known to be around -120 and previous evaluations with similar configurations have indicated the function's potential maximum value. By exploring values at the edges of the defined range, particularly with symmetry in the negative and positive values for different parameter positions, we are increasing the chances of effectively stepping towards the global maximum. This configuration ensures that we probe the boundaries of the defined search space in a systematic way, leveraging the step size of 1.0 for thorough exploration.",
-    "heatmap_file": "heatmap_200.jpeg"
+    "heatmap_file": "heatmap_200.jpeg",
+    "iteration_id": 200
   },
   {
-    "x": 78.54031372070312,
-    "y": 82.88048553466797,
+    "x": 60.579620361328125,
+    "y": 68.58155059814453,
     "epoch_percentage": 52.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -371,11 +392,12 @@
     "reward": -200.0,
     "video_file": "params_210.mp4",
     "justification": "I chose these values to maintain symmetry and use a mid-range exploration around negative values to guide the optimization towards the global optimum, with a step size of 1.0 ensuring a broad exploration.",
-    "heatmap_file": "heatmap_210.jpeg"
+    "heatmap_file": "heatmap_210.jpeg",
+    "iteration_id": 210
   },
   {
-    "x": 85.97850799560547,
-    "y": 79.00323486328125,
+    "x": 58.27701187133789,
+    "y": 76.03824615478516,
     "epoch_percentage": 55.00000000000001,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -388,11 +410,12 @@
     "reward": -200.0,
     "video_file": "params_220.mp4",
     "justification": "This exploration step selects extreme values within the permissible range to move away from consistently deep local optima, potentially approaching the global maximum. By alternating between positive and negative extremes, we maximize the chance of discovering the desired global parameter configuration without revisiting known insufficient values.",
-    "heatmap_file": "heatmap_220.jpeg"
+    "heatmap_file": "heatmap_220.jpeg",
+    "iteration_id": 220
   },
   {
-    "x": 20.095304489135742,
-    "y": 28.584909439086914,
+    "x": 15.815303802490234,
+    "y": 59.49113464355469,
     "epoch_percentage": 57.49999999999999,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -405,11 +428,12 @@
     "reward": -200.0,
     "video_file": "params_230.mp4",
     "justification": "I chose this to explore the parameter space around the promising result of -140.20, aiming to see whether including another -6 in the combination could potentially yield higher performance.",
-    "heatmap_file": "heatmap_230.jpeg"
+    "heatmap_file": "heatmap_230.jpeg",
+    "iteration_id": 230
   },
   {
-    "x": 37.31990051269531,
-    "y": 9.022562980651855,
+    "x": 26.15719223022461,
+    "y": 63.9874153137207,
     "epoch_percentage": 60.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -422,11 +446,12 @@
     "reward": -200.0,
     "video_file": "params_240.mp4",
     "justification": "To explore the parameter space and approach the global maximum, I chose this set of values by adjusting from a successful point balance between negative and positive parameter values. This variation keeps close to previous values with good results, but exploring other dimensions.",
-    "heatmap_file": "heatmap_240.jpeg"
+    "heatmap_file": "heatmap_240.jpeg",
+    "iteration_id": 240
   },
   {
-    "x": 13.454063415527344,
-    "y": 24.749378204345703,
+    "x": 12.6048583984375,
+    "y": 54.56889343261719,
     "epoch_percentage": 62.5,
     "reward_percentage": 0.47142015321155656,
     "size": 51.8334606569901,
@@ -439,11 +464,12 @@
     "reward": -199.6,
     "video_file": "params_250.mp4",
     "justification": "This choice is influenced by previous results, where combinations involving high values close to the extremal negative limits under some of the constraints achieved better results (f(params) < -120). The focus is to slightly adjust the existing known points in the promising region to find potential points that optimize our function.",
-    "heatmap_file": "heatmap_250.jpeg"
+    "heatmap_file": "heatmap_250.jpeg",
+    "iteration_id": 250
   },
   {
-    "x": 10.947025299072266,
-    "y": 9.833758354187012,
+    "x": 8.906658172607422,
+    "y": 62.00437545776367,
     "epoch_percentage": 65.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -456,11 +482,12 @@
     "reward": -200.0,
     "video_file": "params_260.mp4",
     "justification": "Aiming to explore the space near a previously found less negative optimum, I chose values around (-6, -5) for the initial parameters with (+5) for the latter, expecting to further approach the global max. Adjusting params[3] and params[8] by one unit downward aims to maintain the progression in that region.",
-    "heatmap_file": "heatmap_260.jpeg"
+    "heatmap_file": "heatmap_260.jpeg",
+    "iteration_id": 260
   },
   {
-    "x": 10.73288631439209,
-    "y": 29.124086380004883,
+    "x": 11.439477920532227,
+    "y": 63.32727813720703,
     "epoch_percentage": 67.5,
     "reward_percentage": 57.80789628756631,
     "size": 274.8281130634073,
@@ -473,11 +500,12 @@
     "reward": -150.95,
     "video_file": "params_270.mp4",
     "justification": "I selected these parameters to maintain the negative values near -6 for most parameters, which includes slight adjustments with the positive values. The idea is to explore near the promising region where we observed values nearing the boundary of -120. The exploration step size of 1.0 was employed in the adjustment from the previous promising configurations.",
-    "heatmap_file": "heatmap_270.jpeg"
+    "heatmap_file": "heatmap_270.jpeg",
+    "iteration_id": 270
   },
   {
-    "x": 18.726699829101562,
-    "y": 45.62461853027344,
+    "x": 12.833272933959961,
+    "y": 51.53725814819336,
     "epoch_percentage": 70.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -490,11 +518,12 @@
     "reward": -200.0,
     "video_file": "params_280.mp4",
     "justification": "The choice of parameters aims to focus on a region close to where some promising values were previously observed (values around -120 and slightly beyond), while also maintaining exploration as dictated by the guidelines with a step size of 1.0. Exploring combinations near the boundaries with known potential improves the likelihood of discovering better configurations without repetitions.",
-    "heatmap_file": "heatmap_280.jpeg"
+    "heatmap_file": "heatmap_280.jpeg",
+    "iteration_id": 280
   },
   {
-    "x": 10.463907241821289,
-    "y": 31.01639747619629,
+    "x": 11.38564682006836,
+    "y": 63.17169189453125,
     "epoch_percentage": 72.5,
     "reward_percentage": 56.511490866234524,
     "size": 269.78609625668446,
@@ -507,11 +536,12 @@
     "reward": -152.05,
     "video_file": "params_290.mp4",
     "justification": "The chosen parameters are close to previous promising values around the suspected global optimum region; by making small changes, we aim to explore unnoticed vicinities while maintaining balance between previously observed successes and slight exploration.",
-    "heatmap_file": "heatmap_290.jpeg"
+    "heatmap_file": "heatmap_290.jpeg",
+    "iteration_id": 290
   },
   {
-    "x": 7.7894487380981445,
-    "y": 51.812923431396484,
+    "x": 7.707555770874023,
+    "y": 47.26747131347656,
     "epoch_percentage": 75.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -524,11 +554,12 @@
     "reward": -200.0,
     "video_file": "params_300.mp4",
     "justification": "I chose these parameters because the values are more negative than the recent exploratory attempts, especially for parameters that previously indicated higher function values when they were negative in settings close to these parameters. The slight increase in positive values for some earlier parameters also aligns with a past pattern of slightly better results with mixed negative values. This is still within a region roughly near earlier local optima yet unexplored in this precise configuration.",
-    "heatmap_file": "heatmap_300.jpeg"
+    "heatmap_file": "heatmap_300.jpeg",
+    "iteration_id": 300
   },
   {
-    "x": 29.797449111938477,
-    "y": 54.779415130615234,
+    "x": 16.705732345581055,
+    "y": 41.60676574707031,
     "epoch_percentage": 77.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -541,11 +572,12 @@
     "reward": -200.0,
     "video_file": "params_310.mp4",
     "justification": "The previous trials indicate values around -120 or better are in regions with mixed high magnitude positive and negative numbers. To target a new configuration potentially near a global maximum, the solution proposes exploring combinations near known promising coordinates, slightly varied\u2014balancing negative and positive high-magnitude values.",
-    "heatmap_file": "heatmap_310.jpeg"
+    "heatmap_file": "heatmap_310.jpeg",
+    "iteration_id": 310
   },
   {
-    "x": 19.9776611328125,
-    "y": 25.66571617126465,
+    "x": 15.586651802062988,
+    "y": 59.78728103637695,
     "epoch_percentage": 80.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -558,11 +590,12 @@
     "reward": -200.0,
     "video_file": "params_320.mp4",
     "justification": "The choice is to further explore around the recent promising regions of the search space, especially in the vicinity of prior local optima, using values predominantly at the boundary to better encapsulate extreme cases. This combined exploration and exploitation approach may reveal the desired global optimum more efficiently.",
-    "heatmap_file": "heatmap_320.jpeg"
+    "heatmap_file": "heatmap_320.jpeg",
+    "iteration_id": 320
   },
   {
-    "x": 13.26034927368164,
-    "y": 17.684486389160156,
+    "x": 16.129640579223633,
+    "y": 55.11883544921875,
     "epoch_percentage": 82.5,
     "reward_percentage": 62.40424278137889,
     "size": 292.7043544690604,
@@ -575,11 +608,12 @@
     "reward": -147.05,
     "video_file": "params_330.mp4",
     "justification": "I chose this combination because it adds slight variances to configurations around previous steps where the function f(params) was closest to -120. The introduction of minimal changes in the unexplored vicinity of promising configurations can lead us toward the global maximum.",
-    "heatmap_file": "heatmap_330.jpeg"
+    "heatmap_file": "heatmap_330.jpeg",
+    "iteration_id": 330
   },
   {
-    "x": 4.545451641082764,
-    "y": 30.058944702148438,
+    "x": 4.5454559326171875,
+    "y": 56.53643798828125,
     "epoch_percentage": 85.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -592,11 +626,12 @@
     "reward": -200.0,
     "video_file": "params_340.mp4",
     "justification": "These parameters are chosen to continue exploring the search space near known promising values, with slight variations, to seek further improvements in the function value towards the target of around -120. By maintaining variations near the promising neighborhoods and avoiding already explored points, I increase the likelihood of finding an optimal solution.",
-    "heatmap_file": "heatmap_340.jpeg"
+    "heatmap_file": "heatmap_340.jpeg",
+    "iteration_id": 340
   },
   {
-    "x": 16.999332427978516,
-    "y": 53.820587158203125,
+    "x": 14.446027755737305,
+    "y": 48.384422302246094,
     "epoch_percentage": 87.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -609,11 +644,12 @@
     "reward": -200.0,
     "video_file": "params_350.mp4",
     "justification": "I selected these parameters by exploring within the region where promising results have been achieved, particularly around slightly varying some coordinates at the edge of the allowed range, while keeping most successful parameters from previous attempts, aiming to further approach the global maximum.",
-    "heatmap_file": "heatmap_350.jpeg"
+    "heatmap_file": "heatmap_350.jpeg",
+    "iteration_id": 350
   },
   {
-    "x": 18.028337478637695,
-    "y": 57.774932861328125,
+    "x": 14.099963188171387,
+    "y": 46.28071975708008,
     "epoch_percentage": 90.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -626,11 +662,12 @@
     "reward": -200.0,
     "video_file": "params_360.mp4",
     "justification": "I chose this input because it continues the exploration along a region with a mix of boundary extreme values (like -6 and 6) and a few offset values (like -5 and -3) to search for the global maximum based on the trend observed in previous evaluations.",
-    "heatmap_file": "heatmap_360.jpeg"
+    "heatmap_file": "heatmap_360.jpeg",
+    "iteration_id": 360
   },
   {
-    "x": 13.673575401306152,
-    "y": 56.02727508544922,
+    "x": 10.4877347946167,
+    "y": 46.17220687866211,
     "epoch_percentage": 92.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -643,11 +680,12 @@
     "reward": -200.0,
     "video_file": "params_370.mp4",
     "justification": "Explanation: Continuing the search around parameters that resulted in the highest evaluations close to -120. Exploring with slight variations in both positive and negative directions as previous findings show some better results with these settings.",
-    "heatmap_file": "heatmap_370.jpeg"
+    "heatmap_file": "heatmap_370.jpeg",
+    "iteration_id": 370
   },
   {
-    "x": 23.26439094543457,
-    "y": 49.709285736083984,
+    "x": 11.416535377502441,
+    "y": 48.605857849121094,
     "epoch_percentage": 95.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -660,11 +698,12 @@
     "reward": -200.0,
     "video_file": "params_380.mp4",
     "justification": "Given that the best results are around the bounds, with negative numbers for the first four parameters and positive ones for the last five, this exploration continues in a similar direction, adjusting each of the unknown parameters by the exploration step size.",
-    "heatmap_file": "heatmap_380.jpeg"
+    "heatmap_file": "heatmap_380.jpeg",
+    "iteration_id": 380
   },
   {
-    "x": 8.190511703491211,
-    "y": 39.85938262939453,
+    "x": 7.201716899871826,
+    "y": 51.19047927856445,
     "epoch_percentage": 97.5,
     "reward_percentage": 77.13612256923983,
     "size": 350.0,
@@ -677,6 +716,727 @@
     "reward": -134.55,
     "video_file": "params_390.mp4",
     "justification": "I chose these parameters to further explore the region around the known global optimum with small adjustments to ensure we cover spaces that may yield better results. Given the data, this pattern could help locate the global maximum effectively by slightly varying around the points that have previously shown promise.",
-    "heatmap_file": "heatmap_390.jpeg"
+    "heatmap_file": "heatmap_390.jpeg",
+    "iteration_id": 390
+  },
+  {
+    "x": 48.746795654296875,
+    "y": 74.58761596679688,
+    "epoch_percentage": 0.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_0.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_0.jpeg",
+    "iteration_id": 0
+  },
+  {
+    "x": 47.82307434082031,
+    "y": 73.0349349975586,
+    "epoch_percentage": 2.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5117647058823529,
+      0.5011534025374856,
+      0.4885121107266436,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_10.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_10.jpeg",
+    "iteration_id": 10
+  },
+  {
+    "x": 45.07354736328125,
+    "y": 53.95291519165039,
+    "epoch_percentage": 5.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5254901960784314,
+      0.5024990388312187,
+      0.4751095732410611,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_20.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_20.jpeg",
+    "iteration_id": 20
+  },
+  {
+    "x": 46.00721740722656,
+    "y": 52.64994430541992,
+    "epoch_percentage": 7.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5372549019607843,
+      0.5036524413687044,
+      0.46362168396770476,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_30.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_30.jpeg",
+    "iteration_id": 30
+  },
+  {
+    "x": 45.19755554199219,
+    "y": 50.842559814453125,
+    "epoch_percentage": 10.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5509803921568628,
+      0.5049980776624375,
+      0.45021914648212225,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_40.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_40.jpeg",
+    "iteration_id": 40
+  },
+  {
+    "x": 49.00138854980469,
+    "y": 40.81517028808594,
+    "epoch_percentage": 12.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5627450980392157,
+      0.5061514801999231,
+      0.4387312572087659,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_50.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_50.jpeg",
+    "iteration_id": 50
+  },
+  {
+    "x": 50.12446212768555,
+    "y": 39.699302673339844,
+    "epoch_percentage": 15.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5764705882352941,
+      0.5074971164936563,
+      0.42532871972318337,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_60.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_60.jpeg",
+    "iteration_id": 60
+  },
+  {
+    "x": 51.400733947753906,
+    "y": 34.57299041748047,
+    "epoch_percentage": 17.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.5882352941176471,
+      0.5086505190311419,
+      0.413840830449827,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_70.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_70.jpeg",
+    "iteration_id": 70
+  },
+  {
+    "x": 53.9383544921875,
+    "y": 33.87013244628906,
+    "epoch_percentage": 20.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.6019607843137255,
+      0.5099961553248751,
+      0.4004382929642445,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_80.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_80.jpeg",
+    "iteration_id": 80
+  },
+  {
+    "x": 58.341007232666016,
+    "y": 31.173429489135742,
+    "epoch_percentage": 22.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.615686274509804,
+      0.5113417916186083,
+      0.38703575547866204,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_90.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_90.jpeg",
+    "iteration_id": 90
+  },
+  {
+    "x": 56.568294525146484,
+    "y": 28.76099395751953,
+    "epoch_percentage": 25.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.6274509803921569,
+      0.5124951941560938,
+      0.37554786620530567,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_100.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_100.jpeg",
+    "iteration_id": 100
+  },
+  {
+    "x": 62.10258483886719,
+    "y": 31.823434829711914,
+    "epoch_percentage": 27.500000000000004,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.6411764705882352,
+      0.513840830449827,
+      0.36214532871972316,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_110.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_110.jpeg",
+    "iteration_id": 110
+  },
+  {
+    "x": 60.856754302978516,
+    "y": 28.439470291137695,
+    "epoch_percentage": 30.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.6529411764705882,
+      0.5149942329873126,
+      0.35065743944636674,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_120.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_120.jpeg",
+    "iteration_id": 120
+  },
+  {
+    "x": 65.8057861328125,
+    "y": 23.223594665527344,
+    "epoch_percentage": 32.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.6666666666666666,
+      0.5163398692810458,
+      0.33725490196078434,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_130.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_130.jpeg",
+    "iteration_id": 130
+  },
+  {
+    "x": 69.9305419921875,
+    "y": 25.053468704223633,
+    "epoch_percentage": 35.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.6784313725490196,
+      0.5174932718185313,
+      0.3257670126874279,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_140.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_140.jpeg",
+    "iteration_id": 140
+  },
+  {
+    "x": 76.85883331298828,
+    "y": 26.26470375061035,
+    "epoch_percentage": 37.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.692156862745098,
+      0.5188389081122645,
+      0.31236447520184546,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_150.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_150.jpeg",
+    "iteration_id": 150
+  },
+  {
+    "x": 77.17817687988281,
+    "y": 22.648666381835938,
+    "epoch_percentage": 40.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7058823529411764,
+      0.5201845444059977,
+      0.298961937716263,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_160.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_160.jpeg",
+    "iteration_id": 160
+  },
+  {
+    "x": 74.87440490722656,
+    "y": 24.077655792236328,
+    "epoch_percentage": 42.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7176470588235294,
+      0.5213379469434833,
+      0.2874740484429066,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_170.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_170.jpeg",
+    "iteration_id": 170
+  },
+  {
+    "x": 74.2578353881836,
+    "y": 18.026477813720703,
+    "epoch_percentage": 45.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7313725490196079,
+      0.5226835832372165,
+      0.27407151095732407,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_180.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_180.jpeg",
+    "iteration_id": 180
+  },
+  {
+    "x": 70.67640686035156,
+    "y": 18.407602310180664,
+    "epoch_percentage": 47.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7431372549019608,
+      0.5238369857747021,
+      0.2625836216839677,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_190.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_190.jpeg",
+    "iteration_id": 190
+  },
+  {
+    "x": 73.34234619140625,
+    "y": 10.868350982666016,
+    "epoch_percentage": 50.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7568627450980392,
+      0.5251826220684352,
+      0.24918108419838525,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_200.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_200.jpeg",
+    "iteration_id": 200
+  },
+  {
+    "x": 69.91289520263672,
+    "y": 16.160356521606445,
+    "epoch_percentage": 52.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7686274509803921,
+      0.5263360246059208,
+      0.23769319492502883,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_210.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_210.jpeg",
+    "iteration_id": 210
+  },
+  {
+    "x": 75.20320129394531,
+    "y": 8.674628257751465,
+    "epoch_percentage": 55.00000000000001,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7823529411764706,
+      0.527681660899654,
+      0.22429065743944637,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_220.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_220.jpeg",
+    "iteration_id": 220
+  },
+  {
+    "x": 73.38634490966797,
+    "y": 4.545456886291504,
+    "epoch_percentage": 57.49999999999999,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.7941176470588236,
+      0.5288350634371396,
+      0.21280276816608995,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_230.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_230.jpeg",
+    "iteration_id": 230
+  },
+  {
+    "x": 77.79075622558594,
+    "y": 6.526064872741699,
+    "epoch_percentage": 60.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.807843137254902,
+      0.5301806997308728,
+      0.1994002306805075,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_240.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_240.jpeg",
+    "iteration_id": 240
+  },
+  {
+    "x": 78.38926696777344,
+    "y": 7.286585807800293,
+    "epoch_percentage": 62.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.8215686274509804,
+      0.531526336024606,
+      0.1859976931949251,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_250.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_250.jpeg",
+    "iteration_id": 250
+  },
+  {
+    "x": 78.52305603027344,
+    "y": 31.42923927307129,
+    "epoch_percentage": 65.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.8333333333333333,
+      0.5326797385620915,
+      0.17450980392156867,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_260.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_260.jpeg",
+    "iteration_id": 260
+  },
+  {
+    "x": 87.76813507080078,
+    "y": 50.22880554199219,
+    "epoch_percentage": 67.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.8470588235294118,
+      0.5340253748558247,
+      0.16110726643598616,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_270.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_270.jpeg",
+    "iteration_id": 270
+  },
+  {
+    "x": 86.37399291992188,
+    "y": 55.08265686035156,
+    "epoch_percentage": 70.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.8588235294117648,
+      0.5351787773933103,
+      0.14961937716262974,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_280.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_280.jpeg",
+    "iteration_id": 280
+  },
+  {
+    "x": 88.03124237060547,
+    "y": 56.4095573425293,
+    "epoch_percentage": 72.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.8725490196078431,
+      0.5365244136870435,
+      0.13621683967704729,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_290.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_290.jpeg",
+    "iteration_id": 290
+  },
+  {
+    "x": 90.26309204101562,
+    "y": 57.46163558959961,
+    "epoch_percentage": 75.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.884313725490196,
+      0.537677816224529,
+      0.12472895040369092,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_300.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_300.jpeg",
+    "iteration_id": 300
+  },
+  {
+    "x": 91.11274719238281,
+    "y": 60.84150695800781,
+    "epoch_percentage": 77.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.8980392156862744,
+      0.5390234525182622,
+      0.11132641291810846,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_310.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_310.jpeg",
+    "iteration_id": 310
+  },
+  {
+    "x": 89.10865783691406,
+    "y": 62.343971252441406,
+    "epoch_percentage": 80.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.9117647058823529,
+      0.5403690888119954,
+      0.09792387543252601,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_320.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_320.jpeg",
+    "iteration_id": 320
+  },
+  {
+    "x": 95.45453643798828,
+    "y": 65.38213348388672,
+    "epoch_percentage": 82.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.9235294117647059,
+      0.541522491349481,
+      0.08643598615916959,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_330.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_330.jpeg",
+    "iteration_id": 330
+  },
+  {
+    "x": 92.60662078857422,
+    "y": 65.39213562011719,
+    "epoch_percentage": 85.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.9372549019607843,
+      0.5428681276432142,
+      0.07303344867358708,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_340.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_340.jpeg",
+    "iteration_id": 340
+  },
+  {
+    "x": 93.06478881835938,
+    "y": 70.81544494628906,
+    "epoch_percentage": 87.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.9490196078431372,
+      0.5440215301806998,
+      0.061545559400230654,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_350.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_350.jpeg",
+    "iteration_id": 350
+  },
+  {
+    "x": 91.03846740722656,
+    "y": 72.25132751464844,
+    "epoch_percentage": 90.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.9627450980392157,
+      0.545367166474433,
+      0.0481430219146482,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_360.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_360.jpeg",
+    "iteration_id": 360
+  },
+  {
+    "x": 82.15968322753906,
+    "y": 95.45455169677734,
+    "epoch_percentage": 92.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.9745098039215686,
+      0.5465205690119186,
+      0.03665513264129183,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_370.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_370.jpeg",
+    "iteration_id": 370
+  },
+  {
+    "x": 85.24054718017578,
+    "y": 95.18537139892578,
+    "epoch_percentage": 95.0,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      0.9882352941176471,
+      0.5478662053056518,
+      0.023252595155709377,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_380.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_380.jpeg",
+    "iteration_id": 380
+  },
+  {
+    "x": 85.09244537353516,
+    "y": 93.42748260498047,
+    "epoch_percentage": 97.5,
+    "reward_percentage": 0.0,
+    "size": 50.0,
+    "rgb": [
+      1.0,
+      0.5490196078431373,
+      0.011764705882352941,
+      1.0
+    ],
+    "reward": -200.0,
+    "video_file": "params_ppo_390.mp4",
+    "justification": "No LLM Explanations Available",
+    "heatmap_file": "heatmap_ppo_390.jpeg",
+    "iteration_id": 390
   }
 ]

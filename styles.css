@@ -425,13 +425,14 @@ video {
 .tldr-container {
   display: flex;
   width: 100%;
+  align-items: center; /* Center children vertically */
   /* align-items: stretch; ensures both boxes are equal height */
 }
 
 .tldr-container-text-box {
   width: 79%;
   margin-right: 3%;
-  padding-left: 2%;
+  padding-left: 0%;
   padding-top: 0.5%;
 }
 

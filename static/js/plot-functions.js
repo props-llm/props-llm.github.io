@@ -45,6 +45,8 @@ function updateScatterPlot() {
     // Function to render points (we'll call this after fetching data)
     function renderScatterPoints(scatterData) {
 
+        console.log('Rendering scatter points:', scatterData.length, 'points');
+
 
 
 
@@ -65,7 +67,7 @@ function updateScatterPlot() {
 
             point.video_file = data.video_file; 
             point.heatmap_file = data.heatmap_file;
-            point.iter = idx * 10;
+            point.iter = (data.iteration_id + 1) * 20;
             
             point.addEventListener('mouseover', function(event) {
 
@@ -89,7 +91,7 @@ function updateScatterPlot() {
                 justificationTextScatterPlot.textContent = data.justification || 'No justification text available.';
                 console.log('Justification Text:', justificationTextScatterPlot.textContent);
 
-                gifPopupIteration.textContent = `Iteration ${this.iter}`;
+                gifPopupIteration.textContent = `Episode ${this.iter}`;
 
                 gifPopup.style.display = 'block';
                 updatePopupPosition(event, idx);
@@ -101,8 +103,8 @@ function updateScatterPlot() {
                 };
                 
                 // Highlight point
-                this.style.backgroundColor = 'rgba(255, 165, 0, 0.5)';
-                this.style.border = '1px solid rgba(255, 165, 0, 0.8)';
+                this.style.backgroundColor = 'rgba(255, 24, 3, 0.5)';
+                this.style.border = '1px solid rgba(255, 24, 3, 0.8)';
                 this.style.zIndex = '1000';
             });
 
@@ -141,7 +143,7 @@ function updateScatterPlot() {
             numScatterPoints = data.length;
             console.log('Scatter Data Plotting Done');
             console.log('Current initScatterPoint:', initScatterPoint);
-            initScatterPoint = document.getElementById(`tsne-point-${numScatterPoints - 5}`);
+            initScatterPoint = document.getElementById(`tsne-point-39`);
             if (!initScatterPoint) {
                 console.log('numScatterPoints:', numScatterPoints);
                 console.error('Last 5th point not found in the DOM.');
@@ -249,7 +251,6 @@ function updateLearningCurvePlot() {
     // Function to render points (we'll call this after fetching data)
     function renderScatterPoints(scatterData) {
 
-
         heatmapImageContainerLearningCurveImg.src = task_folder + 'heatmaps/' + scatterData.slice(-5)[0].heatmap_file;
         console.log('Heatmap URL:', heatmapImageContainerLearningCurveImg.src);
 
@@ -311,8 +312,8 @@ function updateLearningCurvePlot() {
                 };
                 
                 // Highlight point
-                this.style.backgroundColor = 'rgba(255, 165, 0, 0.5)';
-                this.style.border = '1px solid rgba(255, 165, 0, 0.8)';
+                this.style.backgroundColor = 'rgba(255, 24, 3, 0.5)';
+                this.style.border = '1px solid rgba(255, 24, 3, 0.8)';
                 this.style.zIndex = '1000';
             });
 
@@ -441,17 +442,18 @@ function updateLearningCurvePlot() {
 
 
 
-
+            data = data.slice(0, Math.ceil(data.length / 2));
             renderScatterPoints(data); // Call the function to create points
             curvePlotInited = false;
 
             numCurvePoints = data.length;
+            console.log('numCurvePoints:', numCurvePoints);
             console.log('Curve Data Plotting Done');
             console.log('Current initCurvePoint:', initCurvePoint);
-            initCurvePoint = document.getElementById(`tsne-point-${numScatterPoints - 5}-learning-curve`);
+            initCurvePoint = document.getElementById(`tsne-point-${numCurvePoints - 5}-learning-curve`);
             if (!initCurvePoint) {
                 console.log('numCurvePoints:', numCurvePoints);
-                console.error(`tsne-point-${numScatterPoints - 5}-learning-curve not found in the DOM.`);
+                console.error(`tsne-point-${numCurvePoints - 5}-learning-curve not found in the DOM.`);
             }
             else {
                 // Simulate mouseover on the last 5th point

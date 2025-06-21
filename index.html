@@ -141,7 +141,7 @@
               <span class="author-block"><sup>1</sup><a
                   href="https://interactive-robotics.engineering.asu.edu/">Interactive Robotics Lab, Arizona State
                   University</span></a><br>
-              <span class="author-block"><sup>2</sup><a href="https://pgresearchdevelop.com/">Research & Develop,
+              <span class="author-block"><sup>2</sup><a href="https://pgresearchdevelop.com/">Research & Development,
                   Procter & Gamble</span></a><br>
             </div>
 
@@ -214,13 +214,13 @@
                   
                   <!-- <strong> -->
                   <!-- <span style="font-size: larger;">Tl;Dr:</span> <br> -->
-                  <span style="font-weight: bold;">(1)</span> LLMs can perform numerical optimization for Reinforcement Learning (RL) tasks. <br><br>
-                  <span style="font-weight: bold;">(2)</span> LLMs can incorporate semantics signals, (e.g., goals, domain knowledge, ...), leading to more informed exploration and sample-efficient learning. <br><br>
-                  <span style="font-weight: bold;">(3)</span> Our proposed <code class="props">ProPS</code> outperforms all baselines on 8 out of 15 Gymnasium tasks. <br>
+                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(1)</span> LLMs can perform numerical optimization for Reinforcement Learning (RL) tasks. </p>
+                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(2)</span> LLMs can incorporate semantics signals, (e.g., goals, domain knowledge, ...), leading to more informed exploraton and sample-efficient learning. </p>
+                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(3)</span> Our proposed <code class="props">ProPS</code> outperforms all baselines on 8 out of 15 Gymnasium tasks. </p>
                   <!-- </strong> -->
                 </div>
                 <div class="tldr-container-image-box">
-                  <img src="static/images/frozenlake_top_1_count_v1.5.jpg" alt="Example" />
+                  <img src="static/images/top_1_count_v1.5.png" alt="Example" />
                 </div>
               </div>
             </div>
@@ -235,11 +235,39 @@
     <div class="container is-max-desktop">
 
 
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
+              leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
+              efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
+              Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
+              linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
+              with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
+              policy optimization loop—directly proposing policy updates
+              based on both reward feedback and natural language input. We show that LLMs can perform numerical
+              optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
+              strategy hints can lead to more informed exploration and sample-efficient learning. <code
+                class="props">ProPS</code> is evaluated
+              across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
+              seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
+              tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
+              potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.</p>
+          </div>
+        </div>
+      </div>
+
+
+
       <!-- <h2 class="title is-3">TSNE of Learned Policy Parameters</h2> -->
       <div class="content has-text-justified">
         <p>
-          <strong>Hover over points and discover the mind of the agent!</strong> Each point in the space below represents a learned policy. Hover over any point to watch
-          the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. <span style="color:red">[todo: legends of the size and color of the points; other rl methods' points]</span>
+          Each point in the space below represents a learned policy. Hover over any point to watch
+          the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. <span style="color:red">[todo: legends of the size and color of the points]</span>
         </p>
 
         <div class="button-container top" data-index="0" data-variable="scatterPlotCurrentGymTaskIndex">
@@ -301,34 +329,11 @@
 
         <script src="static/js/scatter-plot.js"></script>
         <!-- <script src="static/js/scatter-plot.js"></script> -->
-
-      </div>
-
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
-              leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
-              efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
-              Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
-              linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
-              with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
-              policy optimization loop—directly proposing policy updates
-              based on both reward feedback and natural language input. We show that LLMs can perform numerical
-              optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
-              strategy hints can lead to more informed exploration and sample-efficient learning. <code
-                class="props">ProPS</code> is evaluated
-              across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
-              seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
-              tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
-              potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.</p>
-          </div>
+        
+        <div class="has-text-centered" style="padding-top: 0.5em;">
+          <strong>Hover over points and discover the mind of the agent!</strong>
         </div>
       </div>
-
 
       <h2 class="title is-3">Overview</h2>
       <div class="content has-text-justified">
@@ -477,6 +482,9 @@ of iterations (400). <br>
         <script src="static/js/learning-curve-plot.js"></script>
         <!-- <script src="static/js/scatter-plot.js"></script> -->
 
+        <div class="has-text-centered" style="padding-top: 0.5em;">
+          <strong>Hover over points and discover more details!</strong>
+        </div>
       </div>
 
 
@@ -492,7 +500,7 @@ of iterations (400). <br>
           MountainCar), games (e.g., Pong, Nim), continuous control tasks (e.g., MuJoCo environments),
           etc. Notably, in 7 out of 15 environments, <code class="props">ProPS</code> outperforms all baseline algorithms. After incorporating
           domain knowledge, <code class="props">ProPS<sup>+</sup></code> achieves the highest performance in 8 out of 15 tasks. The table below displays the
-          average return and standard deviation over 10 random seeds for each method. The best and second-best
+          average return and standard deviation over 10 random seeds for each method. The <span style="background-color: #CCF2FF;">best</span> and <span style="text-decoration: underline;">second-best</span>
           baseline results are highlighted and underlined, respectively. 
         </p>
 
