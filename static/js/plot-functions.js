@@ -198,7 +198,30 @@ function updateScatterPlot() {
             }
 
             // console.log('point style left top', point.style.left, point.style.top);
-            gifPopup.style.left = 'calc(' + point.style.left + ' + 15px)'; // Offset to the right
+            // gifPopup.style.left = 'calc(' + point.style.left + ' + 15px)'; // Offset to the right
+
+            window_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            console.log('window_width', window_width);
+
+            // gifPopup.style.left = 'min(calc(' + point.style.left + ' + 15px), ' + (window_width - 160) + 'px)'; // Offset to the right
+
+            // gifPopup.style.left = `min(calc(${point.style.left} + 15px), ${window_width - 160}px)`; // Offset to the right
+            // console.log(`min(calc(${point.style.left} + 15px), ${window_width - 160}px)`);
+
+            // const pointLeft = parseInt(point.style.left, 10); // remove 'px' and convert to number
+            // const offset = 15;
+            // const maxLeft = 240;
+            // const newLeft = Math.min(pointLeft + offset, maxLeft);
+            // point.style.left = `${newLeft}px`;
+            // console.log('point.style.left', point.style.left);
+
+            // gifPopup.style.left = `calc(${point.style.left} + 15px)`; // Offset to the right
+
+            const percentLeft = point.style.left; // e.g., "40%"
+            const parentLeftPixel = plotContainer.getBoundingClientRect().left;
+            const pixelLimit = window_width - 170 - parentLeftPixel;
+            gifPopup.style.left = `min(calc(${percentLeft} + 15px), ${pixelLimit}px)`;
+            console.log('gifPopup style left', `min(calc(${percentLeft} + 15px), ${pixelLimit}px)`, gifPopup.style.left);
             gifPopup.style.top = 'calc(' + point.style.top + ' + 15px)'; // Offset down
             // console.log('gifPopup style left top', gifPopup.style.left, gifPopup.style.top);
         }
@@ -485,10 +508,16 @@ function updateLearningCurvePlot() {
                 return;
             }
 
-            gifPopup.style.left = 'calc(' + point.style.left + ' + 15px)'; // Offset to the right
+            // gifPopup.style.left = 'calc(' + point.style.left + ' + 15px)'; // Offset to the right
+            // gifPopup.style.top = 'calc(' + point.style.top + ' + 15px)'; // Offset down
+
+
+            const percentLeft = point.style.left; // e.g., "40%"
+            const parentLeftPixel = plotContainer.getBoundingClientRect().left;
+            const pixelLimit = window_width - 170 - parentLeftPixel;
+            gifPopup.style.left = `min(calc(${percentLeft} + 15px), ${pixelLimit}px)`;
+            console.log('gifPopup style left', `min(calc(${percentLeft} + 15px), ${pixelLimit}px)`, gifPopup.style.left);
             gifPopup.style.top = 'calc(' + point.style.top + ' + 15px)'; // Offset down
-
-
 
 
             // const offsetX = 15;
