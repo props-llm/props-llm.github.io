@@ -267,7 +267,7 @@
       <div class="content has-text-justified">
         <p>
           Each point in the space below represents a learned policy. Hover over any point to watch
-          the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. <span style="color:red">[todo: legends of the size and color of the points]</span>
+          the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. Larger points indicate higher rewards obtained by the policy.
         </p>
 
         <div class="button-container top" data-index="0" data-variable="scatterPlotCurrentGymTaskIndex">
@@ -293,9 +293,32 @@
 
             <div class="plot-container" id="plot-container" style="text-align: center">
               <!-- Data points will be added here by JavaScript -->
-
             </div>
+
+            <div class="plot-legend" id="plot-legend">
+              <div class="legend-item" style="display: flex; flex-direction: row; align-items: center;">
+                <div style="background-color: rgba(0,191,255,0.5); border: 1px solid rgba(0,191,255,0.8); border-radius: 50%; height: 12px; aspect-ratio: 1;"></div>
+                <div style="margin-left: 0.5em; display: flex; align-items: center;"><code class="props">ProPS</code></div>
+              </div>
+              <div class="legend-item" style="display: flex; flex-direction: row; align-items: center;">
+                <div style="background-color: rgba(255,140,3,0.5); border: 1px solid rgba(255,140,3,0.8); border-radius: 50%; height: 12px; aspect-ratio: 1;"></div>
+                <div style="margin-left: 0.5em; display: flex; align-items: center;"><span style="padding-left: 4px;">PPO</span></div>
+              </div>
+            </div>
+
+            <div class="plot-legend2" id="plot-legend">
+              <div class="legend-item" style="display: flex; flex-direction: row; align-items: center;">
+                <div style="background-color: rgba(128,128,128,0.5); border: 1px solid rgba(128,128,128,0.8); border-radius: 50%; height: 12px; aspect-ratio: 1;"></div>
+                <div style="margin-left: 0.5em; display: flex; align-items: center;">Episode 0</div>
+              </div>
+              <div class="legend-item" style="display: flex; flex-direction: row; align-items: center;">
+                <div style="background-color: rgba(0,191,255,0.5); border: 1px solid rgba(0,191,255,0.8); border-radius: 50%; height: 12px; aspect-ratio: 1;"></div>
+                <div style="margin-left: 0.5em; display: flex; align-items: center;">Episode 8000</div>
+              </div>
+            </div>
+
           </div>
+
           <div class="learning-info-box" id="learning-info-box">
             <!-- Display the LLM justifications in this scrollable text box. -->
             
@@ -419,10 +442,10 @@ of iterations (400). <br>
       </div>
 
 
-      <h2 class="title is-3">Learning Curves</h2>
+      <h2 class="title is-3">Learning Curves: Rewards vs Iterations</h2>
       <div class="content has-text-justified">
         <p>
-          Here is the learning curve of our proposed <code class="props">ProPS</code>. Similarly, hover over any point to watch the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. <span style="color: red;">[todo: legends of the size and color of the points]</span>
+          Here is the learning curve of our proposed <code class="props">ProPS</code>. Similarly, hover over any point to watch the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior.
         </p>
 
         <div class="button-container top" data-index="0" data-variable="learningCurvePlotCurrentGymTaskIndex">

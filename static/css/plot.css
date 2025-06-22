@@ -28,6 +28,34 @@
     height: 100%;
 }
 
+.plot-legend {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 10;
+    font-size: 12px;
+    padding: 3px;
+    margin: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    border-color: #555;
+    border-width: 2px;
+    border: 1px solid #aaa;
+}
+
+.plot-legend2 {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    z-index: 10;
+    font-size: 12px;
+    padding: 3px;
+    margin: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
 .learning-info-box {
     width: 30%;
     /* height: 40%; */
