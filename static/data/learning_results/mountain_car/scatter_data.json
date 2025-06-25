@@ -1,7 +1,7 @@
 [
   {
-    "x": 63.50419998168945,
-    "y": 13.51150894165039,
+    "x": 16.814435958862305,
+    "y": 19.6796932220459,
     "epoch_percentage": 0.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -13,13 +13,13 @@
     ],
     "reward": -200.0,
     "video_file": "params_0.mp4",
-    "justification": "I chose these initial values because they are at the center of the parameter space. This position allows us to explore both positive and negative directions in subsequent iterations. Starting from the zero point gives a balanced and neutral baseline to identify the gradient of the function more effectively and start the exploration process.",
+    "justification": "I have chosen this set of parameters to explore the lower boundary of the search space, assuming that the global maximum might be near extreme parameter values, which haven't been explored yet.",
     "heatmap_file": "heatmap_0.jpeg",
     "iteration_id": 0
   },
   {
-    "x": 60.90876388549805,
-    "y": 34.940101623535156,
+    "x": 30.208694458007812,
+    "y": 9.341272354125977,
     "epoch_percentage": 2.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -31,67 +31,67 @@
     ],
     "reward": -200.0,
     "video_file": "params_10.mp4",
-    "justification": "I chose this input to explore the symmetry by adjusting previously negative and positive values around the origin for balanced exploration. This helps cover different sign combinations and ensures we're not sticking to the already tried patterns.",
+    "justification": "To maximize exploration initially, I propose this new set of diverse parameters within the specified bounds, utilizing the search step size of 1.0, while ensuring none of these configurations have been tried before.",
     "heatmap_file": "heatmap_10.jpeg",
     "iteration_id": 10
   },
   {
-    "x": 76.47887420654297,
-    "y": 18.830129623413086,
+    "x": 40.97816848754883,
+    "y": 39.7526741027832,
     "epoch_percentage": 5.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 29.072398190045234,
+    "size": 141.56769596199518,
     "rgb": [
       0.4745098039215686,
       0.5127450980392156,
       0.5254901960784314,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -174.3,
     "video_file": "params_20.mp4",
-    "justification": "This set of parameters introduces further exploration into negative and positive ranges in a balanced manner, using a step size of 1.0 to possibly navigate out of a local minimum and assess new areas of the solution space for potentially higher function values.",
+    "justification": "To explore systematically towards the known global maximum region around -120, I am adjusting one parameter (params[4]) towards the known area of improvement. Since params[4]: -6 with other params set to zero yielded a closer result at -171.80, I'm gradually reducing the absolute value to -3 to see if this reduces the function value closer to the global maximum.",
     "heatmap_file": "heatmap_20.jpeg",
     "iteration_id": 20
   },
   {
-    "x": 57.08628845214844,
-    "y": 9.143516540527344,
+    "x": 42.41901779174805,
+    "y": 42.65478515625,
     "epoch_percentage": 7.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 32.46606334841628,
+    "size": 152.25653206650827,
     "rgb": [
       0.4627450980392157,
       0.5186274509803922,
       0.5372549019607843,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -171.3,
     "video_file": "params_30.mp4",
-    "justification": "I chose this input to explore the extreme positive bounds to see if the values near maximum bounds can lead us towards the global maximum, as all previously tried values mainly resulted in -200.00 with mixed and lower ranges.",
+    "justification": "I chose these parameters to explore near previously promising results (-171.80 at params[4]: -6.0 and params[5]: 6.0) by slightly changing params[5] to 5.0, aiming to balance exploration towards optimizing f(params).",
     "heatmap_file": "heatmap_30.jpeg",
     "iteration_id": 30
   },
   {
-    "x": 60.38246154785156,
-    "y": 49.05485153198242,
+    "x": 42.436981201171875,
+    "y": 39.13569259643555,
     "epoch_percentage": 10.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 26.809954751131208,
+    "size": 134.44180522565318,
     "rgb": [
       0.44901960784313727,
       0.5254901960784314,
       0.5509803921568628,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -176.3,
     "video_file": "params_40.mp4",
-    "justification": "I chose this input to maintain diversity in exploration. By exploring both positive and negative numbers with a step size of 1.0, the chosen parameters cover a broad range within the defined limits, avoiding repeating the previously tested inputs and focusing on unexplored combinations that could potentially reveal clues for reaching beyond a local optima.",
+    "justification": "Based on previous patterns, params with 0 values for most elements and specific focus on params[4] and params[5] tend to reduce f(params) below -200. Adjusting values by exploring around previously mentioned local optimas, -171.80, using a step size of 1, should guide toward a potential optimum.",
     "heatmap_file": "heatmap_40.jpeg",
     "iteration_id": 40
   },
   {
-    "x": 27.055376052856445,
-    "y": 45.33244705200195,
+    "x": 4.5454535484313965,
+    "y": 53.90659713745117,
     "epoch_percentage": 12.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -103,49 +103,49 @@
     ],
     "reward": -200.0,
     "video_file": "params_50.mp4",
-    "justification": "I chose this input to explore a potentially promising area by setting balanced extreme values across positive and negative ranges, leveraging symmetry and maximizing parameter impact through large magnitude values while considering non-repetition and a clear deviation from past attempts. This strategy is laid out to intensively explore new areas that were yet to be examined.",
+    "justification": "To explore new potential maxima, I've selected values that incorporate both positive and negative numbers and balanced pairs, especially focusing around the more promising range observed near param index 5 around its optimal values.",
     "heatmap_file": "heatmap_50.jpeg",
     "iteration_id": 50
   },
   {
-    "x": 65.60847473144531,
-    "y": 42.762718200683594,
+    "x": 49.19984817504883,
+    "y": 37.04709243774414,
     "epoch_percentage": 15.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 82.12669683257917,
+    "size": 308.6698337292161,
     "rgb": [
       0.4235294117647059,
       0.538235294117647,
       0.5764705882352941,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -127.4,
     "video_file": "params_60.mp4",
-    "justification": "This combination is selected to ensure a good balance between positive and negative values, maintaining a diverse range across the parameter space, which can potentially lead to higher function values.",
+    "justification": "I chose these params based on the promising results observed when previously testing values in the vicinity of params[5] around 5-8 range. Since the lowest values were observed near params[5]=7.5, I decided to further refine the search around it to explore if the global maximum could be close to this region in the parameter space.",
     "heatmap_file": "heatmap_60.jpeg",
     "iteration_id": 60
   },
   {
-    "x": 54.950904846191406,
-    "y": 89.58676147460938,
+    "x": 56.052833557128906,
+    "y": 34.39820861816406,
     "epoch_percentage": 17.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 54.242081447963784,
+    "size": 220.84323040380042,
     "rgb": [
       0.4117647058823529,
       0.5441176470588235,
       0.5882352941176471,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -152.05,
     "video_file": "params_70.mp4",
-    "justification": "The suggested params are chosen to explore a combination of extreme values within the range with alternating signs, aiming to trigger a change that could lead closer to the direction of a potential global minimum around -120, as all previously attempted configurations received a constant result of -200. Exploring suddenly large differences might reveal unexplored areas that could be more promising than gradual changes.",
+    "justification": "Based on previous observations, the maximum value obtained was when params[5] is around 7. Evaluating nearby values could reveal a slightly better value, particularly around 7.3, as we've covered other integers and midpoints nearby.",
     "heatmap_file": "heatmap_70.jpeg",
     "iteration_id": 70
   },
   {
-    "x": 76.79624938964844,
-    "y": 20.364070892333984,
+    "x": 50.97645950317383,
+    "y": 32.759437561035156,
     "epoch_percentage": 20.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -157,31 +157,31 @@
     ],
     "reward": -200.0,
     "video_file": "params_80.mp4",
-    "justification": "I selected these parameters to explore a new region by focusing on a mix of positive and negative values, distributed to ensure coverage across the parameter space while maintaining a search step size of 1.0, which could potentially increase the function value toward the global maximum.",
+    "justification": "I chose this input because the previous attempts with a dominant parameter at 6.9 have yielded promising results. By incrementing one of the other parameters slightly, we can explore areas close by in case they offer a superior optimum.",
     "heatmap_file": "heatmap_80.jpeg",
     "iteration_id": 80
   },
   {
-    "x": 57.208675384521484,
-    "y": 35.54853439331055,
+    "x": 70.70902252197266,
+    "y": 33.10725402832031,
     "epoch_percentage": 22.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 71.04072398190046,
+    "size": 273.75296912114015,
     "rgb": [
       0.38431372549019605,
       0.557843137254902,
       0.615686274509804,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -137.2,
     "video_file": "params_90.mp4",
-    "justification": "I chose these parameters to further explore the boundaries at extreme values in both the positive and negative directions across different dimensions. This exploration helps ensure we're probing the edges of the parameter space to maximize the function's value.",
+    "justification": "To explore the function further and move towards the global maximum around -120, I propose a slight increment in parameter 5 to 8.6 as previous steps around this region were promising. This is a part of an exploration strategy as suggested by the threshold observed at the global optimum.",
     "heatmap_file": "heatmap_90.jpeg",
     "iteration_id": 90
   },
   {
-    "x": 71.98809051513672,
-    "y": 16.045413970947266,
+    "x": 50.989471435546875,
+    "y": 32.742916107177734,
     "epoch_percentage": 25.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -193,31 +193,31 @@
     ],
     "reward": -200.0,
     "video_file": "params_100.mp4",
-    "justification": "I chose this set of params to explore a new region of the parameter space by utilizing positive and negative values. This approach helps to systematically cover possible value combinations in varying relative magnitude. The step size of 1.0 aligns with the exploration strategy, given we haven't found a solution near the global optimum yet.",
+    "justification": "I chose to explore a neighboring point by only adjusting one parameter (params[7]) by the exploration step size of 1.0, based on the previous successful configuration. This tactic allows us to explore how sensitive the function is to slight changes in this high-performing region.",
     "heatmap_file": "heatmap_100.jpeg",
     "iteration_id": 100
   },
   {
-    "x": 50.447898864746094,
-    "y": 48.44032287597656,
+    "x": 95.45454406738281,
+    "y": 57.01348876953125,
     "epoch_percentage": 27.500000000000004,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 76.30090497737555,
+    "size": 290.32066508313534,
     "rgb": [
       0.3588235294117647,
       0.5705882352941176,
       0.6411764705882352,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -132.55,
     "video_file": "params_110.mp4",
-    "justification": "To explore the parameter space and potentially avoid local optima, I've chosen a balanced set of values centered around zero with extreme values at the limits of the range [-6.0, 6.0] to encourage wide exploration.",
+    "justification": "Based on the previous evaluations, the function seems to improve as the parameter `params[5]` approaches 9.1. Incrementing `params[5]` by 0.1 to 9.5 could move us closer to the global maximum value at around -120, as the trend indicates improvement, particularly around this parameter configuration. The other parameters are maintained at zero to isolate the effect of `params[5]`.",
     "heatmap_file": "heatmap_110.jpeg",
     "iteration_id": 110
   },
   {
-    "x": 74.74580383300781,
-    "y": 4.5454559326171875,
+    "x": 72.68870544433594,
+    "y": 41.385162353515625,
     "epoch_percentage": 30.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -229,13 +229,13 @@
     ],
     "reward": -200.0,
     "video_file": "params_120.mp4",
-    "justification": "This choice represents an exploratory move, using both positive and negative values with a step size of 1.0, testing new regions of the parameter space.",
+    "justification": "Given that the parameters set focusing around `params[5]` (with small variations in other parameters) have resulted in function values close to the estimated optimum, this approach is to explore slightly in the neighborhood while varying another parameter `params[6]` to probe for possible improvement near this region.",
     "heatmap_file": "heatmap_120.jpeg",
     "iteration_id": 120
   },
   {
-    "x": 57.00994110107422,
-    "y": 43.80287551879883,
+    "x": 25.860441207885742,
+    "y": 4.54545259475708,
     "epoch_percentage": 32.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -247,85 +247,85 @@
     ],
     "reward": -200.0,
     "video_file": "params_130.mp4",
-    "justification": "I chose this input to explore an untested area of the parameter space in both positive and negative directions with a mix of high and low values, aiming to find a region that might lead closer to the global maximum.",
+    "justification": "I noticed that the best result so far has a single non-zero parameter focused on params[5]. The trend shows improving function values near negatives of certain integers for this parameter. Hence, I chose params[5] = -6.9, following this pattern for further exploration towards the global maximum.",
     "heatmap_file": "heatmap_130.jpeg",
     "iteration_id": 130
   },
   {
-    "x": 54.626251220703125,
-    "y": 48.738346099853516,
+    "x": 91.041015625,
+    "y": 46.98148727416992,
     "epoch_percentage": 35.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 77.43212669683255,
+    "size": 293.88361045130637,
     "rgb": [
       0.32156862745098036,
       0.5892156862745098,
       0.6784313725490196,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -131.55,
     "video_file": "params_140.mp4",
-    "justification": "I chose this input to explore a new set of parameters within the allowed range, emphasizing variations and balanced steps across the parameter space as there appears to be no prior attempt with this configuration. This should help in identifying promising regions that might lead the optimization process towards the global maximum.",
+    "justification": "Explanation: Recently, several parameter settings with the fifth parameter close to 9 have shown promising function values, notably 9.1 and 9.0. By slightly modifying to 9.2, we continue exploring this apparent trend in this part of the parameter space.",
     "heatmap_file": "heatmap_140.jpeg",
     "iteration_id": 140
   },
   {
-    "x": 30.684890747070312,
-    "y": 25.299301147460938,
+    "x": 94.52301788330078,
+    "y": 54.1146354675293,
     "epoch_percentage": 37.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 86.65158371040724,
+    "size": 322.92161520190024,
     "rgb": [
       0.307843137254902,
       0.596078431372549,
       0.692156862745098,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -123.4,
     "video_file": "params_150.mp4",
-    "justification": "I chose this set of parameters to further explore the edge values, ensuring combinations of the maximum and minimum boundaries, which have not been fully tested in diverse combinations. This step continues the exploration strategy within the given range.",
+    "justification": "After analyzing the provided results, it appears that there is a trend of higher function values around f(params) 9.1 to 9.3 with param[5]. Therefore, I will continue this trajectory to see if this improves the function value. Since f(param) = -120 indicates a local optimum, the direction finding values around f(params) is an option optimal maximum achievement.",
     "heatmap_file": "heatmap_150.jpeg",
     "iteration_id": 150
   },
   {
-    "x": 59.45783996582031,
-    "y": 52.193336486816406,
+    "x": 94.52301788330078,
+    "y": 54.1146354675293,
     "epoch_percentage": 40.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 86.36877828054298,
+    "size": 322.03087885985747,
     "rgb": [
       0.29411764705882354,
       0.6029411764705882,
       0.7058823529411764,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -123.65,
     "video_file": "params_160.mp4",
-    "justification": "The choice of this input utilizes alternating extreme values within the defined range. This increases the chances of escaping local optima and exploring a diverse area of the parameter space, aiming to uncover the global maximum.",
+    "justification": "I chose these input values because our most promising direction seems to be when `params[5]` is close to 9, aiming to explore and exploit further around this area. Keeping all other parameters as zero to isolate the effect of changes in `params[5]`, which has previously shown potentially lower function values.",
     "heatmap_file": "heatmap_160.jpeg",
     "iteration_id": 160
   },
   {
-    "x": 72.10498046875,
-    "y": 7.556641101837158,
+    "x": 75.71903228759766,
+    "y": 33.587379455566406,
     "epoch_percentage": 42.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 86.53846153846153,
+    "size": 322.5653206650831,
     "rgb": [
       0.2823529411764706,
       0.6088235294117648,
       0.7176470588235294,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -123.5,
     "video_file": "params_170.mp4",
-    "justification": "I chose these parameters to explore diverse regions in the parameter space, incorporating both positive and negative values. This is based on the observation that the global maximum should be around -120. Applying a search step size of 1.0 helps further expand the search area in an attempt to move away from local optima and approach global optimality, capturing a wider diversity of states in the search space.",
+    "justification": "Exploration is needed since we have not yet reached an optimal global maximum. Adjusting parameter params[5] slightly within the local region shows the function is sensitive around this range. Given previous results and the higher potential in negative values seen earlier, it's strategic to test adjustments just below the current successful range.",
     "heatmap_file": "heatmap_170.jpeg",
     "iteration_id": 170
   },
   {
-    "x": 62.787689208984375,
-    "y": 46.39601516723633,
+    "x": 25.67788314819336,
+    "y": 5.077916145324707,
     "epoch_percentage": 45.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -337,139 +337,139 @@
     ],
     "reward": -200.0,
     "video_file": "params_180.mp4",
-    "justification": "I chose this combination to explore new parameter ranges, emphasizing negative and positive extremes, while ensuring no repetition of earlier tested combinations. This search step size of 1.0 increases the chance of moving out of local optima.",
+    "justification": "The suggestion explores the boundary of the search space with a significant shift in one of the dimensions (param[5]) towards a negative value. This strategy aims to explore a new direction by significantly changing one parameter to seek a larger improvement in the function's value.",
     "heatmap_file": "heatmap_180.jpeg",
     "iteration_id": 180
   },
   {
-    "x": 76.5511474609375,
-    "y": 19.043792724609375,
+    "x": 95.17635345458984,
+    "y": 67.70701599121094,
     "epoch_percentage": 47.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 89.25339366515837,
+    "size": 331.1163895486936,
     "rgb": [
       0.2568627450980392,
       0.6215686274509804,
       0.7431372549019608,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -121.1,
     "video_file": "params_190.mp4",
-    "justification": "I chose this input to explore different regions in the multidimensional space by using a mix of positive and negative values. This helps in randomly exploring the parameter space while avoiding already seen combinations, potentially getting us closer to the global maximum.",
+    "justification": "To find the global maximum, I am proposing to explore slightly further from the previous inputs with high function evaluations. Since f(params) was around -115.40 with params[5] around 9.1, I'll explore around 9.9. The search is narrowed while maintaining exploration within the range as the optimum was nearby.",
     "heatmap_file": "heatmap_190.jpeg",
     "iteration_id": 190
   },
   {
-    "x": 48.61991882324219,
-    "y": 46.718414306640625,
+    "x": 89.33837127685547,
+    "y": 43.00312805175781,
     "epoch_percentage": 50.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 88.23529411764706,
+    "size": 327.9097387173397,
     "rgb": [
       0.2431372549019608,
       0.6284313725490196,
       0.7568627450980392,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -122.0,
     "video_file": "params_200.mp4",
-    "justification": "I've chosen this set of parameters because the global optimum is known to be around -120 and previous evaluations with similar configurations have indicated the function's potential maximum value. By exploring values at the edges of the defined range, particularly with symmetry in the negative and positive values for different parameter positions, we are increasing the chances of effectively stepping towards the global maximum. This configuration ensures that we probe the boundaries of the defined search space in a systematic way, leveraging the step size of 1.0 for thorough exploration.",
+    "justification": "I chose this input because the available data suggests that we want to explore the tuning around 9.1 for params[5], while keeping others at 0.0. This appears to be close to the global maximum value achieved previously. By staying close to observed successful parameters, we are trying to approach -120 without straying too far into suboptimal parameter space.",
     "heatmap_file": "heatmap_200.jpeg",
     "iteration_id": 200
   },
   {
-    "x": 56.82865524291992,
-    "y": 46.884765625,
+    "x": 95.28591918945312,
+    "y": 69.54656219482422,
     "epoch_percentage": 52.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 61.764705882352935,
+    "size": 244.53681710213775,
     "rgb": [
       0.23137254901960785,
       0.634313725490196,
       0.7686274509803921,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -145.4,
     "video_file": "params_210.mp4",
-    "justification": "I chose these values to maintain symmetry and use a mid-range exploration around negative values to guide the optimization towards the global optimum, with a step size of 1.0 ensuring a broad exploration.",
+    "justification": "I chose to explore the step by increasing the value of `params[5]` to 10 while keeping other parameters at 0, as this strategy has shown promising improvements in previous steps toward reaching values around -120, which likely indicates continued movement towards the global maximum.",
     "heatmap_file": "heatmap_210.jpeg",
     "iteration_id": 210
   },
   {
-    "x": 50.93585205078125,
-    "y": 42.80983352661133,
+    "x": 93.31305694580078,
+    "y": 62.97569274902344,
     "epoch_percentage": 55.00000000000001,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 46.7760180995475,
+    "size": 197.3277909738717,
     "rgb": [
       0.21764705882352942,
       0.6411764705882352,
       0.7823529411764706,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -158.65,
     "video_file": "params_220.mp4",
-    "justification": "This exploration step selects extreme values within the permissible range to move away from consistently deep local optima, potentially approaching the global maximum. By alternating between positive and negative extremes, we maximize the chance of discovering the desired global parameter configuration without revisiting known insufficient values.",
+    "justification": "The recent inputs suggest a focus on maximizing the value of params[5], as it varies around a specific range, producing better outcomes. Given the small changes in params[8], it might improve exploration without disrupting others.",
     "heatmap_file": "heatmap_220.jpeg",
     "iteration_id": 220
   },
   {
-    "x": 15.475005149841309,
-    "y": 53.318359375,
+    "x": 52.26967239379883,
+    "y": 35.28632354736328,
     "epoch_percentage": 57.49999999999999,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 67.08144796380091,
+    "size": 261.2826603325416,
     "rgb": [
       0.20588235294117646,
       0.6470588235294118,
       0.7941176470588236,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -140.7,
     "video_file": "params_230.mp4",
-    "justification": "I chose this to explore the parameter space around the promising result of -140.20, aiming to see whether including another -6 in the combination could potentially yield higher performance.",
+    "justification": "I chose these parameters by analyzing previous results where params focused significantly on a central point while also using a params[5] value of 7, one of the lowest function values indicating closeness to the global maximum. By keeping all parameters around 0 and testing when params[5] is 7, we can explore a promising region in the search landscape.",
     "heatmap_file": "heatmap_230.jpeg",
     "iteration_id": 230
   },
   {
-    "x": 26.446025848388672,
-    "y": 30.807764053344727,
+    "x": 59.85063171386719,
+    "y": 34.18111038208008,
     "epoch_percentage": 60.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 74.20814479638008,
+    "size": 283.729216152019,
     "rgb": [
       0.19215686274509802,
       0.653921568627451,
       0.807843137254902,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -134.4,
     "video_file": "params_240.mp4",
-    "justification": "To explore the parameter space and approach the global maximum, I chose this set of values by adjusting from a successful point balance between negative and positive parameter values. This variation keeps close to previous values with good results, but exploring other dimensions.",
+    "justification": "I chose these parameters based on the previous results which show that params[5] around 7.0 to 8.0 and params[5]: 8.4 gives a function value close to the global maximum. Hence, I continue to explore within this range using a step size of 0.1 to potentially increase the function value further and attempt to locate the global maximum.",
     "heatmap_file": "heatmap_240.jpeg",
     "iteration_id": 240
   },
   {
-    "x": 14.010416030883789,
-    "y": 47.25810241699219,
+    "x": 85.04179382324219,
+    "y": 48.4927978515625,
     "epoch_percentage": 62.5,
-    "reward_percentage": 0.47142015321155656,
-    "size": 51.8334606569901,
+    "reward_percentage": 0.0,
+    "size": 50.0,
     "rgb": [
       0.17843137254901964,
       0.6607843137254902,
       0.8215686274509804,
       1.0
     ],
-    "reward": -199.6,
+    "reward": -200.0,
     "video_file": "params_250.mp4",
-    "justification": "This choice is influenced by previous results, where combinations involving high values close to the extremal negative limits under some of the constraints achieved better results (f(params) < -120). The focus is to slightly adjust the existing known points in the promising region to find potential points that optimize our function.",
+    "justification": "I chose these parameters because we have seen improvements in function values by exploring changes to the fifth parameter, especially closer to -120. By adjusting the final parameter to -1, which has yet to be explored in conjunction with existing values, I can check if it pushes the maximum further.",
     "heatmap_file": "heatmap_250.jpeg",
     "iteration_id": 250
   },
   {
-    "x": 13.955577850341797,
-    "y": 44.167598724365234,
+    "x": 64.21867370605469,
+    "y": 45.5456657409668,
     "epoch_percentage": 65.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -481,211 +481,211 @@
     ],
     "reward": -200.0,
     "video_file": "params_260.mp4",
-    "justification": "Aiming to explore the space near a previously found less negative optimum, I chose values around (-6, -5) for the initial parameters with (+5) for the latter, expecting to further approach the global max. Adjusting params[3] and params[8] by one unit downward aims to maintain the progression in that region.",
+    "justification": "I've noticed that the values of 'params' around small positive and negative numbers for some indices, and around 9 for params[5], have provided higher evaluations. Since params[5] was giving lower scores around its previous range, balancing it with other extreme values may yield closer evaluations to the global maximum. I am further exploring the parameters by using different combinations of small integers, 9 for params[5], and minor values for others to see if this neighborhood might yield a higher score than previously tested combinations.",
     "heatmap_file": "heatmap_260.jpeg",
     "iteration_id": 260
   },
   {
-    "x": 12.08503246307373,
-    "y": 49.91547775268555,
+    "x": 95.28591918945312,
+    "y": 69.54656219482422,
     "epoch_percentage": 67.5,
-    "reward_percentage": 57.80789628756631,
-    "size": 274.8281130634073,
+    "reward_percentage": 91.00678733031674,
+    "size": 336.63895486935866,
     "rgb": [
       0.15294117647058825,
       0.6735294117647059,
       0.8470588235294118,
       1.0
     ],
-    "reward": -150.95,
+    "reward": -119.55,
     "video_file": "params_270.mp4",
-    "justification": "I selected these parameters to maintain the negative values near -6 for most parameters, which includes slight adjustments with the positive values. The idea is to explore near the promising region where we observed values nearing the boundary of -120. The exploration step size of 1.0 was employed in the adjustment from the previous promising configurations.",
+    "justification": "I chose this input because parameter 5 close to 10 has previously shown potential for good performance, with several evaluations resulting near or slightly above -120. Given that -120 is closer to the global optimum, I am exploring this region more thoroughly to find parameters that may enhance this value further.",
     "heatmap_file": "heatmap_270.jpeg",
     "iteration_id": 270
   },
   {
-    "x": 18.39010238647461,
-    "y": 45.1739501953125,
+    "x": 94.81609344482422,
+    "y": 65.2277603149414,
     "epoch_percentage": 70.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 82.29638009049773,
+    "size": 309.20427553444176,
     "rgb": [
       0.1411764705882353,
       0.6794117647058824,
       0.8588235294117648,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -127.25,
     "video_file": "params_280.mp4",
-    "justification": "The choice of parameters aims to focus on a region close to where some promising values were previously observed (values around -120 and slightly beyond), while also maintaining exploration as dictated by the guidelines with a step size of 1.0. Exploring combinations near the boundaries with known potential improves the likelihood of discovering better configurations without repetitions.",
+    "justification": "I chose these parameters as they maintain the pattern observed around previous trials near 9.8 where f(params) results were close to the expected global optimum of around -120, enabling more exploration around that zone to determine potential avenues for maximization.",
     "heatmap_file": "heatmap_280.jpeg",
     "iteration_id": 280
   },
   {
-    "x": 11.949094772338867,
-    "y": 49.68280792236328,
+    "x": 24.98138999938965,
+    "y": 4.979400634765625,
     "epoch_percentage": 72.5,
-    "reward_percentage": 56.511490866234524,
-    "size": 269.78609625668446,
+    "reward_percentage": 0.0,
+    "size": 50.0,
     "rgb": [
       0.12745098039215685,
       0.6862745098039216,
       0.8725490196078431,
       1.0
     ],
-    "reward": -152.05,
+    "reward": -200.0,
     "video_file": "params_290.mp4",
-    "justification": "The chosen parameters are close to previous promising values around the suspected global optimum region; by making small changes, we aim to explore unnoticed vicinities while maintaining balance between previously observed successes and slight exploration.",
+    "justification": "By selecting param[5] to -6 while keeping the others at 0, we continue exploring low f(params) values. Given that positive param[5] values have led to results near the global optimum, it's worth exploring negative param[5] fully.",
     "heatmap_file": "heatmap_290.jpeg",
     "iteration_id": 290
   },
   {
-    "x": 6.345190048217773,
-    "y": 50.88236999511719,
+    "x": 81.99150848388672,
+    "y": 37.38127517700195,
     "epoch_percentage": 75.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 66.23303167420815,
+    "size": 258.6104513064133,
     "rgb": [
       0.11568627450980395,
       0.692156862745098,
       0.884313725490196,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -141.45,
     "video_file": "params_300.mp4",
-    "justification": "I chose these parameters because the values are more negative than the recent exploratory attempts, especially for parameters that previously indicated higher function values when they were negative in settings close to these parameters. The slight increase in positive values for some earlier parameters also aligns with a past pattern of slightly better results with mixed negative values. This is still within a region roughly near earlier local optima yet unexplored in this precise configuration.",
+    "justification": "This choice is made because it matches one of the cases provided where `f(params)` was closest to the global maximum value provided. None of the case values lead to improvement clearly based on the inputs, suggesting an exhaustive step is needed. This is a re-evaluation step based on exploration limits seen.",
     "heatmap_file": "heatmap_300.jpeg",
     "iteration_id": 300
   },
   {
-    "x": 27.806127548217773,
-    "y": 44.10170364379883,
+    "x": 86.18041229248047,
+    "y": 40.98112106323242,
     "epoch_percentage": 77.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 95.24886877828054,
+    "size": 350.0,
     "rgb": [
       0.10196078431372552,
       0.6990196078431372,
       0.8980392156862744,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -115.8,
     "video_file": "params_310.mp4",
-    "justification": "The previous trials indicate values around -120 or better are in regions with mixed high magnitude positive and negative numbers. To target a new configuration potentially near a global maximum, the solution proposes exploring combinations near known promising coordinates, slightly varied\u2014balancing negative and positive high-magnitude values.",
+    "justification": "The previous explorations show that values around 9 for params[5] seem to approach higher function values, with the absence of rising gradients nearby, this hints towards proximate local optimum reconfirmations. Since the aim is for maximum exploration, slightly perturbing params[5] with a 0.05 step size keeps the point in the same favorable region to confirm constraint feature and potential leading local maximum.",
     "heatmap_file": "heatmap_310.jpeg",
     "iteration_id": 310
   },
   {
-    "x": 14.743709564208984,
-    "y": 53.48163986206055,
+    "x": 83.42413330078125,
+    "y": 36.276424407958984,
     "epoch_percentage": 80.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 84.50226244343891,
+    "size": 316.1520190023753,
     "rgb": [
       0.08823529411764708,
       0.7058823529411764,
       0.9117647058823529,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -125.3,
     "video_file": "params_320.mp4",
-    "justification": "The choice is to further explore around the recent promising regions of the search space, especially in the vicinity of prior local optima, using values predominantly at the boundary to better encapsulate extreme cases. This combined exploration and exploitation approach may reveal the desired global optimum more efficiently.",
+    "justification": "Explanation: Aiming for exploration, and since the provided previous observations suggest a pattern with low variation and positive results around the parameter set with the value around `9.0` for `params[5]`, I will simulate a small exploration around `9.0` for `params[5]` to verify the trend.",
     "heatmap_file": "heatmap_320.jpeg",
     "iteration_id": 320
   },
   {
-    "x": 18.803749084472656,
-    "y": 52.47887420654297,
+    "x": 72.9892349243164,
+    "y": 42.483158111572266,
     "epoch_percentage": 82.5,
-    "reward_percentage": 62.40424278137889,
-    "size": 292.7043544690604,
+    "reward_percentage": 0.0,
+    "size": 50.0,
     "rgb": [
       0.07647058823529412,
       0.711764705882353,
       0.9235294117647059,
       1.0
     ],
-    "reward": -147.05,
+    "reward": -200.0,
     "video_file": "params_330.mp4",
-    "justification": "I chose this combination because it adds slight variances to configurations around previous steps where the function f(params) was closest to -120. The introduction of minimal changes in the unexplored vicinity of promising configurations can lead us toward the global maximum.",
+    "justification": "I chose these parameters to explore new combinations around 9.6 for params[5] while adjusting params[6] slightly to potentially maintain an improvement trajectory observed in previous evaluations around this region.",
     "heatmap_file": "heatmap_330.jpeg",
     "iteration_id": 330
   },
   {
-    "x": 11.002429962158203,
-    "y": 46.8826904296875,
+    "x": 72.22357177734375,
+    "y": 32.93296813964844,
     "epoch_percentage": 85.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 66.11990950226243,
+    "size": 258.25415676959614,
     "rgb": [
       0.06274509803921569,
       0.7186274509803922,
       0.9372549019607843,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -141.55,
     "video_file": "params_340.mp4",
-    "justification": "These parameters are chosen to continue exploring the search space near known promising values, with slight variations, to seek further improvements in the function value towards the target of around -120. By maintaining variations near the promising neighborhoods and avoiding already explored points, I increase the likelihood of finding an optimal solution.",
+    "justification": "I chose these params as an incremental adjustment within the previously identified range promising improvements (particularly around 8.9 and 9.3 for `params[5]`), ensuring I explore the region effectively and target improvements in function behavior identified around this value, especially given proximity to potential global maximum trends.",
     "heatmap_file": "heatmap_340.jpeg",
     "iteration_id": 340
   },
   {
-    "x": 21.383241653442383,
-    "y": 47.545562744140625,
+    "x": 84.22896575927734,
+    "y": 44.29045104980469,
     "epoch_percentage": 87.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 45.58823529411766,
+    "size": 193.58669833729218,
     "rgb": [
       0.05098039215686273,
       0.7245098039215686,
       0.9490196078431372,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -159.7,
     "video_file": "params_350.mp4",
-    "justification": "I selected these parameters by exploring within the region where promising results have been achieved, particularly around slightly varying some coordinates at the edge of the allowed range, while keeping most successful parameters from previous attempts, aiming to further approach the global maximum.",
+    "justification": "By choosing a mix of positive and negative values, I aim to further explore the parameter space around some of the better-performing points such as (0, 0, 0, 0, 0, 9.0, 0, 0, 0) which showed a promising function value near the global optimum. I'm adding some variations on other parameters to test the influence of small changes.",
     "heatmap_file": "heatmap_350.jpeg",
     "iteration_id": 350
   },
   {
-    "x": 22.571718215942383,
-    "y": 46.6048698425293,
+    "x": 61.15022277832031,
+    "y": 33.936180114746094,
     "epoch_percentage": 90.0,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 86.14253393665159,
+    "size": 321.3182897862233,
     "rgb": [
       0.03725490196078429,
       0.7313725490196079,
       0.9627450980392157,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -123.85,
     "video_file": "params_360.mp4",
-    "justification": "I chose this input because it continues the exploration along a region with a mix of boundary extreme values (like -6 and 6) and a few offset values (like -5 and -3) to search for the global maximum based on the trend observed in previous evaluations.",
+    "justification": "The value 7.7 for `params[5]` is chosen because nearby values have shown promising outcomes, close to the global optimum of -120, and unexplored exact values represent potential unvisited peaks.",
     "heatmap_file": "heatmap_360.jpeg",
     "iteration_id": 360
   },
   {
-    "x": 4.545454978942871,
-    "y": 51.945091247558594,
+    "x": 63.005733489990234,
+    "y": 33.90036392211914,
     "epoch_percentage": 92.5,
-    "reward_percentage": 0.0,
-    "size": 50.0,
+    "reward_percentage": 69.40045248868778,
+    "size": 268.58669833729215,
     "rgb": [
       0.025490196078431393,
       0.7372549019607844,
       0.9745098039215686,
       1.0
     ],
-    "reward": -200.0,
+    "reward": -138.65,
     "video_file": "params_370.mp4",
-    "justification": "Explanation: Continuing the search around parameters that resulted in the highest evaluations close to -120. Exploring with slight variations in both positive and negative directions as previous findings show some better results with these settings.",
+    "justification": "Based on the previously gathered results, positions near params[5] = 9.0 often yield higher function values. We perform finer grid exploration around this promising subspace by reducing it slightly to 7.9, aiming to balance further finding optimal values while conforming to the given value range and for maximizing the potential identified trend.",
     "heatmap_file": "heatmap_370.jpeg",
     "iteration_id": 370
   },
   {
-    "x": 20.373517990112305,
-    "y": 43.515445709228516,
+    "x": 66.70240783691406,
+    "y": 45.736087799072266,
     "epoch_percentage": 95.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -697,31 +697,31 @@
     ],
     "reward": -200.0,
     "video_file": "params_380.mp4",
-    "justification": "Given that the best results are around the bounds, with negative numbers for the first four parameters and positive ones for the last five, this exploration continues in a similar direction, adjusting each of the unknown parameters by the exploration step size.",
+    "justification": "To maximize the function's value, I chose to explore around a high value for `params[5]` which has frequently yielded values closer to the global maximum, while using a mix of positive and negative values for other parameters to explore new configurations that deviate from previously explored ones.",
     "heatmap_file": "heatmap_380.jpeg",
     "iteration_id": 380
   },
   {
-    "x": 8.932989120483398,
-    "y": 50.2034912109375,
+    "x": 94.01607513427734,
+    "y": 68.7531509399414,
     "epoch_percentage": 97.5,
-    "reward_percentage": 77.13612256923983,
-    "size": 350.0,
+    "reward_percentage": 72.56787330316742,
+    "size": 278.56294536817103,
     "rgb": [
       0.0,
       0.75,
       1.0,
       1.0
     ],
-    "reward": -134.55,
+    "reward": -135.85,
     "video_file": "params_390.mp4",
-    "justification": "I chose these parameters to further explore the region around the known global optimum with small adjustments to ensure we cover spaces that may yield better results. Given the data, this pattern could help locate the global maximum effectively by slightly varying around the points that have previously shown promise.",
+    "justification": "I am choosing to slightly adjust the value of `params[5]` to 9.95 based on promising results observed with similar values. This increment aims to explore a value close to previous near-optimal results, leveraging the fine-tuning of values around 0.",
     "heatmap_file": "heatmap_390.jpeg",
     "iteration_id": 390
   },
   {
-    "x": 62.641929626464844,
-    "y": 13.2066011428833,
+    "x": 19.90861701965332,
+    "y": 14.28696346282959,
     "epoch_percentage": 0.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -738,8 +738,8 @@
     "iteration_id": 0
   },
   {
-    "x": 58.88285827636719,
-    "y": 15.571207046508789,
+    "x": 24.115421295166016,
+    "y": 15.311887741088867,
     "epoch_percentage": 2.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -756,8 +756,8 @@
     "iteration_id": 10
   },
   {
-    "x": 62.07904052734375,
-    "y": 14.554055213928223,
+    "x": 20.414791107177734,
+    "y": 15.370598793029785,
     "epoch_percentage": 5.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -774,8 +774,8 @@
     "iteration_id": 20
   },
   {
-    "x": 54.18174743652344,
-    "y": 19.65546989440918,
+    "x": 31.010055541992188,
+    "y": 15.40077018737793,
     "epoch_percentage": 7.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -792,8 +792,8 @@
     "iteration_id": 30
   },
   {
-    "x": 58.60560607910156,
-    "y": 24.302101135253906,
+    "x": 28.89891242980957,
+    "y": 21.305728912353516,
     "epoch_percentage": 10.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -810,8 +810,8 @@
     "iteration_id": 40
   },
   {
-    "x": 54.1330680847168,
-    "y": 23.325166702270508,
+    "x": 32.890708923339844,
+    "y": 18.296497344970703,
     "epoch_percentage": 12.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -828,8 +828,8 @@
     "iteration_id": 50
   },
   {
-    "x": 50.94854736328125,
-    "y": 23.73765754699707,
+    "x": 36.18224334716797,
+    "y": 16.95316505432129,
     "epoch_percentage": 15.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -846,8 +846,8 @@
     "iteration_id": 60
   },
   {
-    "x": 55.239070892333984,
-    "y": 18.652990341186523,
+    "x": 29.484600067138672,
+    "y": 15.14724063873291,
     "epoch_percentage": 17.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -864,8 +864,8 @@
     "iteration_id": 70
   },
   {
-    "x": 61.09990310668945,
-    "y": 23.646427154541016,
+    "x": 25.99162483215332,
+    "y": 21.820541381835938,
     "epoch_percentage": 20.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -882,8 +882,8 @@
     "iteration_id": 80
   },
   {
-    "x": 63.776702880859375,
-    "y": 25.25457191467285,
+    "x": 24.218400955200195,
+    "y": 24.24909210205078,
     "epoch_percentage": 22.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -900,8 +900,8 @@
     "iteration_id": 90
   },
   {
-    "x": 68.33185577392578,
-    "y": 27.55487823486328,
+    "x": 21.924589157104492,
+    "y": 28.583871841430664,
     "epoch_percentage": 25.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -918,8 +918,8 @@
     "iteration_id": 100
   },
   {
-    "x": 71.68419647216797,
-    "y": 30.692481994628906,
+    "x": 19.502849578857422,
+    "y": 32.23396682739258,
     "epoch_percentage": 27.500000000000004,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -936,8 +936,8 @@
     "iteration_id": 110
   },
   {
-    "x": 74.70486450195312,
-    "y": 33.325801849365234,
+    "x": 17.261627197265625,
+    "y": 35.374298095703125,
     "epoch_percentage": 30.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -954,8 +954,8 @@
     "iteration_id": 120
   },
   {
-    "x": 77.3121566772461,
-    "y": 35.27416229248047,
+    "x": 15.258009910583496,
+    "y": 37.89592361450195,
     "epoch_percentage": 32.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -972,8 +972,8 @@
     "iteration_id": 130
   },
   {
-    "x": 80.73688507080078,
-    "y": 37.13520812988281,
+    "x": 12.242789268493652,
+    "y": 40.5396728515625,
     "epoch_percentage": 35.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -990,8 +990,8 @@
     "iteration_id": 140
   },
   {
-    "x": 84.2394790649414,
-    "y": 39.00742721557617,
+    "x": 9.554397583007812,
+    "y": 43.400909423828125,
     "epoch_percentage": 37.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1008,8 +1008,8 @@
     "iteration_id": 150
   },
   {
-    "x": 86.52192687988281,
-    "y": 40.41542053222656,
+    "x": 9.356700897216797,
+    "y": 46.0344123840332,
     "epoch_percentage": 40.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1026,8 +1026,8 @@
     "iteration_id": 160
   },
   {
-    "x": 88.64668273925781,
-    "y": 42.72859191894531,
+    "x": 7.512205123901367,
+    "y": 48.50265884399414,
     "epoch_percentage": 42.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1044,8 +1044,8 @@
     "iteration_id": 170
   },
   {
-    "x": 91.64928436279297,
-    "y": 45.53181076049805,
+    "x": 7.53327751159668,
+    "y": 52.17356872558594,
     "epoch_percentage": 45.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1062,8 +1062,8 @@
     "iteration_id": 180
   },
   {
-    "x": 92.36223602294922,
-    "y": 49.20188903808594,
+    "x": 6.235846996307373,
+    "y": 55.50232696533203,
     "epoch_percentage": 47.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1080,8 +1080,8 @@
     "iteration_id": 190
   },
   {
-    "x": 94.37495422363281,
-    "y": 51.431488037109375,
+    "x": 7.2819061279296875,
+    "y": 58.02067565917969,
     "epoch_percentage": 50.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1098,8 +1098,8 @@
     "iteration_id": 200
   },
   {
-    "x": 95.45453643798828,
-    "y": 55.08015060424805,
+    "x": 8.521183967590332,
+    "y": 61.2426872253418,
     "epoch_percentage": 52.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1116,8 +1116,8 @@
     "iteration_id": 210
   },
   {
-    "x": 94.97992706298828,
-    "y": 58.42599105834961,
+    "x": 10.62681770324707,
+    "y": 63.6326789855957,
     "epoch_percentage": 55.00000000000001,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1134,8 +1134,8 @@
     "iteration_id": 220
   },
   {
-    "x": 94.88975524902344,
-    "y": 63.216121673583984,
+    "x": 12.964439392089844,
+    "y": 67.35688781738281,
     "epoch_percentage": 57.49999999999999,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1152,8 +1152,8 @@
     "iteration_id": 230
   },
   {
-    "x": 93.79698944091797,
-    "y": 66.36767578125,
+    "x": 15.461122512817383,
+    "y": 69.48983764648438,
     "epoch_percentage": 60.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1170,8 +1170,8 @@
     "iteration_id": 240
   },
   {
-    "x": 92.27325439453125,
-    "y": 68.3507308959961,
+    "x": 17.669376373291016,
+    "y": 70.68412017822266,
     "epoch_percentage": 62.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1188,8 +1188,8 @@
     "iteration_id": 250
   },
   {
-    "x": 89.7765884399414,
-    "y": 73.19929504394531,
+    "x": 21.455339431762695,
+    "y": 74.23323059082031,
     "epoch_percentage": 65.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1206,8 +1206,8 @@
     "iteration_id": 260
   },
   {
-    "x": 88.39950561523438,
-    "y": 75.02481079101562,
+    "x": 23.453393936157227,
+    "y": 75.42748260498047,
     "epoch_percentage": 67.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1224,8 +1224,8 @@
     "iteration_id": 270
   },
   {
-    "x": 84.69000244140625,
-    "y": 77.41097259521484,
+    "x": 27.398740768432617,
+    "y": 77.65131378173828,
     "epoch_percentage": 70.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1242,8 +1242,8 @@
     "iteration_id": 280
   },
   {
-    "x": 82.71260070800781,
-    "y": 79.99803161621094,
+    "x": 30.285364151000977,
+    "y": 79.12532806396484,
     "epoch_percentage": 72.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1260,8 +1260,8 @@
     "iteration_id": 290
   },
   {
-    "x": 79.91484832763672,
-    "y": 80.87601470947266,
+    "x": 33.367774963378906,
+    "y": 79.78252410888672,
     "epoch_percentage": 75.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1278,8 +1278,8 @@
     "iteration_id": 300
   },
   {
-    "x": 76.3474349975586,
-    "y": 83.26382446289062,
+    "x": 37.24148941040039,
+    "y": 81.95706176757812,
     "epoch_percentage": 77.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1296,8 +1296,8 @@
     "iteration_id": 310
   },
   {
-    "x": 73.34063720703125,
-    "y": 84.86588287353516,
+    "x": 40.652339935302734,
+    "y": 83.15629577636719,
     "epoch_percentage": 80.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1314,8 +1314,8 @@
     "iteration_id": 320
   },
   {
-    "x": 70.14448547363281,
-    "y": 86.14940643310547,
+    "x": 43.95708084106445,
+    "y": 84.79446411132812,
     "epoch_percentage": 82.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1332,8 +1332,8 @@
     "iteration_id": 330
   },
   {
-    "x": 67.49932861328125,
-    "y": 86.82356262207031,
+    "x": 46.171478271484375,
+    "y": 86.32401275634766,
     "epoch_percentage": 85.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1350,8 +1350,8 @@
     "iteration_id": 340
   },
   {
-    "x": 64.31880950927734,
-    "y": 88.97822570800781,
+    "x": 49.334163665771484,
+    "y": 88.55059814453125,
     "epoch_percentage": 87.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1368,8 +1368,8 @@
     "iteration_id": 350
   },
   {
-    "x": 63.505332946777344,
-    "y": 89.34069061279297,
+    "x": 50.18798065185547,
+    "y": 88.87621307373047,
     "epoch_percentage": 90.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1386,8 +1386,8 @@
     "iteration_id": 360
   },
   {
-    "x": 57.59992599487305,
-    "y": 91.38324737548828,
+    "x": 56.107486724853516,
+    "y": 91.52924346923828,
     "epoch_percentage": 92.5,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1404,8 +1404,8 @@
     "iteration_id": 370
   },
   {
-    "x": 54.98506546020508,
-    "y": 92.4056396484375,
+    "x": 58.475830078125,
+    "y": 92.77034759521484,
     "epoch_percentage": 95.0,
     "reward_percentage": 0.0,
     "size": 50.0,
@@ -1422,7 +1422,7 @@
     "iteration_id": 380
   },
   {
-    "x": 54.669219970703125,
+    "x": 58.42092514038086,
     "y": 95.45455169677734,
     "epoch_percentage": 97.5,
     "reward_percentage": 0.0,

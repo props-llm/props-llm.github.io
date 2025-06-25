@@ -2,2401 +2,2401 @@
   {
     "epoch_id": 0,
     "epoch_percentage": 0.0,
-    "reward": 1.6118345223878485,
-    "reward_percentage": 34.47634264090573
+    "reward": -8.66890104445099,
+    "reward_percentage": 33.780150792940745
   },
   {
     "epoch_id": 1,
     "epoch_percentage": 0.2506265664160401,
-    "reward": 14.620127579035866,
-    "reward_percentage": 37.18976542763424
+    "reward": 3.718228847394765,
+    "reward_percentage": 37.224393306953274
   },
   {
     "epoch_id": 2,
     "epoch_percentage": 0.5012531328320802,
-    "reward": -17.280168801801047,
-    "reward_percentage": 30.535626354489736
+    "reward": -15.971282294203718,
+    "reward_percentage": 31.74972306888153
   },
   {
     "epoch_id": 3,
     "epoch_percentage": 0.7518796992481203,
-    "reward": 6.108777068124395,
-    "reward_percentage": 35.41436781615918
+    "reward": 0.40355274277941683,
+    "reward_percentage": 36.30274733574142
   },
   {
     "epoch_id": 4,
     "epoch_percentage": 1.0025062656641603,
-    "reward": 19.15462124825423,
-    "reward_percentage": 38.13562345795016
+    "reward": -8.000453208390807,
+    "reward_percentage": 33.966012770288195
   },
   {
     "epoch_id": 5,
     "epoch_percentage": 1.2531328320802004,
-    "reward": -27.315082341168004,
-    "reward_percentage": 28.44242604434965
+    "reward": -18.96038587145153,
+    "reward_percentage": 30.918602566438018
   },
   {
     "epoch_id": 6,
     "epoch_percentage": 1.5037593984962405,
-    "reward": -17.569645491452246,
-    "reward_percentage": 30.475243901349593
+    "reward": -17.821077989937027,
+    "reward_percentage": 31.235387219244874
   },
   {
     "epoch_id": 7,
     "epoch_percentage": 1.7543859649122806,
-    "reward": 11.63480627583574,
-    "reward_percentage": 36.567051992863526
+    "reward": -20.63450038714539,
+    "reward_percentage": 30.453114883768766
   },
   {
     "epoch_id": 8,
     "epoch_percentage": 2.0050125313283207,
-    "reward": 10.705651714291488,
-    "reward_percentage": 36.37323800445569
+    "reward": -15.111172904295183,
+    "reward_percentage": 31.988876557485412
   },
   {
     "epoch_id": 9,
     "epoch_percentage": 2.2556390977443606,
-    "reward": 13.616055877834844,
-    "reward_percentage": 36.98032434096101
+    "reward": -15.981878180321152,
+    "reward_percentage": 31.74677688185048
   },
   {
     "epoch_id": 10,
     "epoch_percentage": 2.506265664160401,
-    "reward": -63.54503614046091,
-    "reward_percentage": 20.885156095631682
+    "reward": -24.315622806984706,
+    "reward_percentage": 29.429578483618368
   },
   {
     "epoch_id": 11,
     "epoch_percentage": 2.756892230576441,
-    "reward": -17.312658973379136,
-    "reward_percentage": 30.52884917230904
+    "reward": -17.463568317821373,
+    "reward_percentage": 31.33479281381138
   },
   {
     "epoch_id": 12,
     "epoch_percentage": 3.007518796992481,
-    "reward": -37.29584298354391,
-    "reward_percentage": 26.36052158248289
+    "reward": -18.535563104032835,
+    "reward_percentage": 31.036724572846232
   },
   {
     "epoch_id": 13,
     "epoch_percentage": 3.258145363408521,
-    "reward": -18.473941392946422,
-    "reward_percentage": 30.286615224675867
+    "reward": -26.35766258397655,
+    "reward_percentage": 28.861789150929617
   },
   {
     "epoch_id": 14,
     "epoch_percentage": 3.508771929824561,
-    "reward": -20.992804463331606,
-    "reward_percentage": 29.761201135212445
+    "reward": -22.501028115008857,
+    "reward_percentage": 29.934126691183288
   },
   {
     "epoch_id": 15,
     "epoch_percentage": 3.7593984962406015,
-    "reward": -36.94432047249042,
-    "reward_percentage": 26.433846282917205
+    "reward": -18.29856480719546,
+    "reward_percentage": 31.102621969324908
   },
   {
     "epoch_id": 16,
     "epoch_percentage": 4.010025062656641,
-    "reward": -18.302974813544377,
-    "reward_percentage": 30.322277444945534
+    "reward": -1.782635352772823,
+    "reward_percentage": 35.69487755088627
   },
   {
     "epoch_id": 17,
     "epoch_percentage": 4.260651629072681,
-    "reward": -24.758969482006947,
-    "reward_percentage": 28.975610132937867
+    "reward": -17.78954805109337,
+    "reward_percentage": 31.244154121406858
   },
   {
     "epoch_id": 18,
     "epoch_percentage": 4.511278195488721,
-    "reward": 12.03411412420909,
-    "reward_percentage": 36.65034432107119
+    "reward": -18.15961326339967,
+    "reward_percentage": 31.141257457828512
   },
   {
     "epoch_id": 19,
     "epoch_percentage": 4.761904761904762,
-    "reward": -13.902064502330251,
-    "reward_percentage": 31.240271087062478
+    "reward": -16.11318300906244,
+    "reward_percentage": 31.710267563114456
   },
   {
     "epoch_id": 20,
     "epoch_percentage": 5.012531328320802,
-    "reward": -16.534728561439003,
-    "reward_percentage": 30.69111904869138
+    "reward": -27.477873514718123,
+    "reward_percentage": 28.550314406900206
   },
   {
     "epoch_id": 21,
     "epoch_percentage": 5.263157894736842,
-    "reward": -19.505876135883614,
-    "reward_percentage": 30.07136213699488
+    "reward": -15.233503278634359,
+    "reward_percentage": 31.95486258655487
   },
   {
     "epoch_id": 22,
     "epoch_percentage": 5.513784461152882,
-    "reward": -14.688392712679459,
-    "reward_percentage": 31.076249499101817
+    "reward": -18.647225059683894,
+    "reward_percentage": 31.005676956634154
   },
   {
     "epoch_id": 23,
     "epoch_percentage": 5.764411027568922,
-    "reward": -22.64226105385156,
-    "reward_percentage": 29.41713807644325
+    "reward": -27.341058732914952,
+    "reward_percentage": 28.588355768551065
   },
   {
     "epoch_id": 24,
     "epoch_percentage": 6.015037593984962,
-    "reward": -18.763258801894953,
-    "reward_percentage": 30.22626599617836
+    "reward": -21.729237060185906,
+    "reward_percentage": 30.14872325924751
   },
   {
     "epoch_id": 25,
     "epoch_percentage": 6.265664160401002,
-    "reward": -8.34091106643251,
-    "reward_percentage": 32.40028188846018
+    "reward": -11.609857601686654,
+    "reward_percentage": 32.96241757348343
   },
   {
     "epoch_id": 26,
     "epoch_percentage": 6.516290726817042,
-    "reward": 15.907584565769065,
-    "reward_percentage": 37.45831835072121
+    "reward": 5.606629732465615,
+    "reward_percentage": 37.74946333275009
   },
   {
     "epoch_id": 27,
     "epoch_percentage": 6.7669172932330826,
-    "reward": -17.20720808087698,
-    "reward_percentage": 30.55084535992183
+    "reward": -3.27521147258535,
+    "reward_percentage": 35.2798666345446
   },
   {
     "epoch_id": 28,
     "epoch_percentage": 7.017543859649122,
-    "reward": -17.951770739715737,
-    "reward_percentage": 30.395535721997607
+    "reward": -19.07901878011691,
+    "reward_percentage": 30.885616676150775
   },
   {
     "epoch_id": 29,
     "epoch_percentage": 7.268170426065162,
-    "reward": -20.533060309710876,
-    "reward_percentage": 29.85709997890141
+    "reward": -27.523525823324725,
+    "reward_percentage": 28.53762077863131
   },
   {
     "epoch_id": 30,
     "epoch_percentage": 7.518796992481203,
-    "reward": -7.309417223598653,
-    "reward_percentage": 32.615443008011155
+    "reward": 15.897707226506853,
+    "reward_percentage": 40.61089830028903
   },
   {
     "epoch_id": 31,
     "epoch_percentage": 7.769423558897243,
-    "reward": 1.0832050690440396,
-    "reward_percentage": 34.36607489107933
+    "reward": 15.270993877234904,
+    "reward_percentage": 40.43664060052255
   },
   {
     "epoch_id": 32,
     "epoch_percentage": 8.020050125313283,
-    "reward": -19.508628329020436,
-    "reward_percentage": 30.070788052175416
+    "reward": -17.47756571932846,
+    "reward_percentage": 31.33090083513857
   },
   {
     "epoch_id": 33,
     "epoch_percentage": 8.270676691729323,
-    "reward": -14.717282907835699,
-    "reward_percentage": 31.07022324235094
+    "reward": 7.320910428038869,
+    "reward_percentage": 38.22611922513167
   },
   {
     "epoch_id": 34,
     "epoch_percentage": 8.521303258145362,
-    "reward": 12.551825336664443,
-    "reward_percentage": 36.7583346157781
+    "reward": 0.11424476450596603,
+    "reward_percentage": 36.222305227915584
   },
   {
     "epoch_id": 35,
     "epoch_percentage": 8.771929824561402,
-    "reward": -81.64536005314599,
-    "reward_percentage": 17.10957761366117
+    "reward": -13.409205871135262,
+    "reward_percentage": 32.4621086349916
   },
   {
     "epoch_id": 36,
     "epoch_percentage": 9.022556390977442,
-    "reward": -18.518779451416897,
-    "reward_percentage": 30.277262374994773
+    "reward": -23.272262704362692,
+    "reward_percentage": 29.719684848389825
   },
   {
     "epoch_id": 37,
     "epoch_percentage": 9.273182957393484,
-    "reward": -21.382215047124035,
-    "reward_percentage": 29.679973294875957
+    "reward": -19.320243971928,
+    "reward_percentage": 30.818543991167186
   },
   {
     "epoch_id": 38,
     "epoch_percentage": 9.523809523809524,
-    "reward": -22.144942898422784,
-    "reward_percentage": 29.52087454742509
+    "reward": -17.517405827808503,
+    "reward_percentage": 31.319823289606397
   },
   {
     "epoch_id": 39,
     "epoch_percentage": 9.774436090225564,
-    "reward": 8.427942116574965,
-    "reward_percentage": 35.89812654309177
+    "reward": -1.999154845017987,
+    "reward_percentage": 35.634674287756354
   },
   {
     "epoch_id": 40,
     "epoch_percentage": 10.025062656641603,
-    "reward": -12.758416644605962,
-    "reward_percentage": 31.478826610345095
+    "reward": -19.53276902438285,
+    "reward_percentage": 30.759451382358783
   },
   {
     "epoch_id": 41,
     "epoch_percentage": 10.275689223057643,
-    "reward": 10.42660337384763,
-    "reward_percentage": 36.31503081906543
+    "reward": 10.98322760164854,
+    "reward_percentage": 39.24442682497755
   },
   {
     "epoch_id": 42,
     "epoch_percentage": 10.526315789473683,
-    "reward": -18.724943801328337,
-    "reward_percentage": 30.234258189708918
+    "reward": -3.4119369722420587,
+    "reward_percentage": 35.241850097802114
   },
   {
     "epoch_id": 43,
     "epoch_percentage": 10.776942355889723,
-    "reward": 2.490348535606016,
-    "reward_percentage": 34.659593428041724
+    "reward": -31.578382902507315,
+    "reward_percentage": 27.410167424843614
   },
   {
     "epoch_id": 44,
     "epoch_percentage": 11.027568922305765,
-    "reward": 24.181666744043085,
-    "reward_percentage": 39.184223742306706
+    "reward": -11.956289110364985,
+    "reward_percentage": 32.86609226319756
   },
   {
     "epoch_id": 45,
     "epoch_percentage": 11.278195488721805,
-    "reward": -17.56530590414774,
-    "reward_percentage": 30.476149103517603
+    "reward": -41.331669511643966,
+    "reward_percentage": 24.698265258333592
   },
   {
     "epoch_id": 46,
     "epoch_percentage": 11.528822055137844,
-    "reward": -16.624787735590868,
-    "reward_percentage": 30.672333446750105
+    "reward": -21.076300463482994,
+    "reward_percentage": 30.33027233517988
   },
   {
     "epoch_id": 47,
     "epoch_percentage": 11.779448621553884,
-    "reward": -19.155767052287942,
-    "reward_percentage": 30.144392008103427
+    "reward": -16.655337052519922,
+    "reward_percentage": 31.559521585480905
   },
   {
     "epoch_id": 48,
     "epoch_percentage": 12.030075187969924,
-    "reward": -42.126774663943735,
-    "reward_percentage": 25.35282902469366
+    "reward": -11.694556087772062,
+    "reward_percentage": 32.93886715226439
   },
   {
     "epoch_id": 49,
     "epoch_percentage": 12.280701754385964,
-    "reward": -163.66958449857796,
-    "reward_percentage": 0.0
+    "reward": -15.869878797362626,
+    "reward_percentage": 31.77791831975393
   },
   {
     "epoch_id": 50,
     "epoch_percentage": 12.531328320802004,
-    "reward": -21.637344160390008,
-    "reward_percentage": 29.626755463260462
+    "reward": 18.180674541061652,
+    "reward_percentage": 41.245677555172506
   },
   {
     "epoch_id": 51,
     "epoch_percentage": 12.781954887218044,
-    "reward": -116.30683730170495,
-    "reward_percentage": 9.8794789544181
+    "reward": -62.995306517418655,
+    "reward_percentage": 18.67468915677499
   },
   {
     "epoch_id": 52,
     "epoch_percentage": 13.032581453634084,
-    "reward": -21.007385872359222,
-    "reward_percentage": 29.758159573391396
+    "reward": -129.4091761295836,
+    "reward_percentage": 0.2083070944634717
   },
   {
     "epoch_id": 53,
     "epoch_percentage": 13.283208020050125,
-    "reward": -17.66187022532757,
-    "reward_percentage": 30.45600658148698
+    "reward": 40.18995189812957,
+    "reward_percentage": 47.36535898563914
   },
   {
     "epoch_id": 54,
     "epoch_percentage": 13.533834586466165,
-    "reward": -21.15656991875083,
-    "reward_percentage": 29.727041010092385
+    "reward": -33.308205357526575,
+    "reward_percentage": 26.929190144933692
   },
   {
     "epoch_id": 55,
     "epoch_percentage": 13.784461152882205,
-    "reward": 22.60223317360781,
-    "reward_percentage": 38.85476690877136
+    "reward": -7.6836197137051006,
+    "reward_percentage": 34.0541083502803
   },
   {
     "epoch_id": 56,
     "epoch_percentage": 14.035087719298245,
-    "reward": -13.837447473796772,
-    "reward_percentage": 31.253749666986057
+    "reward": -33.77486424588647,
+    "reward_percentage": 26.79943560155968
   },
   {
     "epoch_id": 57,
     "epoch_percentage": 14.285714285714285,
-    "reward": 3.802280516566158,
-    "reward_percentage": 34.933251633332226
+    "reward": -25.72571200111537,
+    "reward_percentage": 29.037503063938498
   },
   {
     "epoch_id": 58,
     "epoch_percentage": 14.536340852130325,
-    "reward": 13.14161137541428,
-    "reward_percentage": 36.88135912559418
+    "reward": 25.78625015311757,
+    "reward_percentage": 43.360408497311404
   },
   {
     "epoch_id": 59,
     "epoch_percentage": 14.786967418546364,
-    "reward": -27.72436751111166,
-    "reward_percentage": 28.357052529042225
+    "reward": -42.67364667650224,
+    "reward_percentage": 24.325128394153168
   },
   {
     "epoch_id": 60,
     "epoch_percentage": 15.037593984962406,
-    "reward": 27.042424734049824,
-    "reward_percentage": 39.78095429593094
+    "reward": -7.346903316062599,
+    "reward_percentage": 34.147732373121045
   },
   {
     "epoch_id": 61,
     "epoch_percentage": 15.288220551378446,
-    "reward": -21.027566199856516,
-    "reward_percentage": 29.753950123293954
+    "reward": -20.367450554712203,
+    "reward_percentage": 30.527368112261332
   },
   {
     "epoch_id": 62,
     "epoch_percentage": 15.538847117794486,
-    "reward": -26.394135381550562,
-    "reward_percentage": 28.634527994598773
+    "reward": -20.959136732028092,
+    "reward_percentage": 30.3628497206195
   },
   {
     "epoch_id": 63,
     "epoch_percentage": 15.789473684210526,
-    "reward": 19.979731920683008,
-    "reward_percentage": 38.30773474806266
+    "reward": -22.935699928261336,
+    "reward_percentage": 29.813266156748064
   },
   {
     "epoch_id": 64,
     "epoch_percentage": 16.040100250626566,
-    "reward": -20.80236104158342,
-    "reward_percentage": 29.80092606437138
+    "reward": 27.66034022078559,
+    "reward_percentage": 43.881499399119086
   },
   {
     "epoch_id": 65,
     "epoch_percentage": 16.290726817042607,
-    "reward": -28.359731199057627,
-    "reward_percentage": 28.22452089701143
+    "reward": -2.387782059302391,
+    "reward_percentage": 35.526616457958205
   },
   {
     "epoch_id": 66,
     "epoch_percentage": 16.541353383458645,
-    "reward": -15.956573575553488,
-    "reward_percentage": 30.811717416681
+    "reward": -18.661267568769752,
+    "reward_percentage": 31.00177243579525
   },
   {
     "epoch_id": 67,
     "epoch_percentage": 16.791979949874687,
-    "reward": -23.380371729618147,
-    "reward_percentage": 29.263174269045088
+    "reward": 23.756207459719814,
+    "reward_percentage": 42.79595495473058
   },
   {
     "epoch_id": 68,
     "epoch_percentage": 17.042606516290725,
-    "reward": -23.202270722355962,
-    "reward_percentage": 29.300324672202514
+    "reward": 30.414443790066024,
+    "reward_percentage": 44.647278129473214
   },
   {
     "epoch_id": 69,
     "epoch_percentage": 17.293233082706767,
-    "reward": 55.15219664528358,
-    "reward_percentage": 45.644421185977855
+    "reward": -11.954155601340736,
+    "reward_percentage": 32.866685485562186
   },
   {
     "epoch_id": 70,
     "epoch_percentage": 17.543859649122805,
-    "reward": 22.337179821923094,
-    "reward_percentage": 38.79947896276429
+    "reward": 19.798841807674883,
+    "reward_percentage": 41.6956091005034
   },
   {
     "epoch_id": 71,
     "epoch_percentage": 17.794486215538846,
-    "reward": -19.20307868225307,
-    "reward_percentage": 30.13452319178251
+    "reward": 30.157974930833156,
+    "reward_percentage": 44.57596694147383
   },
   {
     "epoch_id": 72,
     "epoch_percentage": 18.045112781954884,
-    "reward": -23.015728866320092,
-    "reward_percentage": 29.339235766889736
+    "reward": 29.295376135772322,
+    "reward_percentage": 44.33612127355682
   },
   {
     "epoch_id": 73,
     "epoch_percentage": 18.295739348370926,
-    "reward": -3.6437536378633313,
-    "reward_percentage": 33.380070239170585
+    "reward": 26.769137114600227,
+    "reward_percentage": 43.63370030007482
   },
   {
     "epoch_id": 74,
     "epoch_percentage": 18.546365914786968,
-    "reward": 33.348048994899145,
-    "reward_percentage": 41.09625557946042
+    "reward": 24.846541620786695,
+    "reward_percentage": 43.09912246042525
   },
   {
     "epoch_id": 75,
     "epoch_percentage": 18.796992481203006,
-    "reward": -29.19347613652627,
-    "reward_percentage": 28.05060857032912
+    "reward": 21.1970263385134,
+    "reward_percentage": 42.08437442754811
   },
   {
     "epoch_id": 76,
     "epoch_percentage": 19.047619047619047,
-    "reward": 10.493451072086811,
-    "reward_percentage": 36.32897469831636
+    "reward": 25.74436007027831,
+    "reward_percentage": 43.348760956235274
   },
   {
     "epoch_id": 77,
     "epoch_percentage": 19.298245614035086,
-    "reward": -19.89457645155422,
-    "reward_percentage": 29.99028245273837
+    "reward": 21.244562269718188,
+    "reward_percentage": 42.09759179723974
   },
   {
     "epoch_id": 78,
     "epoch_percentage": 19.548872180451127,
-    "reward": -21.68914881147997,
-    "reward_percentage": 29.61594943974039
+    "reward": 21.766152912079185,
+    "reward_percentage": 42.24262011945935
   },
   {
     "epoch_id": 79,
     "epoch_percentage": 19.799498746867165,
-    "reward": -19.0079364692208,
-    "reward_percentage": 30.175228250100965
+    "reward": -6.041257879731754,
+    "reward_percentage": 34.510767197111825
   },
   {
     "epoch_id": 80,
     "epoch_percentage": 20.050125313283207,
-    "reward": -55.83560154722348,
-    "reward_percentage": 22.493280651788776
+    "reward": -8.37721717440974,
+    "reward_percentage": 33.861253517673546
   },
   {
     "epoch_id": 81,
     "epoch_percentage": 20.30075187969925,
-    "reward": -40.684049201358405,
-    "reward_percentage": 25.653769672949718
+    "reward": -10.622278482103166,
+    "reward_percentage": 33.2370140312036
   },
   {
     "epoch_id": 82,
     "epoch_percentage": 20.551378446115287,
-    "reward": -24.14598361914077,
-    "reward_percentage": 29.10347393497556
+    "reward": 29.28445677677609,
+    "reward_percentage": 44.33308514486446
   },
   {
     "epoch_id": 83,
     "epoch_percentage": 20.80200501253133,
-    "reward": 27.913433309536607,
-    "reward_percentage": 39.96263951057591
+    "reward": -11.095006735105954,
+    "reward_percentage": 33.10557190047735
   },
   {
     "epoch_id": 84,
     "epoch_percentage": 21.052631578947366,
-    "reward": -23.361459770880835,
-    "reward_percentage": 29.267119147866318
+    "reward": -10.173172575799764,
+    "reward_percentage": 33.36188796643234
   },
   {
     "epoch_id": 85,
     "epoch_percentage": 21.303258145363408,
-    "reward": -19.74386074754825,
-    "reward_percentage": 30.021720507199994
+    "reward": -7.355849244800156,
+    "reward_percentage": 34.145244956879004
   },
   {
     "epoch_id": 86,
     "epoch_percentage": 21.553884711779446,
-    "reward": -12.921427441282166,
-    "reward_percentage": 31.444823900822964
+    "reward": -8.900010269476011,
+    "reward_percentage": 33.71589085337753
   },
   {
     "epoch_id": 87,
     "epoch_percentage": 21.804511278195488,
-    "reward": -16.320895904100322,
-    "reward_percentage": 30.735722779745313
+    "reward": 119.93099712069082,
+    "reward_percentage": 69.53736335350622
   },
   {
     "epoch_id": 88,
     "epoch_percentage": 22.05513784461153,
-    "reward": 15.470276666763118,
-    "reward_percentage": 37.36709952494508
+    "reward": 85.22867353245017,
+    "reward_percentage": 59.88837934500572
   },
   {
     "epoch_id": 89,
     "epoch_percentage": 22.305764411027567,
-    "reward": -20.662642831840532,
-    "reward_percentage": 29.830070132112347
+    "reward": 124.75438865823867,
+    "reward_percentage": 70.87850777843767
   },
   {
     "epoch_id": 90,
     "epoch_percentage": 22.55639097744361,
-    "reward": -19.68728920990699,
-    "reward_percentage": 30.03352086399143
+    "reward": 131.09086189148792,
+    "reward_percentage": 72.64036469682085
   },
   {
     "epoch_id": 91,
     "epoch_percentage": 22.807017543859647,
-    "reward": -21.622068519805612,
-    "reward_percentage": 29.629941836066102
+    "reward": 95.44617887804526,
+    "reward_percentage": 62.729357570447185
   },
   {
     "epoch_id": 92,
     "epoch_percentage": 23.05764411027569,
-    "reward": -21.93249365731213,
-    "reward_percentage": 29.565189709248585
+    "reward": 106.78303591973727,
+    "reward_percentage": 65.88157162965244
   },
   {
     "epoch_id": 93,
     "epoch_percentage": 23.308270676691727,
-    "reward": -14.303432995902785,
-    "reward_percentage": 31.156548925239097
+    "reward": 137.9913920171146,
+    "reward_percentage": 74.5590576818321
   },
   {
     "epoch_id": 94,
     "epoch_percentage": 23.55889724310777,
-    "reward": -6.867669143643096,
-    "reward_percentage": 32.707588018961104
+    "reward": 135.11519632640452,
+    "reward_percentage": 73.75933122678907
   },
   {
     "epoch_id": 95,
     "epoch_percentage": 23.809523809523807,
-    "reward": -33.51077865352001,
-    "reward_percentage": 27.150054825437564
+    "reward": 132.117047384282,
+    "reward_percentage": 72.92569565987718
   },
   {
     "epoch_id": 96,
     "epoch_percentage": 24.06015037593985,
-    "reward": 1.6023420011547167,
-    "reward_percentage": 34.47436257916316
+    "reward": 145.81141120037373,
+    "reward_percentage": 76.73341467707964
   },
   {
     "epoch_id": 97,
     "epoch_percentage": 24.31077694235589,
-    "reward": 26.2985721594204,
-    "reward_percentage": 39.62579277572406
+    "reward": 138.84726026975653,
+    "reward_percentage": 74.79703192186032
   },
   {
     "epoch_id": 98,
     "epoch_percentage": 24.561403508771928,
-    "reward": 15.018202232056405,
-    "reward_percentage": 37.272800521448715
+    "reward": 140.16389179474896,
+    "reward_percentage": 75.16312142873255
   },
   {
     "epoch_id": 99,
     "epoch_percentage": 24.81203007518797,
-    "reward": -42.56459781730341,
-    "reward_percentage": 25.261502721103323
+    "reward": 141.15383395523207,
+    "reward_percentage": 75.43837493017472
   },
   {
     "epoch_id": 100,
     "epoch_percentage": 25.062656641604008,
-    "reward": -22.365857799495053,
-    "reward_percentage": 29.474793518662363
+    "reward": 144.39842670913515,
+    "reward_percentage": 76.34053421979404
   },
   {
     "epoch_id": 101,
     "epoch_percentage": 25.31328320802005,
-    "reward": -17.88176380302267,
-    "reward_percentage": 30.41013859236844
+    "reward": 145.83567630884295,
+    "reward_percentage": 76.7401615925416
   },
   {
     "epoch_id": 102,
     "epoch_percentage": 25.563909774436087,
-    "reward": -22.139677663239603,
-    "reward_percentage": 29.521972832116344
+    "reward": 147.60799078831394,
+    "reward_percentage": 77.2329537834439
   },
   {
     "epoch_id": 103,
     "epoch_percentage": 25.81453634085213,
-    "reward": 14.711065041303067,
-    "reward_percentage": 37.20873423324221
+    "reward": 147.92540745473121,
+    "reward_percentage": 77.32121151438528
   },
   {
     "epoch_id": 104,
     "epoch_percentage": 26.065162907268167,
-    "reward": 11.103645469653573,
-    "reward_percentage": 36.45625622368494
+    "reward": -9.082947892145645,
+    "reward_percentage": 33.66502503192313
   },
   {
     "epoch_id": 105,
     "epoch_percentage": 26.31578947368421,
-    "reward": 26.463958155083144,
-    "reward_percentage": 39.660290932191074
+    "reward": 145.00116550276724,
+    "reward_percentage": 76.50812579233731
   },
   {
     "epoch_id": 106,
     "epoch_percentage": 26.56641604010025,
-    "reward": -22.152804740945214,
-    "reward_percentage": 29.519234631830233
+    "reward": 141.28223401287786,
+    "reward_percentage": 75.47407657706198
   },
   {
     "epoch_id": 107,
     "epoch_percentage": 26.81704260651629,
-    "reward": -29.958434712414835,
-    "reward_percentage": 27.891044512102543
+    "reward": 133.64886170213055,
+    "reward_percentage": 73.35161676050114
   },
   {
     "epoch_id": 108,
     "epoch_percentage": 27.06766917293233,
-    "reward": 12.036496013726962,
-    "reward_percentage": 36.650841163605804
+    "reward": 128.25194148883153,
+    "reward_percentage": 71.85100263877354
   },
   {
     "epoch_id": 109,
     "epoch_percentage": 27.31829573934837,
-    "reward": -21.602096748596725,
-    "reward_percentage": 29.63410778303959
+    "reward": -12.646256991702408,
+    "reward_percentage": 32.67424663544081
   },
   {
     "epoch_id": 110,
     "epoch_percentage": 27.56892230576441,
-    "reward": -17.388208276202768,
-    "reward_percentage": 30.51309021001396
+    "reward": 124.80285080456909,
+    "reward_percentage": 70.8919826823233
   },
   {
     "epoch_id": 111,
     "epoch_percentage": 27.819548872180448,
-    "reward": -18.863401469656775,
-    "reward_percentage": 30.20537706052436
+    "reward": 121.91647892403255,
+    "reward_percentage": 70.08942673683843
   },
   {
     "epoch_id": 112,
     "epoch_percentage": 28.07017543859649,
-    "reward": -25.36417361718304,
-    "reward_percentage": 28.849369535200882
+    "reward": 143.6591985961147,
+    "reward_percentage": 76.13499178045188
   },
   {
     "epoch_id": 113,
     "epoch_percentage": 28.32080200501253,
-    "reward": -23.387706706293308,
-    "reward_percentage": 29.26164425332636
+    "reward": 141.89871565054668,
+    "reward_percentage": 75.6454893485519
   },
   {
     "epoch_id": 114,
     "epoch_percentage": 28.57142857142857,
-    "reward": -21.785820280563804,
-    "reward_percentage": 29.59578456753954
+    "reward": 144.1887813745488,
+    "reward_percentage": 76.28224231678251
   },
   {
     "epoch_id": 115,
     "epoch_percentage": 28.82205513784461,
-    "reward": -19.22172287621662,
-    "reward_percentage": 30.130634166487603
+    "reward": 140.60105839428596,
+    "reward_percentage": 75.28467563870517
   },
   {
     "epoch_id": 116,
     "epoch_percentage": 29.07268170426065,
-    "reward": 29.682256759094912,
-    "reward_percentage": 40.33160151295626
+    "reward": 150.1978996016013,
+    "reward_percentage": 77.95307814800813
   },
   {
     "epoch_id": 117,
     "epoch_percentage": 29.32330827067669,
-    "reward": -7.683223053131864,
-    "reward_percentage": 32.53747019088209
+    "reward": 142.54535866179114,
+    "reward_percentage": 75.8252884925153
   },
   {
     "epoch_id": 118,
     "epoch_percentage": 29.57393483709273,
-    "reward": -21.01874957634557,
-    "reward_percentage": 29.755789198338807
+    "reward": 141.25351585423888,
+    "reward_percentage": 75.4660914906237
   },
   {
     "epoch_id": 119,
     "epoch_percentage": 29.82456140350877,
-    "reward": 13.926942736821607,
-    "reward_percentage": 37.045172779076275
+    "reward": 146.24956355421577,
+    "reward_percentage": 76.85524297612014
   },
   {
     "epoch_id": 120,
     "epoch_percentage": 30.075187969924812,
-    "reward": -21.965149809072848,
-    "reward_percentage": 29.558377904968925
+    "reward": 127.69189898945926,
+    "reward_percentage": 71.69528277446004
   },
   {
     "epoch_id": 121,
     "epoch_percentage": 30.32581453634085,
-    "reward": -75.28986408500927,
-    "reward_percentage": 18.435281724554496
+    "reward": 121.7963477497212,
+    "reward_percentage": 70.05602425366162
   },
   {
     "epoch_id": 122,
     "epoch_percentage": 30.576441102756892,
-    "reward": -19.770973670233467,
-    "reward_percentage": 30.016064974847783
+    "reward": 128.75954108665968,
+    "reward_percentage": 71.99214074987756
   },
   {
     "epoch_id": 123,
     "epoch_percentage": 30.82706766917293,
-    "reward": -15.679070708443902,
-    "reward_percentage": 30.86960222906327
+    "reward": 138.06913405633614,
+    "reward_percentage": 74.58067386241231
   },
   {
     "epoch_id": 124,
     "epoch_percentage": 31.07769423558897,
-    "reward": -38.01175490911616,
-    "reward_percentage": 26.211188251531702
+    "reward": 167.3751823016275,
+    "reward_percentage": 82.72922305544049
   },
   {
     "epoch_id": 125,
     "epoch_percentage": 31.32832080200501,
-    "reward": 17.741932659420904,
-    "reward_percentage": 37.84094825415524
+    "reward": 140.62269800114115,
+    "reward_percentage": 75.29069253322133
   },
   {
     "epoch_id": 126,
     "epoch_percentage": 31.57894736842105,
-    "reward": 12.756048644903677,
-    "reward_percentage": 36.800933915758826
+    "reward": 135.5679221594563,
+    "reward_percentage": 73.88521168295634
   },
   {
     "epoch_id": 127,
     "epoch_percentage": 31.82957393483709,
-    "reward": -17.40534648973178,
-    "reward_percentage": 30.509515319833447
+    "reward": 181.1465943428953,
+    "reward_percentage": 86.55836533816914
   },
   {
     "epoch_id": 128,
     "epoch_percentage": 32.08020050125313,
-    "reward": 12.369263234494426,
-    "reward_percentage": 36.72025366496741
+    "reward": 162.2151057609437,
+    "reward_percentage": 81.2944633369135
   },
   {
     "epoch_id": 129,
     "epoch_percentage": 32.33082706766917,
-    "reward": -19.16888102331382,
-    "reward_percentage": 30.141656541762746
+    "reward": 160.63909705616706,
+    "reward_percentage": 80.85625398326664
   },
   {
     "epoch_id": 130,
     "epoch_percentage": 32.581453634085214,
-    "reward": -21.319162901582295,
-    "reward_percentage": 29.69312545309687
+    "reward": 148.13083932469317,
+    "reward_percentage": 77.37833186320167
   },
   {
     "epoch_id": 131,
     "epoch_percentage": 32.83208020050125,
-    "reward": -19.467441483114154,
-    "reward_percentage": 30.079379288989422
+    "reward": 15.65459236443814,
+    "reward_percentage": 40.5433001923305
   },
   {
     "epoch_id": 132,
     "epoch_percentage": 33.08270676691729,
-    "reward": -12.572197488814698,
-    "reward_percentage": 31.517670392419262
+    "reward": 142.45269819813225,
+    "reward_percentage": 75.7995242427586
   },
   {
     "epoch_id": 133,
     "epoch_percentage": 33.33333333333333,
-    "reward": -10.670835755756604,
-    "reward_percentage": 31.91427878906488
+    "reward": 134.35110695864836,
+    "reward_percentage": 73.5468761134651
   },
   {
     "epoch_id": 134,
     "epoch_percentage": 33.583959899749374,
-    "reward": -17.941350003268077,
-    "reward_percentage": 30.397709401788525
+    "reward": 137.64066494643976,
+    "reward_percentage": 74.46153799016982
   },
   {
     "epoch_id": 135,
     "epoch_percentage": 33.83458646616541,
-    "reward": -16.14147234418551,
-    "reward_percentage": 30.773149056492667
+    "reward": 127.47740045139044,
+    "reward_percentage": 71.63564143780978
   },
   {
     "epoch_id": 136,
     "epoch_percentage": 34.08521303258145,
-    "reward": -18.76680161396533,
-    "reward_percentage": 30.225526994761413
+    "reward": 139.55587269239433,
+    "reward_percentage": 74.99406166590242
   },
   {
     "epoch_id": 137,
     "epoch_percentage": 34.335839598997495,
-    "reward": 6.831889008368324,
-    "reward_percentage": 35.5652030108668
+    "reward": 114.5508068612829,
+    "reward_percentage": 68.04140099687288
   },
   {
     "epoch_id": 138,
     "epoch_percentage": 34.58646616541353,
-    "reward": -3.272501394899828,
-    "reward_percentage": 33.45751039917424
+    "reward": 146.60228225343096,
+    "reward_percentage": 76.95331644026649
   },
   {
     "epoch_id": 139,
     "epoch_percentage": 34.83709273182957,
-    "reward": 6.2782047926087765,
-    "reward_percentage": 35.44970904396804
+    "reward": 149.9346812822065,
+    "reward_percentage": 77.87989027203992
   },
   {
     "epoch_id": 140,
     "epoch_percentage": 35.08771929824561,
-    "reward": 2.922791225036773,
-    "reward_percentage": 34.74979741117354
+    "reward": 149.68594115964527,
+    "reward_percentage": 77.81072805992572
   },
   {
     "epoch_id": 141,
     "epoch_percentage": 35.338345864661655,
-    "reward": -17.759254254601426,
-    "reward_percentage": 30.435693075099607
+    "reward": 116.77907240031234,
+    "reward_percentage": 68.66097041844537
   },
   {
     "epoch_id": 142,
     "epoch_percentage": 35.58897243107769,
-    "reward": -19.761190224221483,
-    "reward_percentage": 30.018105721102966
+    "reward": -17.63811157210706,
+    "reward_percentage": 31.286261047196046
   },
   {
     "epoch_id": 143,
     "epoch_percentage": 35.83959899749373,
-    "reward": 15.92810675763221,
-    "reward_percentage": 37.46259911090954
+    "reward": 123.36203805776805,
+    "reward_percentage": 70.49136457622514
   },
   {
     "epoch_id": 144,
     "epoch_percentage": 36.09022556390977,
-    "reward": 14.312550440009208,
-    "reward_percentage": 37.125607369841624
+    "reward": 130.72684938481825,
+    "reward_percentage": 72.53915098855666
   },
   {
     "epoch_id": 145,
     "epoch_percentage": 36.340852130325814,
-    "reward": -19.835524917774165,
-    "reward_percentage": 30.00260011629748
+    "reward": 141.02438525374194,
+    "reward_percentage": 75.40238170777785
   },
   {
     "epoch_id": 146,
     "epoch_percentage": 36.59147869674185,
-    "reward": -16.873392089382484,
-    "reward_percentage": 30.62047662621873
+    "reward": 143.7640644159426,
+    "reward_percentage": 76.16414973052356
   },
   {
     "epoch_id": 147,
     "epoch_percentage": 36.84210526315789,
-    "reward": -11.455954588202903,
-    "reward_percentage": 31.750509467373533
+    "reward": 14.036443434274592,
+    "reward_percentage": 40.09337374545098
   },
   {
     "epoch_id": 148,
     "epoch_percentage": 37.092731829573935,
-    "reward": 60.82338418567438,
-    "reward_percentage": 46.82738419525929
+    "reward": 127.65484025312435,
+    "reward_percentage": 71.68497858968806
   },
   {
     "epoch_id": 149,
     "epoch_percentage": 37.34335839598997,
-    "reward": 14.364998653675253,
-    "reward_percentage": 37.13654763521426
+    "reward": 15.79028892023921,
+    "reward_percentage": 40.5810306311469
   },
   {
     "epoch_id": 150,
     "epoch_percentage": 37.59398496240601,
-    "reward": -8.162766714010921,
-    "reward_percentage": 32.437441333060846
+    "reward": 142.5514642230779,
+    "reward_percentage": 75.82698614434743
   },
   {
     "epoch_id": 151,
     "epoch_percentage": 37.84461152882205,
-    "reward": -19.80801053658612,
-    "reward_percentage": 30.0083393895867
+    "reward": 145.93736480655133,
+    "reward_percentage": 76.76843608792926
   },
   {
     "epoch_id": 152,
     "epoch_percentage": 38.095238095238095,
-    "reward": -21.620950540409247,
-    "reward_percentage": 29.630175037359773
+    "reward": 142.64089991708929,
+    "reward_percentage": 75.85185374663091
   },
   {
     "epoch_id": 153,
     "epoch_percentage": 38.34586466165413,
-    "reward": 11.519545748766436,
-    "reward_percentage": 36.54300959627865
+    "reward": 139.5474528539677,
+    "reward_percentage": 74.99172052911581
   },
   {
     "epoch_id": 154,
     "epoch_percentage": 38.59649122807017,
-    "reward": 17.627162259919395,
-    "reward_percentage": 37.817008094144
+    "reward": 136.26797249987334,
+    "reward_percentage": 74.07986073931283
   },
   {
     "epoch_id": 155,
     "epoch_percentage": 38.847117794486216,
-    "reward": 0.5679302302977212,
-    "reward_percentage": 34.25859280386055
+    "reward": -79.16072736864831,
+    "reward_percentage": 14.179892521974105
   },
   {
     "epoch_id": 156,
     "epoch_percentage": 39.097744360902254,
-    "reward": 16.222133757305485,
-    "reward_percentage": 37.52393072124093
+    "reward": 130.95794882099398,
+    "reward_percentage": 72.60340820632949
   },
   {
     "epoch_id": 157,
     "epoch_percentage": 39.34837092731829,
-    "reward": -0.6434033662846099,
-    "reward_percentage": 34.00591859295656
+    "reward": 136.442458232025,
+    "reward_percentage": 74.12837651189395
   },
   {
     "epoch_id": 158,
     "epoch_percentage": 39.59899749373433,
-    "reward": 198.4626334268653,
-    "reward_percentage": 75.53779789926061
+    "reward": 137.3485580782035,
+    "reward_percentage": 74.38031765075313
   },
   {
     "epoch_id": 159,
     "epoch_percentage": 39.849624060150376,
-    "reward": 14.085654460944813,
-    "reward_percentage": 37.07827873747385
+    "reward": 126.17021671610235,
+    "reward_percentage": 71.27217888966383
   },
   {
     "epoch_id": 160,
     "epoch_percentage": 40.100250626566414,
-    "reward": -17.016272286605076,
-    "reward_percentage": 30.590672993933723
+    "reward": 116.03593728407023,
+    "reward_percentage": 68.454341636527
   },
   {
     "epoch_id": 161,
     "epoch_percentage": 40.35087719298245,
-    "reward": -20.34624525739866,
-    "reward_percentage": 29.89606806008165
+    "reward": 15.868320809149889,
+    "reward_percentage": 40.6027274044577
   },
   {
     "epoch_id": 162,
     "epoch_percentage": 40.6015037593985,
-    "reward": -20.4719837681971,
-    "reward_percentage": 29.869840042394465
+    "reward": 128.9944171104822,
+    "reward_percentage": 72.05744804816499
   },
   {
     "epoch_id": 163,
     "epoch_percentage": 40.852130325814535,
-    "reward": -12.454176709338013,
-    "reward_percentage": 31.542288554921054
+    "reward": -20.899666009544237,
+    "reward_percentage": 30.379385560035605
   },
   {
     "epoch_id": 164,
     "epoch_percentage": 41.10275689223057,
-    "reward": 7.471094668425242,
-    "reward_percentage": 35.69853604663493
+    "reward": 132.21512659377083,
+    "reward_percentage": 72.95296659237015
   },
   {
     "epoch_id": 165,
     "epoch_percentage": 41.35338345864661,
-    "reward": -18.62828567411208,
-    "reward_percentage": 30.254420278906093
+    "reward": 23.010200824080187,
+    "reward_percentage": 42.58852774660089
   },
   {
     "epoch_id": 166,
     "epoch_percentage": 41.60401002506266,
-    "reward": -23.373810296776195,
-    "reward_percentage": 29.264542929891626
+    "reward": 114.41828592770746,
+    "reward_percentage": 68.00455354008488
   },
   {
     "epoch_id": 167,
     "epoch_percentage": 41.854636591478695,
-    "reward": 65.89607674252686,
-    "reward_percentage": 47.88550608057439
+    "reward": 5.397791011455022,
+    "reward_percentage": 37.69139570871151
   },
   {
     "epoch_id": 168,
     "epoch_percentage": 42.10526315789473,
-    "reward": -24.134377039458684,
-    "reward_percentage": 29.105894971897794
+    "reward": 113.256564843519,
+    "reward_percentage": 67.68153689437905
   },
   {
     "epoch_id": 169,
     "epoch_percentage": 42.35588972431078,
-    "reward": 24.05865175163043,
-    "reward_percentage": 39.1585638281221
+    "reward": 146.78348675597024,
+    "reward_percentage": 77.00370036752207
   },
   {
     "epoch_id": 170,
     "epoch_percentage": 42.606516290726816,
-    "reward": 10.940706446231392,
-    "reward_percentage": 36.42226848547242
+    "reward": 133.90432764138203,
+    "reward_percentage": 73.42264908651488
   },
   {
     "epoch_id": 171,
     "epoch_percentage": 42.857142857142854,
-    "reward": 23.164700561475644,
-    "reward_percentage": 38.972092973027905
+    "reward": 133.91961505572345,
+    "reward_percentage": 73.42689975336538
   },
   {
     "epoch_id": 172,
     "epoch_percentage": 43.10776942355889,
-    "reward": -11.367351103678772,
-    "reward_percentage": 31.768991424448483
+    "reward": 130.03191402150017,
+    "reward_percentage": 72.34592415201507
   },
   {
     "epoch_id": 173,
     "epoch_percentage": 43.35839598997494,
-    "reward": -19.83906391254914,
-    "reward_percentage": 30.001861911136917
+    "reward": -130.15834725386253,
+    "reward_percentage": 0.0
   },
   {
     "epoch_id": 174,
     "epoch_percentage": 43.609022556390975,
-    "reward": 11.54142255641049,
-    "reward_percentage": 36.54757291816138
+    "reward": 134.39261009040243,
+    "reward_percentage": 73.55841606275926
   },
   {
     "epoch_id": 175,
     "epoch_percentage": 43.859649122807014,
-    "reward": -61.838338482791436,
-    "reward_percentage": 21.24115916953305
+    "reward": 155.93957855028373,
+    "reward_percentage": 79.54955246526549
   },
   {
     "epoch_id": 176,
     "epoch_percentage": 44.11027568922306,
-    "reward": -17.345022759323747,
-    "reward_percentage": 30.522098353130506
+    "reward": 204.9497195597318,
+    "reward_percentage": 93.17682631775088
   },
   {
     "epoch_id": 177,
     "epoch_percentage": 44.3609022556391,
-    "reward": -7.304428586141112,
-    "reward_percentage": 32.61648359669509
+    "reward": 207.95121160615858,
+    "reward_percentage": 94.01139143509732
   },
   {
     "epoch_id": 178,
     "epoch_percentage": 44.611528822055135,
-    "reward": -24.71444968820916,
-    "reward_percentage": 28.98489659522968
+    "reward": 191.25875382579665,
+    "reward_percentage": 89.37005213757946
   },
   {
     "epoch_id": 179,
     "epoch_percentage": 44.86215538847117,
-    "reward": -24.916294648231222,
-    "reward_percentage": 28.9427933990974
+    "reward": 179.91402800522397,
+    "reward_percentage": 86.21565016374095
   },
   {
     "epoch_id": 180,
     "epoch_percentage": 45.11278195488722,
-    "reward": -19.494437797210917,
-    "reward_percentage": 30.073748080228302
+    "reward": 175.00160849967494,
+    "reward_percentage": 84.84975150477766
   },
   {
     "epoch_id": 181,
     "epoch_percentage": 45.363408521303256,
-    "reward": -19.04533302513531,
-    "reward_percentage": 30.167427636559918
+    "reward": 182.7443163638527,
+    "reward_percentage": 87.00261208121637
   },
   {
     "epoch_id": 182,
     "epoch_percentage": 45.614035087719294,
-    "reward": 12.13527801829835,
-    "reward_percentage": 36.6714462761256
+    "reward": 180.93478665409108,
+    "reward_percentage": 86.49947219238446
   },
   {
     "epoch_id": 183,
     "epoch_percentage": 45.86466165413533,
-    "reward": -13.4164349489805,
-    "reward_percentage": 31.341569411925676
+    "reward": 173.40597485420923,
+    "reward_percentage": 84.40608543471252
   },
   {
     "epoch_id": 184,
     "epoch_percentage": 46.11528822055138,
-    "reward": 20.31207932886773,
-    "reward_percentage": 38.37705967997735
+    "reward": 176.00607863796301,
+    "reward_percentage": 85.12904451167714
   },
   {
     "epoch_id": 185,
     "epoch_percentage": 46.365914786967416,
-    "reward": -33.06921198940231,
-    "reward_percentage": 27.242161994538
+    "reward": 154.23008216450302,
+    "reward_percentage": 79.07422685062635
   },
   {
     "epoch_id": 186,
     "epoch_percentage": 46.616541353383454,
-    "reward": -9.89509672276912,
-    "reward_percentage": 32.076091561847335
+    "reward": 157.91403739217074,
+    "reward_percentage": 80.098550913233
   },
   {
     "epoch_id": 187,
     "epoch_percentage": 46.8671679197995,
-    "reward": -12.567376647574854,
-    "reward_percentage": 31.518675980194267
+    "reward": 182.16304285133103,
+    "reward_percentage": 86.84098893190118
   },
   {
     "epoch_id": 188,
     "epoch_percentage": 47.11779448621554,
-    "reward": -29.477434144498584,
-    "reward_percentage": 27.99137726873169
+    "reward": 174.09516522352578,
+    "reward_percentage": 84.5977148751861
   },
   {
     "epoch_id": 189,
     "epoch_percentage": 47.368421052631575,
-    "reward": 174.11594163462172,
-    "reward_percentage": 70.45927852682323
+    "reward": 180.20910062459194,
+    "reward_percentage": 86.29769513051065
   },
   {
     "epoch_id": 190,
     "epoch_percentage": 47.61904761904761,
-    "reward": 15.20762893520513,
-    "reward_percentage": 37.312313371482176
+    "reward": 175.64748951756295,
+    "reward_percentage": 85.02933877642384
   },
   {
     "epoch_id": 191,
     "epoch_percentage": 47.86967418546366,
-    "reward": 15.812380032230887,
-    "reward_percentage": 37.43845946919252
+    "reward": 180.93435253055856,
+    "reward_percentage": 86.49935148429952
   },
   {
     "epoch_id": 192,
     "epoch_percentage": 48.1203007518797,
-    "reward": 29.83876456209793,
-    "reward_percentage": 40.364247751561116
+    "reward": 178.24340145325388,
+    "reward_percentage": 85.7511323096801
   },
   {
     "epoch_id": 193,
     "epoch_percentage": 48.370927318295735,
-    "reward": -14.570023272748603,
-    "reward_percentage": 31.10094038930255
+    "reward": 198.19845773042616,
+    "reward_percentage": 91.2996373951554
   },
   {
     "epoch_id": 194,
     "epoch_percentage": 48.62155388471178,
-    "reward": -84.6197445767909,
-    "reward_percentage": 16.489145501023145
+    "reward": 203.6427074440967,
+    "reward_percentage": 92.81341148846398
   },
   {
     "epoch_id": 195,
     "epoch_percentage": 48.87218045112782,
-    "reward": -13.45613204181519,
-    "reward_percentage": 31.33328892533182
+    "reward": 211.43899997931436,
+    "reward_percentage": 94.98117128721701
   },
   {
     "epoch_id": 196,
     "epoch_percentage": 49.122807017543856,
-    "reward": -12.609233149120255,
-    "reward_percentage": 31.50994505872967
+    "reward": 212.10812335991477,
+    "reward_percentage": 95.167221099781
   },
   {
     "epoch_id": 197,
     "epoch_percentage": 49.373433583959894,
-    "reward": -12.941553092203122,
-    "reward_percentage": 31.440625855808996
+    "reward": 221.6764843515778,
+    "reward_percentage": 97.82770468271326
   },
   {
     "epoch_id": 198,
     "epoch_percentage": 49.62406015037594,
-    "reward": -6.596008601787696,
-    "reward_percentage": 32.76425417041659
+    "reward": 222.20763085574464,
+    "reward_percentage": 97.97539001311613
   },
   {
     "epoch_id": 199,
     "epoch_percentage": 49.87468671679198,
-    "reward": 63.68713637341125,
-    "reward_percentage": 47.42473931386785
+    "reward": 215.36018575393882,
+    "reward_percentage": 96.07145732346768
   },
   {
     "epoch_id": 200,
     "epoch_percentage": 50.125313283208015,
-    "reward": -25.395466771504026,
-    "reward_percentage": 28.842842040960598
+    "reward": 197.26522734142017,
+    "reward_percentage": 91.0401526065686
   },
   {
     "epoch_id": 201,
     "epoch_percentage": 50.37593984962406,
-    "reward": 13.085292955817721,
-    "reward_percentage": 36.869611567142016
+    "reward": 197.7046689411747,
+    "reward_percentage": 91.1623393805441
   },
   {
     "epoch_id": 202,
     "epoch_percentage": 50.6265664160401,
-    "reward": -40.6576643680356,
-    "reward_percentage": 25.65927333185795
+    "reward": 223.68685018884503,
+    "reward_percentage": 98.3866870737829
   },
   {
     "epoch_id": 203,
     "epoch_percentage": 50.877192982456144,
-    "reward": -11.110030061304998,
-    "reward_percentage": 31.82266647442169
+    "reward": 229.2375128007606,
+    "reward_percentage": 99.93004928244791
   },
   {
     "epoch_id": 204,
     "epoch_percentage": 51.127819548872175,
-    "reward": 13.844071549414668,
-    "reward_percentage": 37.02788653196499
+    "reward": 222.7190040541913,
+    "reward_percentage": 98.11757737419126
   },
   {
     "epoch_id": 205,
     "epoch_percentage": 51.37844611528822,
-    "reward": -10.633981940326851,
-    "reward_percentage": 31.921966191411173
+    "reward": 220.52825427147445,
+    "reward_percentage": 97.5084392118342
   },
   {
     "epoch_id": 206,
     "epoch_percentage": 51.62907268170426,
-    "reward": -61.0338300569371,
-    "reward_percentage": 21.408973000703824
+    "reward": 219.7276346186909,
+    "reward_percentage": 97.285826849669
   },
   {
     "epoch_id": 207,
     "epoch_percentage": 51.8796992481203,
-    "reward": -0.6436108849713988,
-    "reward_percentage": 34.00587530626776
+    "reward": 209.03212516121818,
+    "reward_percentage": 94.31193954049495
   },
   {
     "epoch_id": 208,
     "epoch_percentage": 52.130325814536334,
-    "reward": -10.328269116819005,
-    "reward_percentage": 31.9857353683423
+    "reward": 224.86851423384283,
+    "reward_percentage": 98.71524886142835
   },
   {
     "epoch_id": 209,
     "epoch_percentage": 52.38095238095239,
-    "reward": -22.616658775255928,
-    "reward_percentage": 29.422478500881034
+    "reward": 229.48908876291202,
+    "reward_percentage": 100.0
   },
   {
     "epoch_id": 210,
     "epoch_percentage": 52.63157894736842,
-    "reward": -23.53235273068689,
-    "reward_percentage": 29.231472284037995
+    "reward": 215.10515626557867,
+    "reward_percentage": 96.0005463526612
   },
   {
     "epoch_id": 211,
     "epoch_percentage": 52.88220551378446,
-    "reward": -16.730727393430158,
-    "reward_percentage": 30.650235306713782
+    "reward": 198.3060301653888,
+    "reward_percentage": 91.3295479197942
   },
   {
     "epoch_id": 212,
     "epoch_percentage": 53.1328320802005,
-    "reward": 1.8847712471440972,
-    "reward_percentage": 34.53327499360285
+    "reward": 216.69633812525166,
+    "reward_percentage": 96.44297460331019
   },
   {
     "epoch_id": 213,
     "epoch_percentage": 53.383458646616546,
-    "reward": 18.387583952551644,
-    "reward_percentage": 37.97562579589208
+    "reward": 206.73989055544763,
+    "reward_percentage": 93.6745835145052
   },
   {
     "epoch_id": 214,
     "epoch_percentage": 53.63408521303258,
-    "reward": 2.7813026216247163,
-    "reward_percentage": 34.72028405389532
+    "reward": 205.69061024288112,
+    "reward_percentage": 93.382831034858
   },
   {
     "epoch_id": 215,
     "epoch_percentage": 53.88471177944862,
-    "reward": 12.455327112868762,
-    "reward_percentage": 36.73820588111739
+    "reward": 199.21967001678777,
+    "reward_percentage": 91.58358555774258
   },
   {
     "epoch_id": 216,
     "epoch_percentage": 54.13533834586466,
-    "reward": 11.378404365641117,
-    "reward_percentage": 36.51356866629231
+    "reward": 197.3526675945815,
+    "reward_percentage": 91.06446537635495
   },
   {
     "epoch_id": 217,
     "epoch_percentage": 54.385964912280706,
-    "reward": 10.402042857213688,
-    "reward_percentage": 36.30990769759222
+    "reward": 208.09635285551104,
+    "reward_percentage": 94.05174797175442
   },
   {
     "epoch_id": 218,
     "epoch_percentage": 54.63659147869674,
-    "reward": -21.482399558149922,
-    "reward_percentage": 29.65907563106172
+    "reward": 207.90816007365453,
+    "reward_percentage": 93.99942095284368
   },
   {
     "epoch_id": 219,
     "epoch_percentage": 54.88721804511278,
-    "reward": 5.58831467372835,
-    "reward_percentage": 35.30580364755999
+    "reward": 197.71999580268633,
+    "reward_percentage": 91.1666010156836
   },
   {
     "epoch_id": 220,
     "epoch_percentage": 55.13784461152882,
-    "reward": -10.74648137190521,
-    "reward_percentage": 31.898499736603508
+    "reward": 206.18508593200303,
+    "reward_percentage": 93.52032004203637
   },
   {
     "epoch_id": 221,
     "epoch_percentage": 55.388471177944865,
-    "reward": -7.347870843280857,
-    "reward_percentage": 32.60742189967485
+    "reward": 203.2104275730876,
+    "reward_percentage": 92.69321603377182
   },
   {
     "epoch_id": 222,
     "epoch_percentage": 55.639097744360896,
-    "reward": -37.34256255857776,
-    "reward_percentage": 26.350776263944088
+    "reward": 214.33503673847977,
+    "reward_percentage": 95.786414553022
   },
   {
     "epoch_id": 223,
     "epoch_percentage": 55.88972431077694,
-    "reward": -19.984243269190777,
-    "reward_percentage": 29.971578693134482
+    "reward": 193.5962673398862,
+    "reward_percentage": 90.01999796785657
   },
   {
     "epoch_id": 224,
     "epoch_percentage": 56.14035087719298,
-    "reward": -27.928285084262143,
-    "reward_percentage": 28.314517002882774
+    "reward": 186.74810377349488,
+    "reward_percentage": 88.11586550906938
   },
   {
     "epoch_id": 225,
     "epoch_percentage": 56.390977443609025,
-    "reward": -0.3102737209561619,
-    "reward_percentage": 34.075406693096426
+    "reward": 216.6668014939159,
+    "reward_percentage": 96.43476194046936
   },
   {
     "epoch_id": 226,
     "epoch_percentage": 56.64160401002506,
-    "reward": 8.61955711993684,
-    "reward_percentage": 35.9380958545254
+    "reward": 220.9748366403703,
+    "reward_percentage": 97.63261147727337
   },
   {
     "epoch_id": 227,
     "epoch_percentage": 56.89223057644111,
-    "reward": -21.35880858194797,
-    "reward_percentage": 29.68485569072059
+    "reward": 216.32304783796718,
+    "reward_percentage": 96.33918120736142
   },
   {
     "epoch_id": 228,
     "epoch_percentage": 57.14285714285714,
-    "reward": -1.2264985208212358,
-    "reward_percentage": 33.88428974647682
+    "reward": 214.20072135657566,
+    "reward_percentage": 95.74906814972447
   },
   {
     "epoch_id": 229,
     "epoch_percentage": 57.393483709273184,
-    "reward": -19.838798344881443,
-    "reward_percentage": 30.001917306365005
+    "reward": 204.02055547412397,
+    "reward_percentage": 92.91847216516784
   },
   {
     "epoch_id": 230,
     "epoch_percentage": 57.64411027568922,
-    "reward": 196.41279659940227,
-    "reward_percentage": 75.11021882086104
+    "reward": 202.9778307694074,
+    "reward_percentage": 92.62854247283774
   },
   {
     "epoch_id": 231,
     "epoch_percentage": 57.89473684210527,
-    "reward": 23.2298257290082,
-    "reward_percentage": 38.985677546561334
+    "reward": 191.07029149014267,
+    "reward_percentage": 89.31765016921254
   },
   {
     "epoch_id": 232,
     "epoch_percentage": 58.1453634085213,
-    "reward": -17.60874861352475,
-    "reward_percentage": 30.46708731216439
+    "reward": 196.84901155834928,
+    "reward_percentage": 90.92442377288619
   },
   {
     "epoch_id": 233,
     "epoch_percentage": 58.39598997493734,
-    "reward": 315.7357304516847,
-    "reward_percentage": 100.0
+    "reward": 195.64679833562894,
+    "reward_percentage": 90.59014828463712
   },
   {
     "epoch_id": 234,
     "epoch_percentage": 58.64661654135338,
-    "reward": 304.87453253628405,
-    "reward_percentage": 97.73444357484283
+    "reward": 197.84011465144678,
+    "reward_percentage": 91.20000007173996
   },
   {
     "epoch_id": 235,
     "epoch_percentage": 58.89724310776943,
-    "reward": 285.53646334678234,
-    "reward_percentage": 93.7006816230155
+    "reward": 211.94817498984625,
+    "reward_percentage": 95.12274744195656
   },
   {
     "epoch_id": 236,
     "epoch_percentage": 59.14786967418546,
-    "reward": 257.58131166473436,
-    "reward_percentage": 87.86946723922246
+    "reward": 192.99237556419615,
+    "reward_percentage": 89.85208580855458
   },
   {
     "epoch_id": 237,
     "epoch_percentage": 59.3984962406015,
-    "reward": 266.71233948808583,
-    "reward_percentage": 89.77412443400111
+    "reward": 200.4492266598798,
+    "reward_percentage": 91.92546388633845
   },
   {
     "epoch_id": 238,
     "epoch_percentage": 59.64912280701754,
-    "reward": 245.29704604365824,
-    "reward_percentage": 85.30707061198638
+    "reward": 193.09575418435367,
+    "reward_percentage": 89.88083024263214
   },
   {
     "epoch_id": 239,
     "epoch_percentage": 59.899749373433586,
-    "reward": 219.33611078577889,
-    "reward_percentage": 79.89183334859209
+    "reward": 203.59963677370183,
+    "reward_percentage": 92.80143568491819
   },
   {
     "epoch_id": 240,
     "epoch_percentage": 60.150375939849624,
-    "reward": 195.89760037529356,
-    "reward_percentage": 75.00275313200811
+    "reward": 198.62187583402005,
+    "reward_percentage": 91.41736883466832
   },
   {
     "epoch_id": 241,
     "epoch_percentage": 60.40100250626567,
-    "reward": 130.00001105226738,
-    "reward_percentage": 61.25705877526889
+    "reward": 189.1290100769469,
+    "reward_percentage": 88.77787670809846
   },
   {
     "epoch_id": 242,
     "epoch_percentage": 60.6516290726817,
-    "reward": 60.50776120564865,
-    "reward_percentage": 46.76154784130513
+    "reward": 191.57702953859476,
+    "reward_percentage": 89.45854872643967
   },
   {
     "epoch_id": 243,
     "epoch_percentage": 60.902255639097746,
-    "reward": 48.961839276698164,
-    "reward_percentage": 44.35316362676042
+    "reward": 197.55346748444495,
+    "reward_percentage": 91.12029780271321
   },
   {
     "epoch_id": 244,
     "epoch_percentage": 61.152882205513784,
-    "reward": 38.58450323690643,
-    "reward_percentage": 42.188536803449466
+    "reward": 192.9637102478503,
+    "reward_percentage": 89.84411541492035
   },
   {
     "epoch_id": 245,
     "epoch_percentage": 61.40350877192983,
-    "reward": 75.26917376097285,
-    "reward_percentage": 49.840656915608086
+    "reward": 203.90365290740502,
+    "reward_percentage": 92.88596739660512
   },
   {
     "epoch_id": 246,
     "epoch_percentage": 61.65413533834586,
-    "reward": 121.45149199723195,
-    "reward_percentage": 59.47390811163423
+    "reward": 204.73878099369097,
+    "reward_percentage": 93.11817483162407
   },
   {
     "epoch_id": 247,
     "epoch_percentage": 61.904761904761905,
-    "reward": 114.47926178386061,
-    "reward_percentage": 58.01955831701531
+    "reward": 206.4821931388724,
+    "reward_percentage": 93.60293072603287
   },
   {
     "epoch_id": 248,
     "epoch_percentage": 62.15538847117794,
-    "reward": 79.41968084403615,
-    "reward_percentage": 50.70641850681904
+    "reward": 194.12908005854572,
+    "reward_percentage": 90.16814658934004
   },
   {
     "epoch_id": 249,
     "epoch_percentage": 62.40601503759399,
-    "reward": 33.354633593204696,
-    "reward_percentage": 41.09762907243185
+    "reward": 210.8835537848425,
+    "reward_percentage": 94.8267294258698
   },
   {
     "epoch_id": 250,
     "epoch_percentage": 62.65664160401002,
-    "reward": 14.271062285396289,
-    "reward_percentage": 37.1169532825132
+    "reward": 204.9986497175345,
+    "reward_percentage": 93.19043135226597
   },
   {
     "epoch_id": 251,
     "epoch_percentage": 62.907268170426065,
-    "reward": 12.073011671028999,
-    "reward_percentage": 36.658458028951955
+    "reward": 196.40196061972046,
+    "reward_percentage": 90.80012122159316
   },
   {
     "epoch_id": 252,
     "epoch_percentage": 63.1578947368421,
-    "reward": -25.13150295175335,
-    "reward_percentage": 28.897902719580333
+    "reward": 198.9291155370084,
+    "reward_percentage": 91.50279686006763
   },
   {
     "epoch_id": 253,
     "epoch_percentage": 63.40852130325815,
-    "reward": -16.3320489230751,
-    "reward_percentage": 30.7333963518508
+    "reward": 183.02946547470063,
+    "reward_percentage": 87.0818978156028
   },
   {
     "epoch_id": 254,
     "epoch_percentage": 63.65914786967418,
-    "reward": -21.0304860944082,
-    "reward_percentage": 29.753341057340656
+    "reward": 224.02959046618042,
+    "reward_percentage": 98.48198603688168
   },
   {
     "epoch_id": 255,
     "epoch_percentage": 63.90977443609023,
-    "reward": -25.029685497716418,
-    "reward_percentage": 28.919141001856673
+    "reward": 161.34872539321375,
+    "reward_percentage": 81.05356620239603
   },
   {
     "epoch_id": 256,
     "epoch_percentage": 64.16040100250626,
-    "reward": -25.826333476295268,
-    "reward_percentage": 28.75296679524374
+    "reward": 108.26756246017722,
+    "reward_percentage": 66.29434435976881
   },
   {
     "epoch_id": 257,
     "epoch_percentage": 64.41102756892231,
-    "reward": -23.292175919650646,
-    "reward_percentage": 29.281571188565398
+    "reward": 192.69540026875057,
+    "reward_percentage": 89.7695118025406
   },
   {
     "epoch_id": 258,
     "epoch_percentage": 64.66165413533834,
-    "reward": 169.99166047074704,
-    "reward_percentage": 69.59898744634104
+    "reward": 222.1649140781181,
+    "reward_percentage": 97.9635126094845
   },
   {
     "epoch_id": 259,
     "epoch_percentage": 64.91228070175438,
-    "reward": 56.9609795802772,
-    "reward_percentage": 46.02171840788731
+    "reward": 196.99960048944928,
+    "reward_percentage": 90.96629503791391
   },
   {
     "epoch_id": 260,
     "epoch_percentage": 65.16290726817043,
-    "reward": 256.7645342074144,
-    "reward_percentage": 87.6990941891438
+    "reward": 214.86382327979436,
+    "reward_percentage": 95.93344369555423
   },
   {
     "epoch_id": 261,
     "epoch_percentage": 65.41353383458647,
-    "reward": 277.5093805038399,
-    "reward_percentage": 92.02629825833058
+    "reward": 209.0851792401997,
+    "reward_percentage": 94.32669123164257
   },
   {
     "epoch_id": 262,
     "epoch_percentage": 65.6641604010025,
-    "reward": 257.8222621450159,
-    "reward_percentage": 87.91972752478198
+    "reward": 210.6062540949491,
+    "reward_percentage": 94.74962622364359
   },
   {
     "epoch_id": 263,
     "epoch_percentage": 65.91478696741855,
-    "reward": 240.21153955858298,
-    "reward_percentage": 84.24627584678798
+    "reward": 209.61779134567638,
+    "reward_percentage": 94.47478407261359
   },
   {
     "epoch_id": 264,
     "epoch_percentage": 66.16541353383458,
-    "reward": 222.8438687198743,
-    "reward_percentage": 80.6235227614346
+    "reward": 210.62652913006906,
+    "reward_percentage": 94.75526369887336
   },
   {
     "epoch_id": 265,
     "epoch_percentage": 66.41604010025063,
-    "reward": 12.646787088600176,
-    "reward_percentage": 36.77814285506422
+    "reward": 200.06471631249102,
+    "reward_percentage": 91.8185507517288
   },
   {
     "epoch_id": 266,
     "epoch_percentage": 66.66666666666666,
-    "reward": 154.44580813674028,
-    "reward_percentage": 66.35625069536871
+    "reward": -39.428798914412724,
+    "reward_percentage": 25.22735858882031
   },
   {
     "epoch_id": 267,
     "epoch_percentage": 66.9172932330827,
-    "reward": 199.93103220360211,
-    "reward_percentage": 75.84409378938632
+    "reward": 214.43028760801207,
+    "reward_percentage": 95.81289906535088
   },
   {
     "epoch_id": 268,
     "epoch_percentage": 67.16791979949875,
-    "reward": 173.24143258753955,
-    "reward_percentage": 70.27686314263565
+    "reward": 205.29704337304733,
+    "reward_percentage": 93.27339973341661
   },
   {
     "epoch_id": 269,
     "epoch_percentage": 67.41854636591479,
-    "reward": 187.24375597441835,
-    "reward_percentage": 73.19763246876036
+    "reward": 211.46898506014622,
+    "reward_percentage": 94.98950864147817
   },
   {
     "epoch_id": 270,
     "epoch_percentage": 67.66917293233082,
-    "reward": 190.9631253102766,
-    "reward_percentage": 73.97346227703942
+    "reward": 201.8161575600006,
+    "reward_percentage": 92.30553913871897
   },
   {
     "epoch_id": 271,
     "epoch_percentage": 67.91979949874687,
-    "reward": 179.00954017735378,
-    "reward_percentage": 71.48004287592931
+    "reward": 204.3736442476752,
+    "reward_percentage": 93.01664852851462
   },
   {
     "epoch_id": 272,
     "epoch_percentage": 68.1704260651629,
-    "reward": 159.11123337050847,
-    "reward_percentage": 67.32941997161093
+    "reward": 205.0683448748458,
+    "reward_percentage": 93.20981009665054
   },
   {
     "epoch_id": 273,
     "epoch_percentage": 68.42105263157895,
-    "reward": 138.75758402617603,
-    "reward_percentage": 63.08381636447443
+    "reward": 221.7352203579033,
+    "reward_percentage": 97.84403623423938
   },
   {
     "epoch_id": 274,
     "epoch_percentage": 68.67167919799499,
-    "reward": 26.21438696168591,
-    "reward_percentage": 39.6082324368815
+    "reward": 207.6145461935505,
+    "reward_percentage": 93.91778158864969
   },
   {
     "epoch_id": 275,
     "epoch_percentage": 68.92230576441104,
-    "reward": 139.8897587901681,
-    "reward_percentage": 63.31997869490448
+    "reward": 216.66414555879973,
+    "reward_percentage": 96.43402345748571
   },
   {
     "epoch_id": 276,
     "epoch_percentage": 69.17293233082707,
-    "reward": 129.18893269657693,
-    "reward_percentage": 61.087874510848586
+    "reward": 216.14460925456538,
+    "reward_percentage": 96.28956634415592
   },
   {
     "epoch_id": 277,
     "epoch_percentage": 69.42355889724311,
-    "reward": 127.67405803197626,
-    "reward_percentage": 60.77188413332058
+    "reward": 215.62892648890164,
+    "reward_percentage": 96.14618070755162
   },
   {
     "epoch_id": 278,
     "epoch_percentage": 69.67418546365914,
-    "reward": 134.7851778386687,
-    "reward_percentage": 62.25520515311991
+    "reward": 203.630218296416,
+    "reward_percentage": 92.80993887989516
   },
   {
     "epoch_id": 279,
     "epoch_percentage": 69.92481203007519,
-    "reward": 128.14736233017553,
-    "reward_percentage": 60.87061151147832
+    "reward": 205.498626042544,
+    "reward_percentage": 93.32944981171808
   },
   {
     "epoch_id": 280,
     "epoch_percentage": 70.17543859649122,
-    "reward": 112.73050359155323,
-    "reward_percentage": 57.65478176202681
+    "reward": 209.65900118077155,
+    "reward_percentage": 94.48624247074694
   },
   {
     "epoch_id": 281,
     "epoch_percentage": 70.42606516290726,
-    "reward": 122.1451125622413,
-    "reward_percentage": 59.61859164837835
+    "reward": 197.5567208360858,
+    "reward_percentage": 91.12120239741209
   },
   {
     "epoch_id": 282,
     "epoch_percentage": 70.67669172932331,
-    "reward": 121.60484121800125,
-    "reward_percentage": 59.5058954960013
+    "reward": 210.18192746627454,
+    "reward_percentage": 94.63164216865513
   },
   {
     "epoch_id": 283,
     "epoch_percentage": 70.92731829573935,
-    "reward": 128.97851996414443,
-    "reward_percentage": 61.04398414796132
+    "reward": 208.28018242157447,
+    "reward_percentage": 94.1028617981449
   },
   {
     "epoch_id": 284,
     "epoch_percentage": 71.17794486215539,
-    "reward": 124.08742832819185,
-    "reward_percentage": 60.02374271896089
+    "reward": 203.5629219486854,
+    "reward_percentage": 92.7912271247174
   },
   {
     "epoch_id": 285,
     "epoch_percentage": 71.42857142857143,
-    "reward": 116.42986532536592,
-    "reward_percentage": 58.426438149314976
+    "reward": 202.03623079436034,
+    "reward_percentage": 92.36673052014439
   },
   {
     "epoch_id": 286,
     "epoch_percentage": 71.67919799498746,
-    "reward": 133.40194526640036,
-    "reward_percentage": 61.96667423176125
+    "reward": 196.59363646076537,
+    "reward_percentage": 90.85341670540579
   },
   {
     "epoch_id": 287,
     "epoch_percentage": 71.9298245614035,
-    "reward": 137.1512714912423,
-    "reward_percentage": 62.74875280033761
+    "reward": 218.60147761259395,
+    "reward_percentage": 96.97269879888417
   },
   {
     "epoch_id": 288,
     "epoch_percentage": 72.18045112781954,
-    "reward": 115.52032685790819,
-    "reward_percentage": 58.236715916562495
+    "reward": 217.03872784103424,
+    "reward_percentage": 96.53817609273959
   },
   {
     "epoch_id": 289,
     "epoch_percentage": 72.4310776942356,
-    "reward": 79.18927408930304,
-    "reward_percentage": 50.65835755556384
+    "reward": 202.33222042535988,
+    "reward_percentage": 92.44903046207578
   },
   {
     "epoch_id": 290,
     "epoch_percentage": 72.68170426065163,
-    "reward": 131.95890546294328,
-    "reward_percentage": 61.66566801458847
+    "reward": 205.5489511981786,
+    "reward_percentage": 93.3434427254983
   },
   {
     "epoch_id": 291,
     "epoch_percentage": 72.93233082706767,
-    "reward": 128.16102438317347,
-    "reward_percentage": 60.87346130320401
+    "reward": 208.09397732404358,
+    "reward_percentage": 94.05108745502899
   },
   {
     "epoch_id": 292,
     "epoch_percentage": 73.1829573934837,
-    "reward": 117.45612527113505,
-    "reward_percentage": 58.64050752104808
+    "reward": 216.97071326422406,
+    "reward_percentage": 96.5192646339055
   },
   {
     "epoch_id": 293,
     "epoch_percentage": 73.43358395989975,
-    "reward": 89.1513871716984,
-    "reward_percentage": 52.73637229001227
+    "reward": 200.58056871470805,
+    "reward_percentage": 91.96198355579112
   },
   {
     "epoch_id": 294,
     "epoch_percentage": 73.68421052631578,
-    "reward": 81.26477061565028,
-    "reward_percentage": 51.09128903580047
+    "reward": 214.76018738323427,
+    "reward_percentage": 95.90462772575117
   },
   {
     "epoch_id": 295,
     "epoch_percentage": 73.93483709273183,
-    "reward": 72.09738680064746,
-    "reward_percentage": 49.17904828061528
+    "reward": 200.39976614890296,
+    "reward_percentage": 91.91171138707844
   },
   {
     "epoch_id": 296,
     "epoch_percentage": 74.18546365914787,
-    "reward": 65.3218682247915,
-    "reward_percentage": 47.765730913335176
+    "reward": 200.35664531994107,
+    "reward_percentage": 91.89972163693886
   },
   {
     "epoch_id": 297,
     "epoch_percentage": 74.43609022556392,
-    "reward": 124.52383331561403,
-    "reward_percentage": 60.11477320481762
+    "reward": 202.9208697563621,
+    "reward_percentage": 92.61270445834326
   },
   {
     "epoch_id": 298,
     "epoch_percentage": 74.68671679197995,
-    "reward": 63.57802064690013,
-    "reward_percentage": 47.40197867206678
+    "reward": 206.384579558401,
+    "reward_percentage": 93.57578926172759
   },
   {
     "epoch_id": 299,
     "epoch_percentage": 74.93734335839599,
-    "reward": 31.148790101766632,
-    "reward_percentage": 40.637508288900925
+    "reward": 199.5125288642492,
+    "reward_percentage": 91.66501498504644
   },
   {
     "epoch_id": 300,
     "epoch_percentage": 75.18796992481202,
-    "reward": 145.98583581337493,
-    "reward_percentage": 64.5915701506311
+    "reward": 199.70667366894205,
+    "reward_percentage": 91.7189969644102
   },
   {
     "epoch_id": 301,
     "epoch_percentage": 75.43859649122807,
-    "reward": 132.4400775601195,
-    "reward_percentage": 61.76603655080842
+    "reward": 201.9963807750483,
+    "reward_percentage": 92.35565021890454
   },
   {
     "epoch_id": 302,
     "epoch_percentage": 75.6892230576441,
-    "reward": 128.19520243534078,
-    "reward_percentage": 60.880590563373104
+    "reward": 216.09264025393742,
+    "reward_percentage": 96.27511635913628
   },
   {
     "epoch_id": 303,
     "epoch_percentage": 75.93984962406014,
-    "reward": 122.5778631355043,
-    "reward_percentage": 59.708859853541654
+    "reward": 218.1258766314676,
+    "reward_percentage": 96.8404579058602
   },
   {
     "epoch_id": 304,
     "epoch_percentage": 76.19047619047619,
-    "reward": 110.34434995840293,
-    "reward_percentage": 57.15704976808805
+    "reward": 197.87760901661574,
+    "reward_percentage": 91.2104253831461
   },
   {
     "epoch_id": 305,
     "epoch_percentage": 76.44110275689223,
-    "reward": 135.95444192308452,
-    "reward_percentage": 62.49910401029823
+    "reward": 208.18377676215724,
+    "reward_percentage": 94.07605619639087
   },
   {
     "epoch_id": 306,
     "epoch_percentage": 76.69172932330827,
-    "reward": 123.45804175387116,
-    "reward_percentage": 59.89245786360087
+    "reward": 211.9931829848837,
+    "reward_percentage": 95.13526191878306
   },
   {
     "epoch_id": 307,
     "epoch_percentage": 76.94235588972431,
-    "reward": 132.8470749873896,
-    "reward_percentage": 61.85093286183751
+    "reward": 203.27383477432593,
+    "reward_percentage": 92.7108464114385
   },
   {
     "epoch_id": 308,
     "epoch_percentage": 77.19298245614034,
-    "reward": 129.61920026999337,
-    "reward_percentage": 61.177624782695496
+    "reward": 204.77084584322955,
+    "reward_percentage": 93.12709046575002
   },
   {
     "epoch_id": 309,
     "epoch_percentage": 77.44360902255639,
-    "reward": 122.2459481763508,
-    "reward_percentage": 59.63962512693291
+    "reward": 206.41290595676463,
+    "reward_percentage": 93.58366541918816
   },
   {
     "epoch_id": 310,
     "epoch_percentage": 77.69423558897243,
-    "reward": 120.90048303075739,
-    "reward_percentage": 59.35897217970121
+    "reward": 212.91210504396207,
+    "reward_percentage": 95.39076827502343
   },
   {
     "epoch_id": 311,
     "epoch_percentage": 77.94486215538848,
-    "reward": 126.31723002167948,
-    "reward_percentage": 60.48886098610379
+    "reward": 211.26723992383185,
+    "reward_percentage": 94.9334133892643
   },
   {
     "epoch_id": 312,
     "epoch_percentage": 78.19548872180451,
-    "reward": 117.01990183395658,
-    "reward_percentage": 58.549514905076826
+    "reward": 207.40267871392683,
+    "reward_percentage": 93.85887181802262
   },
   {
     "epoch_id": 313,
     "epoch_percentage": 78.44611528822055,
-    "reward": 105.84322765218528,
-    "reward_percentage": 56.218152729225515
+    "reward": 201.47512224419313,
+    "reward_percentage": 92.2107142403172
   },
   {
     "epoch_id": 314,
     "epoch_percentage": 78.69674185463658,
-    "reward": 102.87789047005735,
-    "reward_percentage": 55.599607817508044
+    "reward": 203.0213905447192,
+    "reward_percentage": 92.64065427204706
   },
   {
     "epoch_id": 315,
     "epoch_percentage": 78.94736842105263,
-    "reward": 116.40479990688152,
-    "reward_percentage": 58.421209709474454
+    "reward": 210.32627826083007,
+    "reward_percentage": 94.67177891928912
   },
   {
     "epoch_id": 316,
     "epoch_percentage": 79.19799498746866,
-    "reward": 107.68911055322883,
-    "reward_percentage": 56.60318869847316
+    "reward": 188.60067319803588,
+    "reward_percentage": 88.63097259423557
   },
   {
     "epoch_id": 317,
     "epoch_percentage": 79.4486215538847,
-    "reward": 113.86159773179352,
-    "reward_percentage": 57.89071868324297
+    "reward": 203.41060473134283,
+    "reward_percentage": 92.74887530955375
   },
   {
     "epoch_id": 318,
     "epoch_percentage": 79.69924812030075,
-    "reward": -21.294904304452572,
-    "reward_percentage": 29.69818559664832
+    "reward": 209.64114597147955,
+    "reward_percentage": 94.48127782829327
   },
   {
     "epoch_id": 319,
     "epoch_percentage": 79.9498746867168,
-    "reward": 110.63409687100928,
-    "reward_percentage": 57.2174885875109
+    "reward": 203.0062426559208,
+    "reward_percentage": 92.63644240028557
   },
   {
     "epoch_id": 320,
     "epoch_percentage": 80.20050125313283,
-    "reward": 99.77426284136378,
-    "reward_percentage": 54.95221665768839
+    "reward": 219.46691327830177,
+    "reward_percentage": 97.2133332589245
   },
   {
     "epoch_id": 321,
     "epoch_percentage": 80.45112781954887,
-    "reward": 105.30508446518616,
-    "reward_percentage": 56.10590049292
+    "reward": 226.63124109077253,
+    "reward_percentage": 99.20537521307222
   },
   {
     "epoch_id": 322,
     "epoch_percentage": 80.7017543859649,
-    "reward": 113.62257101287261,
-    "reward_percentage": 57.8408596784579
+    "reward": 202.4922639397139,
+    "reward_percentage": 92.49353057477686
   },
   {
     "epoch_id": 323,
     "epoch_percentage": 80.95238095238095,
-    "reward": 106.0200532638543,
-    "reward_percentage": 56.255037095367214
+    "reward": 208.1262121295907,
+    "reward_percentage": 94.0600503454375
   },
   {
     "epoch_id": 324,
     "epoch_percentage": 81.203007518797,
-    "reward": 230.27715559933262,
-    "reward_percentage": 82.17404517903223
+    "reward": 219.24226638993323,
+    "reward_percentage": 97.15087017261513
   },
   {
     "epoch_id": 325,
     "epoch_percentage": 81.45363408521304,
-    "reward": 209.74867132990002,
-    "reward_percentage": 77.89197244657569
+    "reward": 216.72621750466223,
+    "reward_percentage": 96.45128256728222
   },
   {
     "epoch_id": 326,
     "epoch_percentage": 81.70426065162907,
-    "reward": 185.83719675820808,
-    "reward_percentage": 72.90423580160905
+    "reward": 210.43536928009848,
+    "reward_percentage": 94.70211168642257
   },
   {
     "epoch_id": 327,
     "epoch_percentage": 81.95488721804512,
-    "reward": 165.4019093468218,
-    "reward_percentage": 68.64160316611014
+    "reward": 206.75639080832144,
+    "reward_percentage": 93.67917141121221
   },
   {
     "epoch_id": 328,
     "epoch_percentage": 82.20551378446115,
-    "reward": 162.02132522858966,
-    "reward_percentage": 67.9364411637692
+    "reward": 199.02510399065812,
+    "reward_percentage": 91.52948645772273
   },
   {
     "epoch_id": 329,
     "epoch_percentage": 82.45614035087719,
-    "reward": 144.58657343694702,
-    "reward_percentage": 64.2996955441568
+    "reward": 190.15717802178656,
+    "reward_percentage": 89.06375889211373
   },
   {
     "epoch_id": 330,
     "epoch_percentage": 82.70676691729322,
-    "reward": 129.85635793537315,
-    "reward_percentage": 61.22709391830665
+    "reward": 204.4899728188277,
+    "reward_percentage": 93.04899369756153
   },
   {
     "epoch_id": 331,
     "epoch_percentage": 82.95739348370927,
-    "reward": 109.35967389934031,
-    "reward_percentage": 56.95165445260959
+    "reward": 209.35786842308144,
+    "reward_percentage": 94.40251248200427
   },
   {
     "epoch_id": 332,
     "epoch_percentage": 83.20802005012531,
-    "reward": 64.60481284185883,
-    "reward_percentage": 47.61615906659687
+    "reward": 194.6633644338621,
+    "reward_percentage": 90.31670440508142
   },
   {
     "epoch_id": 333,
     "epoch_percentage": 83.45864661654136,
-    "reward": 66.0237429280979,
-    "reward_percentage": 47.91213619534153
+    "reward": 196.90382855921618,
+    "reward_percentage": 90.93966564461313
   },
   {
     "epoch_id": 334,
     "epoch_percentage": 83.70927318295739,
-    "reward": 158.2276780769095,
-    "reward_percentage": 67.14511761491082
+    "reward": 196.32164540742514,
+    "reward_percentage": 90.77778957002215
   },
   {
     "epoch_id": 335,
     "epoch_percentage": 83.95989974937343,
-    "reward": 177.66581252279067,
-    "reward_percentage": 71.1997523550154
+    "reward": 187.40455500305688,
+    "reward_percentage": 88.29839182896545
   },
   {
     "epoch_id": 336,
     "epoch_percentage": 84.21052631578947,
-    "reward": 97.72363726969579,
-    "reward_percentage": 54.52447305374426
+    "reward": 196.2206626237094,
+    "reward_percentage": 90.74971129846982
   },
   {
     "epoch_id": 337,
     "epoch_percentage": 84.46115288220551,
-    "reward": 115.0050102167359,
-    "reward_percentage": 58.129225109701956
+    "reward": 200.91355972552248,
+    "reward_percentage": 92.05457173450925
   },
   {
     "epoch_id": 338,
     "epoch_percentage": 84.71177944862156,
-    "reward": 108.55917905302508,
-    "reward_percentage": 56.78467782107218
+    "reward": 199.19182985044569,
+    "reward_percentage": 91.57584459713672
   },
   {
     "epoch_id": 339,
     "epoch_percentage": 84.9624060150376,
-    "reward": 158.2689047364969,
-    "reward_percentage": 67.15371715653076
+    "reward": 201.70832506871506,
+    "reward_percentage": 92.27555630539759
   },
   {
     "epoch_id": 340,
     "epoch_percentage": 85.21303258145363,
-    "reward": 43.33054639607015,
-    "reward_percentage": 43.17852231490674
+    "reward": 224.1310062822848,
+    "reward_percentage": 98.5101847131263
   },
   {
     "epoch_id": 341,
     "epoch_percentage": 85.46365914786968,
-    "reward": 102.31109175353075,
-    "reward_percentage": 55.48137827376897
+    "reward": 221.25541273044763,
+    "reward_percentage": 97.7106256828478
   },
   {
     "epoch_id": 342,
     "epoch_percentage": 85.71428571428571,
-    "reward": 107.52094251189104,
-    "reward_percentage": 56.5681102301931
+    "reward": 204.48176107932338,
+    "reward_percentage": 93.0467104226979
   },
   {
     "epoch_id": 343,
     "epoch_percentage": 85.96491228070175,
-    "reward": 106.22772344425387,
-    "reward_percentage": 56.298355384489874
+    "reward": 198.84390271485347,
+    "reward_percentage": 91.47910342766097
   },
   {
     "epoch_id": 344,
     "epoch_percentage": 86.21553884711778,
-    "reward": -33.0430335216764,
-    "reward_percentage": 27.247622607282484
+    "reward": 207.5161525943999,
+    "reward_percentage": 93.89042324008469
   },
   {
     "epoch_id": 345,
     "epoch_percentage": 86.46616541353383,
-    "reward": 104.16517529254183,
-    "reward_percentage": 55.86812482855078
+    "reward": 200.16813671734403,
+    "reward_percentage": 91.8473068040445
   },
   {
     "epoch_id": 346,
     "epoch_percentage": 86.71679197994987,
-    "reward": 102.28758839086194,
-    "reward_percentage": 55.476475665905454
+    "reward": 204.55242486231734,
+    "reward_percentage": 93.06635849353543
   },
   {
     "epoch_id": 347,
     "epoch_percentage": 86.96741854636592,
-    "reward": 8.586548984215279,
-    "reward_percentage": 35.93121062929068
+    "reward": 219.09854306714186,
+    "reward_percentage": 97.11090789055825
   },
   {
     "epoch_id": 348,
     "epoch_percentage": 87.21804511278195,
-    "reward": 105.57627305817516,
-    "reward_percentage": 56.16246819972924
+    "reward": 191.4766743167561,
+    "reward_percentage": 89.43064494852037
   },
   {
     "epoch_id": 349,
     "epoch_percentage": 87.468671679198,
-    "reward": 101.85633567753328,
-    "reward_percentage": 55.38651990198712
+    "reward": 201.4037531159613,
+    "reward_percentage": 92.19087004817663
   },
   {
     "epoch_id": 350,
     "epoch_percentage": 87.71929824561403,
-    "reward": 93.67463809355587,
-    "reward_percentage": 53.6798851758314
+    "reward": 196.97546133479918,
+    "reward_percentage": 90.95958314392199
   },
   {
     "epoch_id": 351,
     "epoch_percentage": 87.96992481203007,
-    "reward": 101.7960845112063,
-    "reward_percentage": 55.37395200495969
+    "reward": 196.98757496168372,
+    "reward_percentage": 90.96295133890169
   },
   {
     "epoch_id": 352,
     "epoch_percentage": 88.22055137844612,
-    "reward": 89.48314926252542,
-    "reward_percentage": 52.80557512954721
+    "reward": 197.9924469005887,
+    "reward_percentage": 91.24235606649665
   },
   {
     "epoch_id": 353,
     "epoch_percentage": 88.47117794486216,
-    "reward": 87.5187073237538,
-    "reward_percentage": 52.395808721559966
+    "reward": 204.43829452384816,
+    "reward_percentage": 93.03462454327203
   },
   {
     "epoch_id": 354,
     "epoch_percentage": 88.7218045112782,
-    "reward": 92.64062547153245,
-    "reward_percentage": 53.4641986596878
+    "reward": 222.16491500457337,
+    "reward_percentage": 97.96351286708544
   },
   {
     "epoch_id": 355,
     "epoch_percentage": 88.97243107769424,
-    "reward": 92.52304415397495,
-    "reward_percentage": 53.43967216532265
+    "reward": 216.8012887620951,
+    "reward_percentage": 96.47215613676023
   },
   {
     "epoch_id": 356,
     "epoch_percentage": 89.22305764411027,
-    "reward": 120.92353426254371,
-    "reward_percentage": 59.363780476786665
+    "reward": 210.404172968346,
+    "reward_percentage": 94.69343754930149
   },
   {
     "epoch_id": 357,
     "epoch_percentage": 89.47368421052632,
-    "reward": 158.72647966694424,
-    "reward_percentage": 67.2491635181329
+    "reward": 196.3354987521745,
+    "reward_percentage": 90.78164149370129
   },
   {
     "epoch_id": 358,
     "epoch_percentage": 89.72431077694235,
-    "reward": 91.57900673437221,
-    "reward_percentage": 53.24275373530886
+    "reward": 208.40093008523985,
+    "reward_percentage": 94.13643569623873
   },
   {
     "epoch_id": 359,
     "epoch_percentage": 89.97493734335839,
-    "reward": 83.11251509182588,
-    "reward_percentage": 51.476713314287515
+    "reward": 215.2761207110106,
+    "reward_percentage": 96.04808303117208
   },
   {
     "epoch_id": 360,
     "epoch_percentage": 90.22556390977444,
-    "reward": 88.20272836051114,
-    "reward_percentage": 52.53848987577877
+    "reward": 194.96031102801038,
+    "reward_percentage": 90.39927043069726
   },
   {
     "epoch_id": 361,
     "epoch_percentage": 90.47619047619048,
-    "reward": 83.48499250316998,
-    "reward_percentage": 51.55440903432407
+    "reward": 218.2823081894258,
+    "reward_percentage": 96.88395371377997
   },
   {
     "epoch_id": 362,
     "epoch_percentage": 90.72681704260651,
-    "reward": 97.73335229430592,
-    "reward_percentage": 54.526499527858576
+    "reward": 212.2206393141643,
+    "reward_percentage": 95.1985061703756
   },
   {
     "epoch_id": 363,
     "epoch_percentage": 90.97744360902256,
-    "reward": 204.4087425402107,
-    "reward_percentage": 76.77810728422484
+    "reward": 208.01654544544877,
+    "reward_percentage": 94.02955751463725
   },
   {
     "epoch_id": 364,
     "epoch_percentage": 91.22807017543859,
-    "reward": 139.05113334208139,
-    "reward_percentage": 63.14504833390635
+    "reward": 211.58550970228643,
+    "reward_percentage": 95.0219083280798
   },
   {
     "epoch_id": 365,
     "epoch_percentage": 91.47869674185463,
-    "reward": 157.7450210314437,
-    "reward_percentage": 67.04443933070867
+    "reward": 219.38614175623442,
+    "reward_percentage": 97.19087473038279
   },
   {
     "epoch_id": 366,
     "epoch_percentage": 91.72932330827066,
-    "reward": 29.272471566212282,
-    "reward_percentage": 40.24612369698229
+    "reward": 198.53119173065437,
+    "reward_percentage": 91.3921541120583
   },
   {
     "epoch_id": 367,
     "epoch_percentage": 91.97994987468672,
-    "reward": 183.32599119722673,
-    "reward_percentage": 72.38041900553497
+    "reward": 199.40920894564167,
+    "reward_percentage": 91.63628687293982
   },
   {
     "epoch_id": 368,
     "epoch_percentage": 92.23057644110276,
-    "reward": 180.05689504407636,
-    "reward_percentage": 71.69851247442162
+    "reward": 207.74807811534092,
+    "reward_percentage": 93.9549101507964
   },
   {
     "epoch_id": 369,
     "epoch_percentage": 92.4812030075188,
-    "reward": 172.41050467702627,
-    "reward_percentage": 70.10353842457334
+    "reward": 216.44968696582927,
+    "reward_percentage": 96.37439322757342
   },
   {
     "epoch_id": 370,
     "epoch_percentage": 92.73182957393483,
-    "reward": 162.38055946680873,
-    "reward_percentage": 68.01137446697139
+    "reward": 203.84928217684237,
+    "reward_percentage": 92.87084961037404
   },
   {
     "epoch_id": 371,
     "epoch_percentage": 92.98245614035088,
-    "reward": 157.08419149340074,
-    "reward_percentage": 66.9065957321012
+    "reward": 216.4451636350403,
+    "reward_percentage": 96.373135515065
   },
   {
     "epoch_id": 372,
     "epoch_percentage": 93.23308270676691,
-    "reward": 129.52520928144912,
-    "reward_percentage": 61.15801903665701
+    "reward": 206.1258314108345,
+    "reward_percentage": 93.50384431741429
   },
   {
     "epoch_id": 373,
     "epoch_percentage": 93.48370927318295,
-    "reward": 128.24568075852088,
-    "reward_percentage": 60.89111992581569
+    "reward": 204.81917667380657,
+    "reward_percentage": 93.14052885727932
   },
   {
     "epoch_id": 374,
     "epoch_percentage": 93.734335839599,
-    "reward": 153.0626396898561,
-    "reward_percentage": 66.06773315003703
+    "reward": 194.27979508567682,
+    "reward_percentage": 90.21005291537988
   },
   {
     "epoch_id": 375,
     "epoch_percentage": 93.98496240601504,
-    "reward": 116.05616185716073,
-    "reward_percentage": 58.34848668391581
+    "reward": 214.0945689557147,
+    "reward_percentage": 95.71955246568771
   },
   {
     "epoch_id": 376,
     "epoch_percentage": 94.23558897243107,
-    "reward": 29.38149992437032,
-    "reward_percentage": 40.26886611446454
+    "reward": 206.8371417649293,
+    "reward_percentage": 93.70162422152616
   },
   {
     "epoch_id": 377,
     "epoch_percentage": 94.48621553884712,
-    "reward": -40.640307856661785,
-    "reward_percentage": 25.662893757170842
+    "reward": 205.01972573059052,
+    "reward_percentage": 93.19629153947861
   },
   {
     "epoch_id": 378,
     "epoch_percentage": 94.73684210526315,
-    "reward": 250.27795393260763,
-    "reward_percentage": 86.34604697157599
+    "reward": 216.24900940380184,
+    "reward_percentage": 96.31859481448029
   },
   {
     "epoch_id": 379,
     "epoch_percentage": 94.9874686716792,
-    "reward": 135.2253542223878,
-    "reward_percentage": 62.34702232118047
+    "reward": 216.3294111447038,
+    "reward_percentage": 96.3409505253377
   },
   {
     "epoch_id": 380,
     "epoch_percentage": 95.23809523809523,
-    "reward": 129.06929533576925,
-    "reward_percentage": 61.06291914279639
+    "reward": 218.04233286199087,
+    "reward_percentage": 96.81722855369188
   },
   {
     "epoch_id": 381,
     "epoch_percentage": 95.48872180451127,
-    "reward": 133.61703830877505,
-    "reward_percentage": 62.01154086875235
+    "reward": 207.09175087560985,
+    "reward_percentage": 93.77241830628329
   },
   {
     "epoch_id": 382,
     "epoch_percentage": 95.73934837092732,
-    "reward": 134.8459249568705,
-    "reward_percentage": 62.26787650162344
+    "reward": 204.97912324570453,
+    "reward_percentage": 93.1850020151223
   },
   {
     "epoch_id": 383,
     "epoch_percentage": 95.98997493734336,
-    "reward": 129.1529046365132,
-    "reward_percentage": 61.08035935427017
+    "reward": 197.8241318096976,
+    "reward_percentage": 91.19555604123993
   },
   {
     "epoch_id": 384,
     "epoch_percentage": 96.2406015037594,
-    "reward": 118.94185187344843,
-    "reward_percentage": 58.95041785286564
+    "reward": 199.01288466947307,
+    "reward_percentage": 91.52608887443382
   },
   {
     "epoch_id": 385,
     "epoch_percentage": 96.49122807017544,
-    "reward": 114.94870662695318,
-    "reward_percentage": 58.117480644626816
+    "reward": 215.76569854997214,
+    "reward_percentage": 96.18421019069915
   },
   {
     "epoch_id": 386,
     "epoch_percentage": 96.74185463659147,
-    "reward": 112.27546062379074,
-    "reward_percentage": 57.5598635469858
+    "reward": 217.68706113704465,
+    "reward_percentage": 96.71844522052511
   },
   {
     "epoch_id": 387,
     "epoch_percentage": 96.99248120300751,
-    "reward": 151.46359579639287,
-    "reward_percentage": 65.73418576464161
+    "reward": 209.63779656512452,
+    "reward_percentage": 94.480346525573
   },
   {
     "epoch_id": 388,
     "epoch_percentage": 97.24310776942356,
-    "reward": 133.58648166186325,
-    "reward_percentage": 62.005167003891245
+    "reward": 207.86619299823593,
+    "reward_percentage": 93.98775200397436
   },
   {
     "epoch_id": 389,
     "epoch_percentage": 97.4937343358396,
-    "reward": 99.23461653049746,
-    "reward_percentage": 54.8396508821249
+    "reward": 207.75093562731644,
+    "reward_percentage": 93.95570468224284
   },
   {
     "epoch_id": 390,
     "epoch_percentage": 97.74436090225564,
-    "reward": 51.460654404429384,
-    "reward_percentage": 44.874395880514314
+    "reward": 201.1528431302619,
+    "reward_percentage": 92.12110450543334
   },
   {
     "epoch_id": 391,
     "epoch_percentage": 97.99498746867168,
-    "reward": 1.9855887356670983,
-    "reward_percentage": 34.55430469130937
+    "reward": 203.7112151285978,
+    "reward_percentage": 92.83246005593325
   },
   {
     "epoch_id": 392,
     "epoch_percentage": 98.24561403508771,
-    "reward": 3.03263606014606,
-    "reward_percentage": 34.77271013902276
+    "reward": 214.92919614288445,
+    "reward_percentage": 95.95162062566504
   },
   {
     "epoch_id": 393,
     "epoch_percentage": 98.49624060150376,
-    "reward": 3.97961444527161,
-    "reward_percentage": 34.97024203022089
+    "reward": 203.66548956663615,
+    "reward_percentage": 92.81974605956277
   },
   {
     "epoch_id": 394,
     "epoch_percentage": 98.74686716791979,
-    "reward": 3.2334476759496105,
-    "reward_percentage": 34.814597788062365
+    "reward": 194.18770765920218,
+    "reward_percentage": 90.18444799866072
   },
   {
     "epoch_id": 395,
     "epoch_percentage": 98.99749373433583,
-    "reward": 132.6083167454591,
-    "reward_percentage": 61.80112985914127
+    "reward": 209.68742035611785,
+    "reward_percentage": 94.49414442485539
   },
   {
     "epoch_id": 396,
     "epoch_percentage": 99.24812030075188,
-    "reward": 121.87242018542345,
-    "reward_percentage": 59.56171026464857
+    "reward": 217.00760643916914,
+    "reward_percentage": 96.52952278431904
   },
   {
     "epoch_id": 397,
     "epoch_percentage": 99.49874686716792,
-    "reward": 117.48174471060629,
-    "reward_percentage": 58.64585152510317
+    "reward": 202.72816804951975,
+    "reward_percentage": 92.55912373245889
   },
   {
     "epoch_id": 398,
     "epoch_percentage": 99.74937343358395,
-    "reward": 108.16517422091492,
-    "reward_percentage": 56.70249165837787
+    "reward": 201.2710338652374,
+    "reward_percentage": 92.15396744928873
   },
   {
     "epoch_id": 399,
     "epoch_percentage": 100.0,
-    "reward": 122.54501986169437,
-    "reward_percentage": 59.70200901714377
+    "reward": 203.5597510147663,
+    "reward_percentage": 92.79034544627302
   }
 ]
