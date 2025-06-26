@@ -534,6 +534,11 @@ video {
   flex: 0 0 20%; /* fixed width */
 }
 
+.banner-video-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 /* Responsive Switch */
 @media (max-width: 768px) {
   .tldr-container {
@@ -616,5 +621,10 @@ video {
     display: flex; /* ensures content inside can be aligned */
     justify-content: center; /* centers content horizontally */
     align-items: center; /* centers content vertically */
+  }
+
+  .banner-video-container {
+    width: 100%;
+    margin: 0 auto;
   }
 }
