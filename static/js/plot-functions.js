@@ -30,6 +30,7 @@ function updateScatterPlot() {
     const gifPopup = document.getElementById('gif-popup');
     const gifImage = gifPopup.querySelector('video');
     const gifPopupIteration = document.getElementById('gif-popup-iteration-scatter');
+    const gifPopupReward = document.getElementById('gif-popup-reward-scatter');
     const heatmapImageContainerScatterPlot = document.getElementById('heatmap-image-container-scatter-plot');
     const heatmapImageContainerScatterPlotImg = heatmapImageContainerScatterPlot.querySelector('img');
     const justificationTextScatterPlot = document.getElementById('justification-text-scatter-plot');
@@ -68,6 +69,7 @@ function updateScatterPlot() {
             point.video_file = data.video_file; 
             point.heatmap_file = data.heatmap_file;
             point.iter = (data.iteration_id + 1) * 20;
+            point.reward = data.reward;
             
             point.addEventListener('mouseover', function(event) {
 
@@ -92,6 +94,7 @@ function updateScatterPlot() {
                 console.log('Justification Text:', justificationTextScatterPlot.textContent);
 
                 gifPopupIteration.textContent = `Episode ${this.iter}`;
+                gifPopupReward.textContent = `Reward: ${this.reward.toFixed(2)}`;
 
                 gifPopup.style.display = 'block';
                 updatePopupPosition(event, idx);
@@ -260,6 +263,7 @@ function updateLearningCurvePlot() {
     const gifPopup = document.getElementById('gif-popup-learning-curve');
     const gifImage = gifPopup.querySelector('video');
     const gifPopupIteration = document.getElementById('gif-popup-iteration-learning-curve');
+    const gifPopupReward = document.getElementById('gif-popup-reward-learning-curve');
     const heatmapImageContainerLearningCurve = document.getElementById('heatmap-image-container-learning-curve');
     const heatmapImageContainerLearningCurveImg = heatmapImageContainerLearningCurve.querySelector('img');
     const justificationTextLearningCurve = document.getElementById('justification-text-learning-curve');
@@ -301,6 +305,7 @@ function updateLearningCurvePlot() {
             point.video_file = data.video_file; 
             point.heatmap_file = data.heatmap_file; // Assuming heatmap_file is part of the data
             point.iter = idx * 10;
+            point.reward = data.reward;
             
             point.addEventListener('mouseover', function(event) {
 
@@ -324,6 +329,7 @@ function updateLearningCurvePlot() {
                 console.log('Justification Text:', justificationTextLearningCurve.textContent);
 
                 gifPopupIteration.textContent = `Iteration ${this.iter}`;
+                gifPopupReward.textContent = `Reward: ${this.reward.toFixed(2)}`;
 
                 gifPopup.style.display = 'block';
                 updatePopupPosition(event, idx);
