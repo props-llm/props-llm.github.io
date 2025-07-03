@@ -98,7 +98,7 @@
   </header> -->
 
   <section class="hero" id="main-section">
-    <div class="hero-body" >
+    <div class="hero-body" style="padding-bottom: 1em;">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered" style="padding-bottom: 0%;">
@@ -206,11 +206,11 @@
 
         <div class="content has-text-justified" style="padding-top: 0%;">
           
-          <div class="card">
-            <div class="card-header">Summary of Results</div>
-            <div class="card-body">
-              <div class="tldr-container" style="background-color: #ebfbff;">
-                <div class="tldr-container-text-box">
+          <div class="tldr-container">
+            <div class="tldr-container-text-box" style="padding-top: 0%;">
+              <div class="card" style="margin: 0%;">
+                <div class="card-header" style="font-size: 1.5em;">Summary of Results</div>
+                <div class="card-body" style="font-size: 1.05em;"  style="background-color: #ebfbff;">
                   
                   <!-- <strong> -->
                   <!-- <span style="font-size: larger;">Tl;Dr:</span> <br> -->
@@ -221,22 +221,22 @@
 
                   <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(1)</span> LLMs can directly optimize policies for RL tasks. </p>
                   <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(2)</span> LLMs can use semantic signals for smarter, more efficient policy search. </p>
-                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(3)</span> Our proposed <code class="props">ProPS</code> outperforms baselines on 8 out of 15 Gymnasium tasks. </p>
-                </div>
-                <div class="tldr-container-image-box">
-                  <img src="static/images/top_1_count_v1.5.png" alt="Example" />
+                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(3)</span> Our proposed <code class="props">ProPS</code> method outperforms baselines on 8 out of 15 Gymnasium tasks. </p>
                 </div>
               </div>
+            </div>
+            <div class="tldr-container-image-box">
+              <img src="static/images/top_1_count_v1.5.png" alt="Example" />
             </div>
           </div>
 
 
-          <div class="banner-video-container">
+          <!-- <div class="banner-video-container">
             <video autoplay loop muted playsinline>
               <source src="static/images/banner.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -250,7 +250,7 @@
 
 
 
-      <div class="columns is-centered has-text-centered">
+      <!-- <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
@@ -272,12 +272,68 @@
               potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.</p>
           </div>
         </div>
+      </div> -->
+
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+        </div>
       </div>
 
+      <!-- <div class="content has-text-justified">
+        <p>
+          Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
+          leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
+          efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
+          Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
+          linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
+          with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
+          policy optimization loop—directly proposing policy updates
+          based on both reward feedback and natural language input. We show that LLMs can perform numerical
+          optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
+          strategy hints can lead to more informed exploration and sample-efficient learning. <code
+            class="props">ProPS</code> is evaluated
+          across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
+          seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
+          tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
+          potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.
+        </p>
+      </div> -->
 
+      <div class="content has-text-justified", style="padding-top: 1em;">
+        <div class="main-intro-container">
+          <div class="main-abstract-container-text-box">
+            <p>
+              Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
+              leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
+              efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
+              Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
+              linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
+              with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
+              policy optimization loop—directly proposing policy updates
+              based on both reward feedback and natural language input. We show that LLMs can perform numerical
+              optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
+              strategy hints can lead to more informed exploration and sample-efficient learning. <code
+                class="props">ProPS</code> is evaluated
+              across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
+              seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
+              tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
+              potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.
+            </p>
+          </div>
+          <div class="main-abstract-container-image-box">
+            <video autoplay loop muted playsinline>
+              <source src="static/images/banner.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
 
       <!-- <h2 class="title is-3">TSNE of Learned Policy Parameters</h2> -->
-      <h2 class="title is-3">Visualization of Policy Search</h2>
+      <h2 class="title is-3">Visualizing the Policy Search of <code class="props">ProPS</code></h2>
       <div class="content has-text-justified">
         <p>
           Each point in the space below represents a learned policy. Hover over any point to watch
@@ -374,6 +430,8 @@
           <strong>Hover over points to see the LLM outputs!</strong>
         </div>
       </div>
+
+      
 
       <h2 class="title is-3">Overview</h2>
       <div class="content has-text-justified">
@@ -529,12 +587,12 @@ of iterations (400). <br>
           <strong>Hover over points and discover more details!</strong>
         </div>
 
-          <div class="banner-video-container" style="padding-top: 0.5em;">
-            <video autoplay loop muted playsinline>
-              <source src="static/images/swimmer_gif.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+        <div class="banner-video-container" style="padding-top: 0.5em;">
+          <video autoplay loop muted playsinline>
+            <source src="static/images/swimmer_gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
       </div>
 

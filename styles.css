@@ -437,7 +437,7 @@ video {
 }
 
 .tldr-container-image-box {
-  width: 200px;
+  width: 180px;
   /* height: auto; */
   display: flex;
   align-items: center;
@@ -472,6 +472,25 @@ video {
 }
 
 .main-intro-container-image-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.main-abstract-container-text-box {
+  width: 60%;
+  margin-right: 0%;
+}
+
+.main-abstract-container-image-box {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-abstract-container-image-box video {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -563,6 +582,7 @@ video {
     display: flex;
     width: 100%;
     flex-direction: column-reverse;
+    align-items: center;
     /* align-items: stretch; ensures both boxes are equal height */
   }
 
@@ -626,5 +646,29 @@ video {
   .banner-video-container {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .main-abstract-container-text-box {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  .main-abstract-container-image-box {
+    /* width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .main-abstract-container-image-box video {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }
