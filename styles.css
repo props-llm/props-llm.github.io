@@ -551,6 +551,8 @@ video {
 .semantics-container-video-box {
   width: 20%;
   flex: 0 0 20%; /* fixed width */
+  display: flex;
+  align-items: center;
 }
 
 .banner-video-container {

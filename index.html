@@ -98,7 +98,7 @@
   </header> -->
 
   <section class="hero" id="main-section">
-    <div class="hero-body" style="padding-bottom: 1em;">
+    <div class="hero-body" style="padding-bottom: 22px;">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered" style="padding-bottom: 0%;">
@@ -305,7 +305,7 @@
       <div class="content has-text-justified", style="padding-top: 1em;">
         <div class="main-intro-container">
           <div class="main-abstract-container-text-box">
-            <p>
+            <!-- <p>
               Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
               leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
               efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
@@ -321,6 +321,17 @@
               seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
               tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
               potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.
+            </p> -->
+            <p>
+              Traditional RL relies on scalar rewards, limiting its use of rich semantic knowledge. In contrast, humans learn by
+              combining numerical feedback with language and prior knowledge. We introduce
+          Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
+          linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
+          with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
+          policy optimization loop—directly proposing policy updates
+          based on both reward feedback and natural language input. Across 15 Gymnasium tasks, <code class="props">ProPS</code>
+              outperforms all seven popular RL methods on 8 tasks and shows further gains with domain knowledge, demonstrating the
+              benefits of integrating semantics and numerics for more efficient, human-aligned RL.
             </p>
           </div>
           <div class="main-abstract-container-image-box">
@@ -332,11 +343,98 @@
         </div>
       </div>
 
+
+
+
+      <h2 class="title is-3">Overview</h2>
+      <div class="content has-text-justified">
+        <div class="main-intro-container">
+          <div class="main-intro-container-text-box">
+            <p>We present a novel reinforcement learning (RL) approach in which a large language model (LLM) directly
+              generates policy parameters without relying on a conventional RL optimizer or any external optimization
+              component beyond the reward signal. Traditional RL methods focus on numerical information (e.g., gradients
+              with respect to the reward) and as a result cannot incorporate important task-specific knowledge that is
+              difficult to express in numbers, such as domain semantics or user-provided guidance. To address this
+              limitation, we introduce <strong>Prompted Policy Search</strong> (<code class="props">ProPS</code>), a new method that combines
+              <strong>numerical reasoning</strong> with <strong>linguistic reasoning</strong> to enable more flexible and informed
+              learning. By linguistic reasoning, we mean the ability of LLMs to understand, process, and analyze natural
+              language in order to draw (deductive and inductive) inferences and make informed decisions. This allows us
+              to embed valuable information like prior domain knowledge, goals, or user-provided policy hints directly
+              into the learning process using natural language. For example, traditional RL methods treat all input
+              features as raw numbers and do not distinguish between features expressed in different units, such as
+              meters versus kilometers. In contrast, an LLM can interpret text-based task descriptions that explain the
+              nature and context of each feature.</p>
+          </div>
+          <div class="main-intro-container-image-box">
+            <img src="static/images/Approach_Overview.jpg" alt="Example" />
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header"><code class="props-card">ProPS</code> Prompt</div>
+          <div class="card-body">
+
+You are a good global optimizer, helping me find the global maximum of a mathematical function
+f(params). I will give you the function evaluation and the current iteration number at each step. Your
+goal is to propose input values that efficiently lead us to the global maximum within a limited number
+of iterations (400). <br>
+  1. Regarding the parameters param: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% definitions of parameters</span> <br>
+  2. Here’s how we’ll interact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% formatting instructions</span> <br>
+  3. Remember: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% constraints to be respected</span> <br>
+          </div>
+        </div>
+
+        <p>
+          The figure above illustrates a truncated version of the prompt (full prompt in paper). The system message
+          specifies the role of the LLM as a global optimizer and indicates the total number of optimization
+          iterations. The prompt includes three key components: (1) definitions of the parameters to be
+          optimized, (2) formatting instructions for the LLM’s output, and (3) any additional constraints the
+          LLM must adhere to during optimization. At each iteration, the LLM receives the prompt along
+          with a history of previous parameter suggestions and their associated rewards (i.e., in-context
+          examples). It then proposes a new parameter vector, accompanied by a textual justification of the
+          update. These justifications add a layer of interpretability to the search process, as they describe
+          observed trends in the data.
+        </p>
+
+        <div class="card">
+          <div class="card-header"><code class="props-card">ProPS<sup>+</sup></code> Prompt</div>
+          <div class="card-body">
+            You are a good global RL policy optimizer, helping me find an optimal policy in the following environment: <br>
+            1. Environment: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% definition of the environment, parameters and policy</span> <br>
+            In the cartpole environment, a pole is attached by an un-actuated joint to a cart which moves along a
+            frictionless track. The pendulum is placed upright on the cart and the goal is to balance the pole by
+            applying forces in the left and right direction on the cart.The state is a vector of 4 elements, representing
+            the cart position (-4.8 to 4.8), cart velocity (-inf to inf), pole angle (-0.418 to 0.418 rad), and pole
+            angular velocity (-inf to inf) respectively. The goal is to keep the pole upright and the cart within the
+            bounding position of [-2.4, 2.4]. The action space consists of 2 actions (0: push left, 1: push right).
+            The policy is a linear policy with 10 parameters and works as follows: action = argmax(...) The reward
+            is +1 for every time step the pole is upright and the cart is within the bounding position. The episode
+            ends when the pole falls over or the cart goes out of bounds. <br>
+            2. Regarding the parameters param: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #000000;">% definitions of parameters</span> <br>
+            3. Here’s how we’ll interact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% formatting instructions</span> <br>
+            4. Remember: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% constraints to be respected</span> <br>
+          </div>
+        </div>
+
+        <p>
+          The figure above illustrates <code class="props">ProPS<sup>+</sup></code>, which is a semantically-augmented variant of
+          <code class="props">ProPS</code>, where we extend the basic framework to incorporate rich, task-specific, and contextual
+          knowledge into the reinforcement learning process via semantically-informed prompts. The
+          example shown describes the CartPole environment, using text adapted from publicly available documentation (e.g., OpenAI
+          Gym/Gymnasium). In this example, the prompt specifies details such as the task description, action space (binary),
+          policy parameterization (linear), and reward structure. Additionally, it includes optional expert-provided guidance on
+          desirable or undesirable policy behaviors, framed as constraints. 
+        </p>
+
+      </div>
+
+
       <!-- <h2 class="title is-3">TSNE of Learned Policy Parameters</h2> -->
-      <h2 class="title is-3">Visualizing the Policy Search of <code class="props">ProPS</code></h2>
+      <h2 class="title is-3">Visualizing the Policy Search Process of <code class="props">ProPS</code></h2>
       <div class="content has-text-justified">
         <p>
-          Each point in the space below represents a learned policy. Hover over any point to watch
+          Below is the visualization of the policy search process of <code class="props">ProPS</code> compared to PPO, where each point represents the parameters of a learned policy, projected down by T-SNE. Hover over any point to watch
           the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior. Larger points indicate higher rewards obtained by the policy.
         </p>
 
@@ -431,91 +529,20 @@
         </div>
       </div>
 
-      
-
-      <h2 class="title is-3">Overview</h2>
+      <h2 class="title is-3">Example of the Policy Search Process</h2>
       <div class="content has-text-justified">
-        <div class="main-intro-container">
-          <div class="main-intro-container-text-box">
-            <p>We present a novel reinforcement learning (RL) approach in which a large language model (LLM) directly
-              generates policy parameters without relying on a conventional RL optimizer or any external optimization
-              component beyond the reward signal. Traditional RL methods focus on numerical information (e.g., gradients
-              with respect to the reward) and as a result cannot incorporate important task-specific knowledge that is
-              difficult to express in numbers, such as domain semantics or user-provided guidance. To address this
-              limitation, we introduce <strong>Prompted Policy Search</strong> (<code class="props">ProPS</code>), a new method that combines
-              <strong>numerical reasoning</strong> with <strong>linguistic reasoning</strong> to enable more flexible and informed
-              learning. By linguistic reasoning, we mean the ability of LLMs to understand, process, and analyze natural
-              language in order to draw (deductive and inductive) inferences and make informed decisions. This allows us
-              to embed valuable information like prior domain knowledge, goals, or user-provided policy hints directly
-              into the learning process using natural language. For example, traditional RL methods treat all input
-              features as raw numbers and do not distinguish between features expressed in different units, such as
-              meters versus kilometers. In contrast, an LLM can interpret text-based task descriptions that explain the
-              nature and context of each feature.</p>
-          </div>
-          <div class="main-intro-container-image-box">
-            <img src="static/images/Approach_Overview.jpg" alt="Example" />
-          </div>
-        </div>
-
-
-        <div class="card">
-          <div class="card-header"><code class="props-card">ProPS</code> Prompt</div>
-          <div class="card-body">
-
-You are a good global optimizer, helping me find the global maximum of a mathematical function
-f(params). I will give you the function evaluation and the current iteration number at each step. Your
-goal is to propose input values that efficiently lead us to the global maximum within a limited number
-of iterations (400). <br>
-  1. Regarding the parameters param: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% definitions of parameters</span> <br>
-  2. Here’s how we’ll interact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% formatting instructions</span> <br>
-  3. Remember: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% constraints to be respected</span> <br>
-          </div>
-        </div>
-
         <p>
-          The figure above illustrates a truncated version of the prompt (full prompt in paper). The system message
-          specifies the role of the LLM as a global optimizer and indicates the total number of optimization
-          iterations. The prompt includes three key components: (1) definitions of the parameters to be
-          optimized, (2) formatting instructions for the LLM’s output, and (3) any additional constraints the
-          LLM must adhere to during optimization. At each iteration, the LLM receives the prompt along
-          with a history of previous parameter suggestions and their associated rewards (i.e., in-context
-          examples). It then proposes a new parameter vector, accompanied by a textual justification of the
-          update. These justifications add a layer of interpretability to the search process, as they describe
-          observed trends in the data.
+          The video below illustrates the policy search process of <code class="props">ProPS</code> in the Swimmer environment. It shows how the LLM analyzes
+          policy parameters based on reward feedback and generates updates through its own reasoning, combining both numerical and
+          linguistic signals.
         </p>
-
-        <div class="card">
-          <div class="card-header"><code class="props-card">ProPS<sup>+</sup></code> Prompt</div>
-          <div class="card-body">
-            You are a good global RL policy optimizer, helping me find an optimal policy in the following environment: <br>
-            1. Environment: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% definition of the environment, parameters and policy</span> <br>
-            In the cartpole environment, a pole is attached by an un-actuated joint to a cart which moves along a
-            frictionless track. The pendulum is placed upright on the cart and the goal is to balance the pole by
-            applying forces in the left and right direction on the cart.The state is a vector of 4 elements, representing
-            the cart position (-4.8 to 4.8), cart velocity (-inf to inf), pole angle (-0.418 to 0.418 rad), and pole
-            angular velocity (-inf to inf) respectively. The goal is to keep the pole upright and the cart within the
-            bounding position of [-2.4, 2.4]. The action space consists of 2 actions (0: push left, 1: push right).
-            The policy is a linear policy with 10 parameters and works as follows: action = argmax(...) The reward
-            is +1 for every time step the pole is upright and the cart is within the bounding position. The episode
-            ends when the pole falls over or the cart goes out of bounds. <br>
-            2. Regarding the parameters param: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #000000;">% definitions of parameters</span> <br>
-            3. Here’s how we’ll interact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% formatting instructions</span> <br>
-            4. Remember: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #000000;">% constraints to be respected</span> <br>
-          </div>
+        <div class="banner-video-container" style="padding-top: 0.5em;">
+          <video autoplay loop muted playsinline>
+            <source src="static/images/swimmer_gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-
-        <p>
-          The figure above illustrates <code class="props">ProPS<sup>+</sup></code>, which is a semantically-augmented variant of
-          <code class="props">ProPS</code>, where we extend the basic framework to incorporate rich, task-specific, and contextual
-          knowledge into the reinforcement learning process via semantically-informed prompts. The
-          example shown describes the CartPole environment, using text adapted from publicly available documentation (e.g., OpenAI
-          Gym/Gymnasium). In this example, the prompt specifies details such as the task description, action space (binary),
-          policy parameterization (linear), and reward structure. Additionally, it includes optional expert-provided guidance on
-          desirable or undesirable policy behaviors, framed as constraints. 
-        </p>
-
       </div>
-
 
       <h2 class="title is-3">Learning Curves: Rewards vs Iterations</h2>
       <div class="content has-text-justified">
@@ -586,13 +613,13 @@ of iterations (400). <br>
         <div class="has-text-centered" style="padding-top: 0.5em;">
           <strong>Hover over points and discover more details!</strong>
         </div>
-
+<!-- 
         <div class="banner-video-container" style="padding-top: 0.5em;">
           <video autoplay loop muted playsinline>
             <source src="static/images/swimmer_gif.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> -->
 
       </div>
 
@@ -871,6 +898,80 @@ of iterations (400). <br>
               </div>
             </div>
           </div>          
+
+
+
+        <p>
+          Text text text
+        </p>
+
+        <div class="semantics-container">
+          <div class="semantics-container-row">
+            <div class="semantics-container-video-box">
+              <img src="static/data/props_plus/maze/maze_llm_num_optim_q_table_semantics_long_take_1_4o_prompt3/q_table_1.png" alt="img1"/>       
+            </div>
+            <div class="semantics-container-text-box">
+              <div class="card">
+                <div class="card-header">LLM's Explanation on Iteration 1</div>
+                <div class="card-body">
+                  <p>
+                    To maximize the episodic reward, the agent needs a strategy that efficiently navigates the 3x3 grid to reach the goal state at position 8, while avoiding walls. Initially, we'll consider the structure of the grid and possible walls to hypothesize an optimal path. Let's first assume there is no wall directly from state 0 to state 8. However, based on typical grid setups, a sensible path could involve moving right when possible, then down, and repeating until reaching the goal. Since each move results in a negative reward, minimizing steps is crucial. The optimal series of actions could follow a: right → right → down → left or any combination that explores possible moves while maximizing potential paths. Experimenting with strategies will help uncover wall positions, preventing specific moves.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="semantics-container-row">
+            <div class="semantics-container-video-box">
+              <img src="static/data/props_plus/maze/maze_llm_num_optim_q_table_semantics_long_take_1_4o_prompt3/q_table_5.png" alt="img1"/>        
+            </div>
+            <div class="semantics-container-text-box">
+              <div class="card">
+                <div class="card-header">LLM's Explanation on Iteration 5</div>
+                <div class="card-body">
+                  <p>
+                    Analyzing the given trajectories, it appears that the agent easily gets stuck in loops whether at state 4 in the first two examples or state 1 in the last two. An effective strategy might include focusing on actions that push the agent across the grid towards state 8 without revisiting previous states or falling into cycles. For state 0, moving right (action 2) or down (action 1) seems logical to exit the first row. For state 3, down (action 1) or right (action 2) also works to advance on the grid. From the bottom row, state 6 should attempt moving right (action 2) to continue on a path towards the end. On the second row, movement should ideally target quickly approaching state 5 through optimized directional choices. I'll attempt a bold pathway spreading strategy based on this reasoning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="semantics-container-row">
+            <div class="semantics-container-video-box">
+              <img src="static/data/props_plus/maze/maze_llm_num_optim_q_table_semantics_long_take_1_4o_prompt3/q_table_10.png" alt="img1"/>            
+            </div>
+            <div class="semantics-container-text-box">
+              <div class="card">
+                <div class="card-header">LLM's Explanation on Iteration 10</div>
+                <div class="card-body">
+                  <p>
+                    In examining the provided trajectories, it appears that the agent is often getting stuck in loops or not effectively reaching the goal state at position 8. This suggests that there may be walls or unproductive directions being repeatedly chosen. An effective strategy would involve identifying a path that navigates the agent from state 0 to state 8 without redundancy. A sensible initial approach might be testing straightforward paths while avoiding previously explored unsuccessful sequences. Considering the 3x3 grid, a possible path could be moving right across the first row, then down, then right again. Thus, preliminary actions could involve moving right from the starting state, moving downward upon reaching the row's end, and continuing in a similar pattern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="semantics-container-row">
+            <div class="semantics-container-video-box">
+              <img src="static/data/props_plus/maze/maze_llm_num_optim_q_table_semantics_long_take_1_4o_prompt3/q_table_13.png" alt="img1"/>           
+            </div>
+            <div class="semantics-container-text-box">
+              <div class="card">
+                <div class="card-header">LLM's Explanation on Iteration 13</div>
+                <div class="card-body">
+                  <p>
+                    The current policies suggest a need for more exploration as they all lead to a loop or a suboptimal state. To reach state 8 from state 0, the agent likely needs to move right from state 0 to state 1 or down immediately, then further plan down-right movements avoiding loops. Since previous strategies mostly move the agent into cycles or confined state loops, a combination directing movement towards the unexplored bottom right is ideal. Moving down from state 1 and state 2 might break the cycle, and encourage exploration. Thus, an alternative approach from state 0 is to explore downward towards state 6 or attempt right and downward sequences from the middle and right sections of the grid. Overall, the focus must be on exploring potential pathways, diverging from existing patterns that involve repeated movements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>          
+
 
 
         </div>
