@@ -98,12 +98,13 @@
   </header> -->
 
   <section class="hero" id="main-section">
-    <div class="hero-body" style="padding-bottom: 22px;">
+    <div class="hero-body" style="padding-bottom: 11px;">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered" style="padding-bottom: 0%;">
-            <h1 class="title is-1 publication-title">Prompted Policy Search: Reinforcement Learning through Linguistic
-              and Numerical Reasoning in LLMs</h1>
+            <h1 class="title is-1 publication-title" style="margin-bottom: 0.1em;">Prompted Policy Search:</h1>
+            <h1 class="title is-3 sub-title">Reinforcement Learning through Linguistic
+            and Numerical Reasoning in LLMs</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://yifanzhou.com/">Yifan Zhou</a><sup>1</sup>,</span>
@@ -198,15 +199,64 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  <section class="section" style="padding-top: 0;">
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered has-text-centered" style="margin-top: 12px">
+        <div class="column is-four-fifths" style="padding-top: 0; padding-bottom: 0;">
+          <h2 class="title is-3">Abstract</h2>
+        </div>
+      </div>
+
+      <div class="content has-text-justified", style="padding-top: 1em; margin-bottom: 0; padding-bottom: 0;">
+        <div class="main-intro-container">
+          <div class="main-abstract-container-text-box">
+
+            <p>
+              Traditional reinforcement learning relies on scalar rewards, limiting its use of rich semantic knowledge. In contrast, humans learn by
+              combining numerical feedback with language and prior knowledge. We introduce
+          Prompted Policy Search (<code class="props">ProPS</code>), a novel LLM-based reinforcement learning method that unifies numerical and
+          linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
+          with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
+          policy optimization loop—directly proposing policy updates
+          based on both reward feedback and natural language input. Across 15 Gymnasium tasks, <code class="props">ProPS</code>
+              outperforms all seven popular RL methods on 8 tasks and shows further gains with domain knowledge, demonstrating the
+              benefits of integrating semantics and numerics for more efficient, human-aligned RL.
+            </p>
+          </div>
+          <div class="main-abstract-container-image-box">
+            <video autoplay loop muted playsinline>
+              <source src="static/images/banner.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <h2 class="title is-3">Example of the Policy Search Process</h2> -->
+      <div class="content has-text-justified">
+        <p style="margin-bottom: 0.75em;">
+          The video below illustrates the policy search process of <code class="props">ProPS</code> in the Gymnasium Swimmer environment. It
+          shows how the LLM synthesizes policy parameters based on reward feedback through its own reasoning,
+          combining both numerical and linguistic signals.
+        </p>
+        <div class="banner-video-container" style="padding-top: 0;">
+          <video autoplay loop muted playsinline>
+            <source src="static/images/swimmer_gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
 
 
 
-        <div class="content has-text-justified" style="padding-top: 0%;">
-          
-          <div class="tldr-container">
+          <div class="tldr-container" style="padding-top: 0.75em">
             <div class="tldr-container-text-box" style="padding-top: 0%;">
               <div class="card" style="margin: 0%;">
                 <div class="card-header" style="font-size: 1.5em;">Summary of Results</div>
@@ -231,120 +281,9 @@
           </div>
 
 
-          <!-- <div class="banner-video-container">
-            <video autoplay loop muted playsinline>
-              <source src="static/images/banner.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div> -->
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section" style="padding-top: 0%;">
-    <div class="container is-max-desktop">
-
-
-
-
-      <!-- <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
-              leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
-              efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
-              Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
-              linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
-              with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
-              policy optimization loop—directly proposing policy updates
-              based on both reward feedback and natural language input. We show that LLMs can perform numerical
-              optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
-              strategy hints can lead to more informed exploration and sample-efficient learning. <code
-                class="props">ProPS</code> is evaluated
-              across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
-              seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
-              tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
-              potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.</p>
-          </div>
-        </div>
-      </div> -->
-
-
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-        </div>
       </div>
 
-      <!-- <div class="content has-text-justified">
-        <p>
-          Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
-          leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
-          efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
-          Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
-          linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
-          with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
-          policy optimization loop—directly proposing policy updates
-          based on both reward feedback and natural language input. We show that LLMs can perform numerical
-          optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
-          strategy hints can lead to more informed exploration and sample-efficient learning. <code
-            class="props">ProPS</code> is evaluated
-          across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
-          seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
-          tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
-          potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.
-        </p>
-      </div> -->
-
-      <div class="content has-text-justified", style="padding-top: 1em;">
-        <div class="main-intro-container">
-          <div class="main-abstract-container-text-box">
-            <!-- <p>
-              Reinforcement Learning (RL) traditionally relies on scalar reward signals, limiting its ability to
-              leverage the rich semantic knowledge often available in real-world tasks. In contrast, humans learn
-              efficiently by combining numerical feedback with language, prior knowledge, and common sense. We introduce
-              Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
-              linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
-              with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
-              policy optimization loop—directly proposing policy updates
-              based on both reward feedback and natural language input. We show that LLMs can perform numerical
-              optimization in-context, and that incorporating semantic signals, such as goals, domain knowledge, and
-              strategy hints can lead to more informed exploration and sample-efficient learning. <code
-                class="props">ProPS</code> is evaluated
-              across 15 Gymnasium tasks, spanning classic control, Atari games, and MuJoCo environments, and compared to
-              seven widely-adopted RL algorithms (e.g., PPO, SAC, TRPO). It outperforms all baselines on 8 out of 15
-              tasks and demonstrates substantial gains when provided with domain knowledge. These results highlight the
-              potential of unifying semantics and numerics for transparent, generalizable, and human-aligned RL.
-            </p> -->
-            <p>
-              Traditional RL relies on scalar rewards, limiting its use of rich semantic knowledge. In contrast, humans learn by
-              combining numerical feedback with language and prior knowledge. We introduce
-          Prompted Policy Search (<code class="props">ProPS</code>), a novel RL method that unifies numerical and
-          linguistic reasoning within a single framework. Unlike prior work that augments existing RL components
-          with language, <code class="props">ProPS</code> places a large language model (LLM) at the center of the
-          policy optimization loop—directly proposing policy updates
-          based on both reward feedback and natural language input. Across 15 Gymnasium tasks, <code class="props">ProPS</code>
-              outperforms all seven popular RL methods on 8 tasks and shows further gains with domain knowledge, demonstrating the
-              benefits of integrating semantics and numerics for more efficient, human-aligned RL.
-            </p>
-          </div>
-          <div class="main-abstract-container-image-box">
-            <video autoplay loop muted playsinline>
-              <source src="static/images/banner.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-
-
-
+      
 
       <h2 class="title is-3">Overview</h2>
       <div class="content has-text-justified">
@@ -529,99 +468,7 @@ of iterations (400). <br>
         </div>
       </div>
 
-      <h2 class="title is-3">Example of the Policy Search Process</h2>
-      <div class="content has-text-justified">
-        <p>
-          The video below illustrates the policy search process of <code class="props">ProPS</code> in the Swimmer environment. It shows how the LLM analyzes
-          policy parameters based on reward feedback and generates updates through its own reasoning, combining both numerical and
-          linguistic signals.
-        </p>
-        <div class="banner-video-container" style="padding-top: 0.5em;">
-          <video autoplay loop muted playsinline>
-            <source src="static/images/swimmer_gif.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
 
-      <h2 class="title is-3">Learning Curves: Rewards vs Iterations</h2>
-      <div class="content has-text-justified">
-        <p>
-          Here is the learning curve of our proposed <code class="props">ProPS</code>. Similarly, hover over any point to watch the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior.
-        </p>
-
-        <div class="button-container top" data-index="0" data-variable="learningCurvePlotCurrentGymTaskIndex">
-          <span class="button-text">
-            <pre class="cbutton"></pre>
-          </span>
-          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
-          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
-        </div>
-
-
-
-        <div class="interactive-container">
-
-          <div class="plot-parent-container">
-            <div class="gif-popup-learning-curve" id="gif-popup-learning-curve">
-              <div class="gif-popup-iteration" id="gif-popup-iteration-learning-curve">
-                Iteration
-              </div>
-              <div class="gif-popup-iteration" id="gif-popup-reward-learning-curve">
-                Reward: 
-              </div>
-              <!-- <img src="" alt="Hovered GIF"> -->
-              <video autoplay loop muted playsinline>
-                <source src="" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-            <div class="plot-container" id="plot-container-learning-curve" style="text-align: center">
-              <!-- Data points will be added here by JavaScript -->
-            </div>
-          </div>
-
-
-          <div class="learning-info-box" id="learning-info-box-learning-curve">
-            <!-- Display the LLM justifications in this scrollable text box. -->
-
-            <div class="justification-text-container">
-              <div class="justification-text-title">
-                LLM Explanation
-              </div>
-              <div class="justification-text" id="justification-text-learning-curve">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
-                Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-                ... (more text to make it scrollable) ...
-              </div>
-            </div>
-            <div class="heatmap-image-container">
-              <div class="heatmap-image-title">
-                Policy Parameters
-              </div>
-              <div class="heatmap-image" id="heatmap-image-container-learning-curve">
-                <img src="" alt="Placeholder">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <script src="static/js/learning-curve-plot.js"></script>
-        <!-- <script src="static/js/scatter-plot.js"></script> -->
-
-        <div class="has-text-centered" style="padding-top: 0.5em;">
-          <strong>Hover over points and discover more details!</strong>
-        </div>
-<!-- 
-        <div class="banner-video-container" style="padding-top: 0.5em;">
-          <video autoplay loop muted playsinline>
-            <source src="static/images/swimmer_gif.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div> -->
-
-      </div>
 
 
 
@@ -814,10 +661,95 @@ of iterations (400). <br>
       </div>
 
 
+
+
+      <h2 class="title is-3">Learning Curves: Rewards vs Iterations</h2>
+      <div class="content has-text-justified">
+        <p>
+          Here is the learning curve of our proposed <code class="props">ProPS</code>. Similarly, hover over any point to watch the policy in action, see how the LLM explains its decision, and explore the parameter heatmap that shaped the behavior.
+        </p>
+
+        <div class="button-container top" data-index="0" data-variable="learningCurvePlotCurrentGymTaskIndex">
+          <span class="button-text">
+            <pre class="cbutton"></pre>
+          </span>
+          <div class="button-overlay left" onclick="updateGlobalIndex(this)"></div>
+          <div class="button-overlay right" onclick="updateGlobalIndex(this)"></div>
+        </div>
+
+
+
+        <div class="interactive-container">
+
+          <div class="plot-parent-container">
+            <div class="gif-popup-learning-curve" id="gif-popup-learning-curve">
+              <div class="gif-popup-iteration" id="gif-popup-iteration-learning-curve">
+                Iteration
+              </div>
+              <div class="gif-popup-iteration" id="gif-popup-reward-learning-curve">
+                Reward: 
+              </div>
+              <!-- <img src="" alt="Hovered GIF"> -->
+              <video autoplay loop muted playsinline>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="plot-container" id="plot-container-learning-curve" style="text-align: center">
+              <!-- Data points will be added here by JavaScript -->
+            </div>
+          </div>
+
+
+          <div class="learning-info-box" id="learning-info-box-learning-curve">
+            <!-- Display the LLM justifications in this scrollable text box. -->
+
+            <div class="justification-text-container">
+              <div class="justification-text-title">
+                LLM Explanation
+              </div>
+              <div class="justification-text" id="justification-text-learning-curve">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+                ... (more text to make it scrollable) ...
+              </div>
+            </div>
+            <div class="heatmap-image-container">
+              <div class="heatmap-image-title">
+                Policy Parameters
+              </div>
+              <div class="heatmap-image" id="heatmap-image-container-learning-curve">
+                <img src="" alt="Placeholder">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="static/js/learning-curve-plot.js"></script>
+        <!-- <script src="static/js/scatter-plot.js"></script> -->
+
+        <div class="has-text-centered" style="padding-top: 0.5em;">
+          <strong>Hover over points and discover more details!</strong>
+        </div>
+<!-- 
+        <div class="banner-video-container" style="padding-top: 0.5em;">
+          <video autoplay loop muted playsinline>
+            <source src="static/images/swimmer_gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div> -->
+
+      </div>
+
+
       <h2 class="title is-3"><code class="props">ProPS<sup>+</sup></code>: Semantics Help Reasoning</h2>
       <div class="content has-text-justified">
         <p>
-          Over the span of 250 iterations, the LLM is capable of consistently reaching policies that maximize the reward for the CartPole environment. This capability of the LLM is coupled with the provision of textual justification for the choice of updates for policy parameters at each iteration. These justifications, as shown below, specify trends and patterns on how certain parameters or combinations of parameters impact the reward function, providing a level of interpretability and linguistic reasoning that is not afforded by traditional numeric optimizers.
+          Over the span of 250 iterations, the LLM is capable of consistently reaching policies that maximize the reward for the
+          CartPole environment. At every iteration, LLM explains and justifies its updates for the policy parameters. These justifications, as shown below, specify trends and patterns on
+          how certain parameters or combinations of parameters impact the reward function, providing a level of interpretability
+          and linguistic reasoning that is not afforded by traditional numeric optimizers.
         </p>
 
         <div class="semantics-container">
@@ -900,7 +832,7 @@ of iterations (400). <br>
           </div>          
 
 
-
+<!-- 
         <p>
           Text text text
         </p>
@@ -972,7 +904,7 @@ of iterations (400). <br>
             </div>
           </div>          
 
-
+ -->
 
         </div>
       </div>
@@ -1154,7 +1086,7 @@ of iterations (400). <br>
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{zhou2025props,
-        author    = {xxx},
+        author    = {Zhou, Yifan and Grover, Sachin and El Mistiri, Mohamed and Kalirathinam, Kamalesh and Kerhalkar, Pratyush and Mishra, Swaroop and Kumar, Neelesh and Gaurav, Sanket and Aran, Oya and Ben Amor, Heni},
         title     = {Prompted Policy Search: Reinforcement Learning through Linguistic and Numerical Reasoning in LLMs},
         year      = {2025},
       }</code></pre>

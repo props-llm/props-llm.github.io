@@ -560,6 +560,13 @@ video {
   margin: 0 auto;
 }
 
+.sub-title {
+  width: 650px; /* Adjust as needed */
+  margin: 0 auto;
+  text-align: center;
+  /* line-height: 1.2; */
+}
+
 /* Responsive Switch */
 @media (max-width: 768px) {
   .tldr-container {
@@ -672,5 +679,12 @@ video {
     max-width: 100%;
     height: auto;
     object-fit: contain;
+  }
+
+  .sub-title {
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em; /* Adjust font size for smaller screens */
   }
 }
