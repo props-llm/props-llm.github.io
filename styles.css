@@ -430,19 +430,19 @@ video {
 }
 
 .tldr-container-text-box {
-  width: 79%;
-  margin-right: 3%;
+  width: 65%;
+  margin-right: 5%;
   padding-left: 0%;
   padding-top: 0.5%;
 }
 
 .tldr-container-image-box {
-  width: 180px;
+  width: 25%;
   /* height: auto; */
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .tldr-container-image-box img {

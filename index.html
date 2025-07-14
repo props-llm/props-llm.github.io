@@ -269,9 +269,10 @@
                   <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(3)</span> Our proposed <code class="props">ProPS</code> outperforms all baselines on 8 out of 15 Gymnasium tasks. </p> -->
                   <!-- </strong> -->
 
-                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(1)</span> LLMs can directly optimize policies for RL tasks. </p>
+                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(1)</span> LLMs can directly perform reinforcement learning and optimize policies.</p>
                   <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(2)</span> LLMs can use semantic signals for smarter, more efficient policy search. </p>
-                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(3)</span> Our proposed <code class="props">ProPS</code> method outperforms baselines on 8 out of 15 Gymnasium tasks. </p>
+                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(3)</span> We introduce <code class="props">ProPS</code>, a method for LLM-based policy search without the need for external optimizers. </p>
+                  <p style="margin-bottom: 0.2em;"><span style="font-weight: bold;">(4)</span> <code class="props">ProPS</code> outperforms widely-adopted RL algorithms, including PPO and TRPO, on 8 out of 15 diverse RL tasks. </p>
                 </div>
               </div>
             </div>
@@ -923,22 +924,20 @@ of iterations (400). <br>
           Gemini-1.5-pro achieved the best (lowest mean) objective value in a majority of cases, succeeding in 12 out of the 20
           distinct optimization tasks. -->
           <p>
-          Our experiments demonstrate that large language models (LLMs), specifically Gemini-1.5-pro and GPT-4o, can effectively
+          In this section, our experiments demonstrate that large language models (LLMs), specifically Gemini-1.5-pro and GPT-4o, can effectively
           perform direct numerical optimization tasks, such as minimizing complex mathematical functions. Given that policy search
-          in reinforcement learning is fundamentally a numerical optimization problem—where the goal is to maximize rewards within
-          a parameterized policy space—we investigated how well LLMs perform compared to classical optimization algorithms,
-          including Gradient Descent and Adam.
+          in reinforcement learning is fundamentally a numerical optimization problem, where the goal is to maximize rewards
+          within a parameterized policy space, we argue that LLMs can be used for direct policy search.
           </p>
           
           <p>
-          We conducted a thorough evaluation across several numerical optimization benchmarks, such as the Ackley and Rastrigin
-          functions. The results presented reflect the mean and standard deviation of the final objective function values obtained
+          Specifically, how well can LLMs perform numerical optimization? To answer this, we conducted a thorough evaluation across several benchmark functions, such as Ackley and Rastrigin. The results show the mean and standard deviation of the final objective function values obtained
           with 50 independent trials, each consisting of 100 optimization steps.
           </p>
           
           <p>
           Gemini-1.5-pro consistently outperformed other methods, achieving the best (lowest) average objective value in 12 out of
-          the 20 tested optimization scenarios. This robust performance highlights the capability and potential of LLM-based
+          the 20 tested optimization scenarios. This robust performance enables the capability and potential of LLM-based
           approaches for policy optimization tasks.      
           </p>
 
